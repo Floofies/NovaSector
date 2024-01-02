@@ -16,7 +16,9 @@ Your added Quirk should NOT distribute it's added dependencies across the folder
 
 ### Quirk Balancing
 
-Nova Sector has a unique combat and roleplaying environment, and it can be influenced by Quirks. Quirks *may* give any degree of mechanical disadvantage to the Quirk holder. Quirks can also provide minor mechanical advantages to the Quirk holder. On Nova Sector, Quirks can easily be used to construct more unique characters, but may also sometimes cause a substantial balance-shift to the game. To limit balance-related issues, some Quirks are incompatible with each other, and are also blacklisted from certain jobs.
+Nova Sector is a combat and roleplaying environment, and it can be influenced by Quirks. Quirks may give any degree of mechanical disadvantage to the Quirk holder. Quirks can also provide minor mechanical advantages to the Quirk holder.
+
+On Nova Sector, Quirks can easily be used to construct more unique characters, but may also sometimes cause a substantial balance-shift to the game. To limit balance-related issues, some Quirks are incompatible with each other, and are also blacklisted from certain jobs.
 
 ### Quirk Incompatability
 
@@ -31,3 +33,8 @@ If your added Quirk provides a significant mechanical disadvantage to the player
 The defines for the Quirk-Job blacklist are located within the file `code/DEFINES/~skyrat_defines/jobs.dm`
 
 The `RESTRICTED_QUIRKS_EXCEPTIONS` list associates a blacklisted Quirk with another Quirk, which allows them to bypass the blacklist. For instance the Mute Quirk may be blacklisted from a job, and the Signer Quirk will whitelist the Mute Quirk for that job anyways, making it possible to play the game as a Captain who is mute but also proficient at sign-language.
+
+### TG Proc/File Changes:
+
+- healthscanner.dm: /proc/healthscan(), For the Death Consequences quirk
+- species_features.tsx: For the Death Consequences quirk
