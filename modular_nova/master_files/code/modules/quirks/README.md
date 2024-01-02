@@ -12,3 +12,4 @@ If you're trying to add a new Quirk, or want to learn more about Nova Sector's Q
 - /datum/quirk/foreigner - Hides the quirk
 - /datum/quirk/all_nighter - Changes the icon
 - /datum/quirk/blooddeficiency, add_to_holder() - Quirk subtypes for slimes & synths
+- /datum/brain_trauma/severe/monophobia/proc/stress_reaction() - Remove heartattack from Monophobia
