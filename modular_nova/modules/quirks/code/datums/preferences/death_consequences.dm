@@ -1,7 +1,3 @@
-/// Absolute maximum for preferences.
-#define DEATH_CONSEQUENCES_MAXIMUM_THEORETICAL_DEGRADATION 10000
-#define DEATH_CONSEQUENCES_VAR(var_name) /datum/brain_trauma/severe/death_consequences::##var_name
-
 /datum/preference/numeric/death_consequences
 	abstract_type = /datum/preference/numeric/death_consequences
 	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
@@ -23,11 +19,12 @@
 
 /datum/preference/numeric/death_consequences/max_degradation
 	savefile_key = "dc_max_degradation"
+
 	minimum = 0
 	maximum = DEATH_CONSEQUENCES_MAXIMUM_THEORETICAL_DEGRADATION
 
 /datum/preference/numeric/death_consequences/max_degradation/create_default_value()
-	return DEATH_CONSEQUENCES_VAR(max_degradation)
+	return DEATH_CONSEQUENCES_DEFAULT_MAX_DEGRADATION
 
 /datum/preference/numeric/death_consequences/living_degradation_recovery_per_second
 	savefile_key = "dc_living_degradation_recovery_per_second"
@@ -36,7 +33,7 @@
 	maximum = 1000
 
 /datum/preference/numeric/death_consequences/living_degradation_recovery_per_second/create_default_value()
-	return DEATH_CONSEQUENCES_VAR(base_degradation_reduction_per_second_while_alive)
+	return DEATH_CONSEQUENCES_DEFAULT_LIVING_DEGRADATION_RECOVERY
 
 /datum/preference/numeric/death_consequences/dead_degradation_per_second
 	savefile_key = "dc_dead_degradation_per_second"
@@ -54,7 +51,7 @@
 	maximum = 1000
 
 /datum/preference/numeric/death_consequences/degradation_on_death/create_default_value()
-	return DEATH_CONSEQUENCES_VAR(base_degradation_on_death)
+	return DEATH_CONSEQUENCES_DEFAULT_DEGRADATION_ON_DEATH
 
 /datum/preference/numeric/death_consequences/formeldahyde_dead_degradation_mult
 	savefile_key = "dc_formeldahyde_dead_degradation_mult"
@@ -81,7 +78,7 @@
 	maximum = 500
 
 /datum/preference/numeric/death_consequences/rezadone_living_degradation_reduction/create_default_value()
-	return DEATH_CONSEQUENCES_VAR(rezadone_degradation_decrease)
+	return DEATH_CONSEQUENCES_DEFAULT_REZADONE_DEGRADATION_REDUCTION
 
 /datum/preference/numeric/death_consequences/eigenstasium_degradation_reduction
 	savefile_key = "dc_eigenstasium_degradation_reduction"
@@ -90,7 +87,7 @@
 	maximum = 5000
 
 /datum/preference/numeric/death_consequences/eigenstasium_degradation_reduction/create_default_value()
-	return DEATH_CONSEQUENCES_VAR(eigenstasium_degradation_decrease)
+	return DEATH_CONSEQUENCES_DEFAULT_EIGENSTASIUM_DEGRADATION_REDUCTION
 
 /datum/preference/numeric/death_consequences/crit_threshold_reduction_min_percent_of_max
 	savefile_key = "dc_crit_threshold_reduction_min_percent_of_max"
@@ -165,6 +162,3 @@
 	savefile_key = "dc_force_death_if_permakilled"
 
 	default_value = FALSE
-
-#undef DEATH_CONSEQUENCES_MAXIMUM_THEORETICAL_DEGRADATION
-#undef DEATH_CONSEQUENCES_VAR

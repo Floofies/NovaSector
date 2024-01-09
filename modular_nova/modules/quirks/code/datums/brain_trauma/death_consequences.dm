@@ -12,22 +12,9 @@
 /// Only rezadone at or above this purity can reduce degradation. Needed because of borg synthesizers.
 #define DEATH_CONSEQUENCES_REZADONE_MINIMUM_PURITY 100
 
-/// The victim's crit threshold cannot go below this.
-#define DEATH_CONSEQUENCES_MINIMUM_VICTIM_CRIT_THRESHOLD (MAX_LIVING_HEALTH) - 1
-#define DEATH_CONSEQUENCES_DEFAULT_MAX_DEGRADATION 500 // arbitrary
-#define DEATH_CONSEQUENCES_DEFAULT_LIVING_DEGRADATION_RECOVERY 0.01
-#define DEATH_CONSEQUENCES_DEFAULT_DEGRADATION_ON_DEATH 50
-
-#define DEATH_CONSEQUENCES_DEFAULT_REZADONE_DEGRADATION_REDUCTION 0.4
-#define DEATH_CONSEQUENCES_DEFAULT_EIGENSTASIUM_DEGRADATION_REDUCTION 5 // for such a rare chem, you fucking bet
-
-#define DEATH_CONSEQUENCES_SHOW_HEALTH_ANALYZER_DATA "dc_show_health_analyzer_data"
-
-#define DEATH_CONSEQUENCES_TIME_BETWEEN_REMINDERS 5 MINUTES
-
 /datum/brain_trauma/severe/death_consequences
-	name = /datum/quirk/death_consequences::name
-	desc = /datum/quirk/death_consequences::medical_record_text
+	name = DEATH_CONSEQUENCES_QUIRK_NAME
+	desc = DEATH_CONSEQUENCES_QUIRK_DESC
 	scan_desc = "death degradation"
 	gain_text = span_warning("For a brief moment, you completely disassociate.")
 	lose_text = span_notice("You feel like you have a firm grasp on your consciousness again!")
@@ -36,7 +23,7 @@
 	/// The current degradation we are currently at. Generally speaking, things get worse the higher this is. Can never go below 0.
 	var/current_degradation = 0
 	/// The absolute maximum degradation we can receive. Will cause permadeath if [permakill_if_at_max_degradation] is TRUE.
-	var/max_degradation = DEATH_CONSEQUENCES_DEFAULT_MAX_DEGRADATION
+	var/max_degradation = DEATH_CONSEQUENCES_DEFAULT_MAX_DEGRADATION // arbitrary
 	/// While alive, our victim will lose degradation by this amount per second.
 	var/base_degradation_reduction_per_second_while_alive = DEATH_CONSEQUENCES_DEFAULT_LIVING_DEGRADATION_RECOVERY
 	/// When our victim dies, they will degrade by this amount, but only if the last time they died was after [time_required_between_deaths_to_degrade] ago.
@@ -334,6 +321,8 @@
 
 /// Ensures our victim's stamina is at or above the minimum stamina they're supposed to have.
 /datum/brain_trauma/severe/death_consequences/proc/damage_stamina(seconds_per_tick)
+	if (!stamina_damage_max_degradation)
+		return
 	if (victim_properly_resting())
 		return
 
@@ -563,15 +552,3 @@
 #undef DEGRADATION_LEVEL_HIGH_THRESHOLD
 
 #undef DEATH_CONSEQUENCES_REZADONE_MINIMUM_PURITY
-
-#undef DEATH_CONSEQUENCES_MINIMUM_VICTIM_CRIT_THRESHOLD
-#undef DEATH_CONSEQUENCES_DEFAULT_MAX_DEGRADATION
-#undef DEATH_CONSEQUENCES_DEFAULT_LIVING_DEGRADATION_RECOVERY
-
-#undef DEATH_CONSEQUENCES_DEFAULT_DEGRADATION_ON_DEATH
-#undef DEATH_CONSEQUENCES_DEFAULT_REZADONE_DEGRADATION_REDUCTION
-#undef DEATH_CONSEQUENCES_DEFAULT_EIGENSTASIUM_DEGRADATION_REDUCTION
-
-#undef DEATH_CONSEQUENCES_SHOW_HEALTH_ANALYZER_DATA
-
-#undef DEATH_CONSEQUENCES_TIME_BETWEEN_REMINDERS
