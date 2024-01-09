@@ -25,7 +25,7 @@
 
 // Omits the NOBLOOD check for jelly/slime species.
 // TODO: There is a better way to do this in the species code itself.
-/datum/quirk/blooddeficiency/jelly/process(delta_time)
+/datum/quirk/blooddeficiency/jelly/process(seconds_per_tick)
 	if(quirk_holder.stat == DEAD)
 		return
 
@@ -33,4 +33,5 @@
 	if (carbon_target.blood_volume <= min_blood)
 		return
 
-	carbon_target.blood_volume = max(min_blood, carbon_target.blood_volume - drain_rate * delta_time)
+	// Ensures that we don't reduce total blood volume below min_blood.
+	carbon_target.blood_volume = max(min_blood, carbon_target.blood_volume - carbon_target.dna.species.blood_deficiency_drain_rate * seconds_per_tick)

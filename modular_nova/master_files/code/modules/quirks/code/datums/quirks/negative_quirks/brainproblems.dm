@@ -16,7 +16,8 @@
 
 // Adds custom medical flavortext for synthetic brains.
 /datum/quirk/item_quirk/brainproblems/synth/add()
-	var/obj/item/organ/internal/brain/synth_brain = quirk_holder.getorganslot(ORGAN_SLOT_BRAIN)
+	var/mob/living/carbon/human/human_holder = quirk_holder
+	var/obj/item/organ/internal/brain/synth_brain = human_holder.get_organ_slot(ORGAN_SLOT_BRAIN)
 	if (istype(synth_brain, /obj/item/organ/internal/brain/synth/circuit))
 		name = "Processor Firmware Bug"
 	else if (istype(synth_brain, /obj/item/organ/internal/brain/synth/mmi))
