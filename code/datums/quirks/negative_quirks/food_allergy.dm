@@ -1,16 +1,3 @@
-GLOBAL_LIST_INIT(possible_food_allergies, list(
-	"Alcohol" = ALCOHOL,
-	"Bugs" = BUGS,
-	"Dairy" = DAIRY,
-	"Fruit" = FRUIT,
-	"Grain" = GRAIN,
-	"Meat" = MEAT,
-	"Nuts" = NUTS,
-	"Seafood" = SEAFOOD,
-	"Sugar" = SUGAR,
-	"Vegetables" = VEGETABLES,
-))
-
 /datum/quirk/item_quirk/food_allergic
 	name = "Food Allergy"
 	desc = "Ever since you were a kid, you've been allergic to certain foods."
