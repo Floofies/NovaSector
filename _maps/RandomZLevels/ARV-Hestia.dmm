@@ -6064,9 +6064,6 @@
 	},
 /area/station/hestia/Fore_port_maints)
 "fzO" = (
-/obj/machinery/telecomms/allinone{
-	id = "tcommsat"
-	},
 /obj/machinery/door/window{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
@@ -6075,14 +6072,17 @@
 	},
 /obj/machinery/spaceship_navigation_beacon{
 	pixel_y = 19;
-	pixel_x = -7;
+	pixel_x = -9;
 	name = "ARV Hestia"
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/item/gps/computer/beacon{
 	pixel_y = 16;
-	pixel_x = 6;
+	pixel_x = 3;
 	gpstag = "NTSS Blue Moon"
+	},
+/obj/machinery/telecomms/relay/preset/auto{
+	name = "ARV Hestia Relay"
 	},
 /turf/open/floor/circuit/green,
 /area/station/hestia/tcomms_cabinet)

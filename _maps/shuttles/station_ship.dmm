@@ -2503,9 +2503,6 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/shipstation)
 "ne" = (
-/obj/machinery/telecomms/allinone{
-	id = "tcommsat"
-	},
 /obj/machinery/door/window{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
@@ -2514,13 +2511,11 @@
 	},
 /obj/machinery/spaceship_navigation_beacon{
 	pixel_y = 19;
-	pixel_x = -7
+	pixel_x = -9
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/item/gps/computer/beacon{
-	pixel_y = 16;
-	pixel_x = 6;
-	gpstag = "NTSS Blue Moon"
+/obj/machinery/telecomms/relay/preset/auto{
+	name = "Blue Moon Relay"
 	},
 /turf/open/floor/circuit/green,
 /area/shuttle/shipstation)
@@ -4125,9 +4120,12 @@
 /turf/open/floor/pod/light,
 /area/shuttle/shipstation)
 "xx" = (
-/obj/effect/landmark/start/ai/secondary,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
+	},
+/obj/item/gps/computer/beacon{
+	pixel_y = 0;
+	gpstag = "NTSS Blue Moon"
 	},
 /turf/open/floor/circuit,
 /area/shuttle/shipstation)
