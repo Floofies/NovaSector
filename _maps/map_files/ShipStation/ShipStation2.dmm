@@ -10707,7 +10707,7 @@
 /turf/open/floor/iron/recharge_floor,
 /area/station/hallway/primary/central)
 "VR" = (
-/obj/docking_port/stationary/autumnal,
+/obj/docking_port/stationary/hestia_ferry,
 /turf/open/space/basic,
 /area/space)
 "VT" = (

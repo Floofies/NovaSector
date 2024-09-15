@@ -1,8 +1,8 @@
 /datum/map_template/shuttle/hestiaferry
-	port_id = "hestia"
 	who_can_purchase = null
-	suffix = "ferry"
 	name = "Hestia Ferry"
+	shuttle_id = "ferry_hestia"
+	mappath = "ferry_hestia.dmm"
 
 /area/shuttle/hestia_ferry
 	name = "Hestia Ferry"
@@ -21,7 +21,7 @@
 
 /obj/docking_port/mobile/hestia_ferry
 	name = "Hestia Ferry"
-	shuttle_id = "hestia_ferry"
+	shuttle_id = "ferry_hestia"
 	dir = EAST
 	port_direction = NORTH
 	preferred_direction = NORTH
