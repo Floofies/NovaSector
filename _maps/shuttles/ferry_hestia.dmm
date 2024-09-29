@@ -1,0 +1,162 @@
+"az" = (/obj/machinery/door/airlock/hatch,/obj/effect/mapping_helpers/airlock/locked,/obj/structure/fans/tiny/forcefield{dir = 8},/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"aP" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "0,3"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/mining_large.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"br" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "12,4"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"cm" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "15,6"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"cs" = (/obj/effect/turf_decal/siding/dark_blue{dir = 5},/turf/open/floor/iron/dark/textured_corner{dir = 8},/area/shuttle/hestia_ferry)
+"cD" = (/obj/effect/turf_decal/shuttle/exploration/hazardstripe,/obj/effect/turf_decal/shuttle/exploration/hazardstripe{dir = 1},/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/shuttle/exploration,/area/shuttle/hestia_ferry)
+"dg" = (/obj/effect/turf_decal/siding/dark,/obj/effect/turf_decal/siding/dark{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner,/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 8},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 4},/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/door/airlock/hatch,/turf/open/floor/iron/shuttle/evac{icon_state = "floorplace2"},/area/shuttle/hestia_ferry)
+"dK" = (/turf/open/floor/glass/reinforced,/area/shuttle/hestia_ferry)
+"dS" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{dir = 4},/turf/open/floor/iron/shuttle/evac{icon_state = "flooreng2"},/area/shuttle/hestia_ferry)
+"dW" = (/obj/effect/turf_decal/siding/wood{dir = 8},/obj/structure/extinguisher_cabinet/directional/north,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/wood/tile,/area/shuttle/hestia_ferry)
+"dZ" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "4,4"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"eO" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "9,24"; dir = 1},/area/shuttle/hestia_ferry)
+"eP" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/structure/curtain/bounty,/turf/open/floor/wood/tile,/area/shuttle/hestia_ferry)
+"eU" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/effect/turf_decal/siding/dark_blue,/turf/open/floor/iron/dark/textured_edge,/area/shuttle/hestia_ferry)
+"fr" = (/obj/effect/turf_decal/shuttle/exploration/medbay,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"; dir = 1},/area/shuttle/hestia_ferry)
+"ge" = (/obj/machinery/atmospherics/components/tank/air/layer4{dir = 4},/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"gF" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "diagonalWall"; dir = 8; pixel_x = -32; pixel_y = 0; name = "hull"; color = "#e7e7e7"},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "11,20"},/area/shuttle/hestia_ferry)
+"gM" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{dir = 4},/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"gN" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "10,23"; name = "hull"; dir = 2},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,24"},/area/shuttle/hestia_ferry)
+"hq" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "10,22"; name = "hull"; dir = 2},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,/area/shuttle/hestia_ferry)
+"hP" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "4,3"; dir = 2; pixel_x = -32; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/machinery/power/shuttle_engine/heater{icon_state = "3,3"; dir = 2; pixel_x = 0; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/machinery/power/shuttle_engine/heater{icon_state = "2,3"; dir = 2; pixel_x = 32; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/machinery/power/shuttle_engine/heater{icon_state = "2,4"; dir = 2; pixel_x = 32; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "3,4"},/area/shuttle/hestia_ferry)
+"hV" = (/obj/effect/turf_decal/siding/dark_blue,/turf/open/floor/iron/dark/textured_half,/area/shuttle/hestia_ferry)
+"ji" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/effect/turf_decal/siding/dark_blue/corner{dir = 4},/turf/open/floor/iron/dark/textured_corner{dir = 4},/area/shuttle/hestia_ferry)
+"jx" = (/obj/machinery/atmospherics/components/binary/pump/on/general/hidden/layer4{dir = 4},/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"jA" = (/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{dir = 8},/obj/machinery/airalarm/directional/north,/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"jL" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/mining_labor.dmi'; icon_state = "2,8"; name = "engine"},/obj/structure/window/reinforced/spawner/directional/north{layer = 2.8},/obj/structure/lattice,/obj/machinery/atmospherics/components/unary/passive_vent/layer2{dir = 1; alpha = 0},/turf/template_noop,/area/shuttle/hestia_ferry)
+"kj" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,/area/shuttle/hestia_ferry)
+"lH" = (/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,23"},/area/shuttle/hestia_ferry)
+"mg" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "11,22"; name = "hull"; dir = 2},/turf/template_noop,/area/shuttle/hestia_ferry)
+"mB" = (/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "15,16"; dir = 1},/area/shuttle/hestia_ferry)
+"mP" = (/obj/machinery/light/directional/west,/turf/open/floor/iron/shuttle/evac{icon_state = "floorinv"},/area/shuttle/hestia_ferry)
+"nC" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{dir = 4},/obj/effect/turf_decal/siding/dark_blue{dir = 9},/turf/open/floor/iron/dark/textured_corner,/area/shuttle/hestia_ferry)
+"nH" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/open/floor/iron/dark/textured_half{dir = 1},/area/shuttle/hestia_ferry)
+"nN" = (/obj/effect/turf_decal/siding/wood/end{dir = 8},/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/structure/curtain/bounty,/turf/open/floor/iron/shuttle/evac{icon_state = "9,6"; dir = 1},/area/shuttle/hestia_ferry)
+"nU" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "0,0"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"oa" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "9,24"; name = "hull"; dir = 2},/obj/machinery/power/shuttle_engine/heater{icon_state = "diagonalWall"; dir = 8; pixel_x = -32; pixel_y = 0; name = "hull"; color = "#e7e7e7"},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,24"},/area/shuttle/hestia_ferry)
+"oi" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "11,21"},/area/shuttle/hestia_ferry)
+"on" = (/obj/effect/turf_decal/siding/wood/end{dir = 4},/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/structure/curtain/bounty,/turf/open/floor/iron/shuttle/evac{icon_state = "9,6"},/area/shuttle/hestia_ferry)
+"oy" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "7,24"; dir = 1},/area/shuttle/hestia_ferry)
+"pv" = (/obj/structure/chair/comfy/shuttle{dir = 1},/obj/effect/turf_decal/siding/dark_blue{dir = 1},/turf/open/floor/iron/dark/textured_edge{dir = 1},/area/shuttle/hestia_ferry)
+"pS" = (/obj/effect/turf_decal/siding/wood/end{dir = 4},/obj/structure/curtain/bounty,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/open/floor/iron/shuttle/evac{icon_state = "9,6"},/area/shuttle/hestia_ferry)
+"pW" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"; dir = 1},/area/shuttle/hestia_ferry)
+"qS" = (/obj/effect/turf_decal/siding/dark,/obj/effect/turf_decal/siding/dark{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner,/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 8},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 4},/obj/machinery/door/airlock/centcom,/turf/open/floor/iron/shuttle/evac{icon_state = "floorplace2"},/area/shuttle/hestia_ferry)
+"rC" = (/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "3,5"},/area/shuttle/hestia_ferry)
+"rR" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/machinery/light/directional/south,/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"sa" = (/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"sc" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "12,0"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/obj/structure/window/reinforced/survival_pod/spawner/directional/north{pixel_x = 0; pixel_y = 4},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,/area/shuttle/hestia_ferry)
+"sd" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "0,0"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,/area/shuttle/hestia_ferry)
+"sj" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "12,0"; dir = 1; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,/area/shuttle/hestia_ferry)
+"sA" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "5,21"},/area/shuttle/hestia_ferry)
+"sH" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "7,23"; name = "hull"; dir = 2},/obj/machinery/computer/shuttle/hestia_ferry{dir = 2; pixel_x = -16},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,23"},/area/shuttle/hestia_ferry)
+"sL" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "5,23"; name = "hull"; dir = 2},/turf/template_noop,/area/shuttle/hestia_ferry)
+"tH" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "6,22"; name = "hull"; dir = 2},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,/area/shuttle/hestia_ferry)
+"tK" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "6,24"; name = "hull"; dir = 2},/turf/template_noop,/area/shuttle/hestia_ferry)
+"uN" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "11,0"; dir = 1},/area/shuttle/hestia_ferry)
+"vs" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "0,3"; dir = 1; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/mining_large.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"wa" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "6,13"},/area/shuttle/hestia_ferry)
+"wz" = (/obj/effect/turf_decal/siding/wood/end{dir = 8},/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/shuttle/evac{icon_state = "9,6"; dir = 1},/area/shuttle/hestia_ferry)
+"wD" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "4,6"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"yd" = (/obj/structure/curtain/bounty,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/open/floor/wood/tile,/area/shuttle/hestia_ferry)
+"yn" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "0,0"; dir = 1; pixel_x = 0; pixel_y = 1; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"yU" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "9,1"; dir = 1},/area/shuttle/hestia_ferry)
+"zt" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "12,0"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"zV" = (/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"Bm" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "6,6"},/area/shuttle/hestia_ferry)
+"Bz" = (/obj/effect/turf_decal/siding/dark,/obj/effect/turf_decal/siding/dark{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner,/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 8},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 4},/obj/machinery/door/airlock/maintenance_hatch,/obj/effect/mapping_helpers/airlock/locked,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/shuttle/evac{icon_state = "floorplace2"},/area/shuttle/hestia_ferry)
+"BE" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "12,6"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"BM" = (/obj/effect/turf_decal/siding/dark_blue{dir = 9},/turf/open/floor/iron/dark/textured_corner,/area/shuttle/hestia_ferry)
+"Cm" = (/obj/structure/closet/emcloset/wall{pixel_x = 0; pixel_y = 32},/turf/open/floor/plating,/area/shuttle/hestia_ferry)
+"Cx" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"},/area/shuttle/hestia_ferry)
+"CE" = (/obj/structure/window/reinforced/survival_pod/spawner/directional/north{pixel_x = -32; pixel_y = 4},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "1,0"},/area/shuttle/hestia_ferry)
+"CR" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "2,5"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"CS" = (/obj/structure/table/reinforced/plastitaniumglass,/obj/machinery/status_display/shuttle/directional/north,/obj/machinery/light/directional/north,/turf/open/floor/iron/shuttle/evac{icon_state = "flooreng2"},/area/shuttle/hestia_ferry)
+"DA" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "10,24"; name = "hull"; dir = 2; layer = 2.91},/turf/template_noop,/area/shuttle/hestia_ferry)
+"Ev" = (/obj/effect/turf_decal/siding/wideplating_new/light{dir = 8},/obj/effect/turf_decal/siding/wideplating_new/light{dir = 4},/obj/effect/turf_decal/siding/wood{dir = 8},/obj/effect/turf_decal/siding/wood{dir = 4},/obj/structure/table/reinforced/rglass,/obj/structure/marker_beacon/cerulean,/obj/item/serviette{pixel_x = 0; pixel_y = 6},/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{dir = 4},/obj/machinery/light/directional/west,/turf/open/floor/carpet/blue,/area/shuttle/hestia_ferry)
+"Ex" = (/obj/structure/window/reinforced/spawner/directional/north{layer = 2.8},/obj/machinery/power/shuttle_engine/heater{icon_state = "12,7"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"ET" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"},/area/shuttle/hestia_ferry)
+"Fq" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/structure/curtain/bounty,/turf/open/floor/wood/tile,/area/shuttle/hestia_ferry)
+"Fx" = (/obj/effect/turf_decal/siding/wood{dir = 8},/obj/machinery/digital_clock/directional/south,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/wood/tile,/area/shuttle/hestia_ferry)
+"FU" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,6"},/area/shuttle/hestia_ferry)
+"Gl" = (/obj/effect/turf_decal/siding/wideplating_new/light/end,/obj/effect/turf_decal/siding/wood/end,/obj/structure/chair/comfy/shuttle{dir = 1},/turf/open/floor/carpet/blue,/area/shuttle/hestia_ferry)
+"Gy" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"; dir = 8},/area/shuttle/hestia_ferry)
+"GL" = (/obj/effect/turf_decal/siding/dark_blue{dir = 10},/obj/machinery/light/directional/south,/turf/open/floor/iron/dark/textured_corner{dir = 4},/area/shuttle/hestia_ferry)
+"Hi" = (/obj/effect/turf_decal/siding/wideplating_new/light{dir = 8},/obj/effect/turf_decal/siding/wideplating_new/light{dir = 4},/obj/effect/turf_decal/siding/wood{dir = 8},/obj/effect/turf_decal/siding/wood{dir = 4},/obj/structure/table/reinforced/rglass,/obj/structure/marker_beacon/cerulean,/obj/item/serviette{pixel_x = 0; pixel_y = 6},/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{dir = 8},/obj/machinery/light/directional/east,/turf/open/floor/carpet/blue,/area/shuttle/hestia_ferry)
+"HH" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "4,5"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"HV" = (/obj/effect/turf_decal/siding/wood/end{dir = 8},/obj/structure/curtain/bounty,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/shuttle/evac{icon_state = "9,6"; dir = 1},/area/shuttle/hestia_ferry)
+"Ij" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "1,0"},/area/shuttle/hestia_ferry)
+"Iq" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "diagonalWall"; dir = 1; pixel_x = 32; pixel_y = 0; name = "hull"; color = "#e7e7e7"},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "5,20"},/area/shuttle/hestia_ferry)
+"IW" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "11,6"},/area/shuttle/hestia_ferry)
+"Jg" = (/obj/structure/window/reinforced/survival_pod/spawner/directional/south{pixel_x = -32; pixel_y = -4},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "11,0"; dir = 1},/area/shuttle/hestia_ferry)
+"Jw" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"; dir = 8},/area/shuttle/hestia_ferry)
+"JB" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "9,23"; name = "hull"; dir = 2},/obj/machinery/computer/camera_advanced/shuttle_docker/hestia_ferry{dir = 2; pixel_y = 0; pixel_x = 16},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,23"},/area/shuttle/hestia_ferry)
+"JE" = (/obj/effect/turf_decal/siding/dark_blue{dir = 6},/obj/machinery/light/directional/south,/turf/open/floor/iron/dark/textured_corner{dir = 1},/area/shuttle/hestia_ferry)
+"JL" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "7,6"},/area/shuttle/hestia_ferry)
+"La" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "11,0"},/area/shuttle/hestia_ferry)
+"Ld" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "12,5"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"Lf" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "12,5"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"Lz" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "12,0"; dir = 1; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"LN" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "14,3"; dir = 2; pixel_x = -32; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/machinery/power/shuttle_engine/heater{icon_state = "13,3"; dir = 2; pixel_x = 0; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/machinery/power/shuttle_engine/heater{icon_state = "12,3"; dir = 2; pixel_x = 32; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/machinery/power/shuttle_engine/heater{icon_state = "14,4"; dir = 2; pixel_x = -32; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "13,4"},/area/shuttle/hestia_ferry)
+"Mj" = (/obj/effect/turf_decal/box/white,/turf/open/floor/iron/shuttle/evac{icon_state = "flooreng1"},/area/shuttle/hestia_ferry)
+"MZ" = (/turf/template_noop,/area/template_noop)
+"Nh" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"; dir = 4},/area/shuttle/hestia_ferry)
+"Nz" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "1,6"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+"Oq" = (/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "13,5"},/area/shuttle/hestia_ferry)
+"Ow" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "5,22"; name = "hull"; dir = 2},/turf/template_noop,/area/shuttle/hestia_ferry)
+"OL" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "1,5"; dir = 2; pixel_x = 32; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "2,6"},/area/shuttle/hestia_ferry)
+"ON" = (/obj/effect/turf_decal/siding/dark,/obj/effect/turf_decal/siding/dark{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner,/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 8},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 4},/obj/machinery/door/airlock/maintenance_hatch,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/shuttle/evac{icon_state = "floorplace2"},/area/shuttle/hestia_ferry)
+"Pg" = (/obj/effect/turf_decal/siding/wood,/obj/effect/turf_decal/siding/wood{dir = 1},/turf/open/floor/iron/shuttle/evac{icon_state = "10,18"},/area/shuttle/hestia_ferry)
+"PN" = (/obj/structure/curtain/bounty,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/wood/tile,/area/shuttle/hestia_ferry)
+"Qk" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "4,5"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"Rs" = (/obj/structure/lattice,/obj/machinery/power/shuttle_engine/heater{icon_state = "14,5"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/template_noop,/area/shuttle/hestia_ferry)
+"RV" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "5,13"; dir = 4},/area/shuttle/hestia_ferry)
+"Sv" = (/obj/structure/fans/tiny/forcefield{dir = 4},/obj/machinery/door/airlock/hatch,/obj/docking_port/mobile/hestia_ferry{dir = 8},/turf/open/floor/iron/shuttle/cargo{icon_state = "floor_box"},/area/shuttle/hestia_ferry)
+"Tl" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "0,0"; dir = 1; pixel_x = 0; pixel_y = 1; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/wagon.dmi'},/obj/structure/window/reinforced/survival_pod/spawner/directional/south{pixel_x = 0; pixel_y = -4},/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,/area/shuttle/hestia_ferry)
+"TA" = (/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{dir = 8},/obj/effect/turf_decal/siding/dark_blue{dir = 5},/turf/open/floor/iron/dark/textured_corner{dir = 8},/area/shuttle/hestia_ferry)
+"Uo" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "9,1"},/area/shuttle/hestia_ferry)
+"Uz" = (/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "15,16"},/area/shuttle/hestia_ferry)
+"Vz" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "7,24"; name = "hull"; dir = 2},/obj/machinery/power/shuttle_engine/heater{icon_state = "diagonalWall"; dir = 1; pixel_x = 32; pixel_y = 0; name = "hull"; color = "#e7e7e7"},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,24"},/area/shuttle/hestia_ferry)
+"VK" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "11,23"; name = "hull"; dir = 2},/turf/template_noop,/area/shuttle/hestia_ferry)
+"Wq" = (/obj/effect/turf_decal/shuttle/exploration/hazardstripe{dir = 1},/obj/effect/turf_decal/shuttle/exploration/hazardstripe,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/shuttle/exploration,/area/shuttle/hestia_ferry)
+"Wx" = (/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,24"},/area/shuttle/hestia_ferry)
+"WG" = (/turf/template_noop,/area/shuttle/hestia_ferry)
+"Xa" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "9,6"},/area/shuttle/hestia_ferry)
+"Xm" = (/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{icon_state = "1,0"; dir = 1},/area/shuttle/hestia_ferry)
+"XL" = (/obj/machinery/power/shuttle_engine/heater{icon_state = "15,5"; dir = 2; pixel_x = -32; pixel_y = -32; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "14,6"},/area/shuttle/hestia_ferry)
+"Yk" = (/obj/effect/turf_decal/siding/dark,/obj/effect/turf_decal/siding/dark{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner,/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 8},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 1},/obj/effect/turf_decal/siding/wideplating/dark/corner{dir = 4},/obj/machinery/door/airlock/hatch,/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/turf/open/floor/iron/shuttle/evac{icon_state = "floorplace2"},/area/shuttle/hestia_ferry)
+"Ys" = (/obj/machinery/power/shuttle_engine/heater{icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'; icon_state = "6,23"; name = "hull"; dir = 2},/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{icon_state = "8,24"},/area/shuttle/hestia_ferry)
+"Yv" = (/obj/effect/turf_decal/siding/wideplating_new/light/end{dir = 1},/obj/effect/turf_decal/siding/wood/end{dir = 1},/obj/structure/chair/comfy/shuttle,/turf/open/floor/carpet/blue,/area/shuttle/hestia_ferry)
+"YQ" = (/turf/closed/wall/mineral/titanium/shuttle_wall/evac{icon_state = "10,6"},/area/shuttle/hestia_ferry)
+"Zs" = (/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,/obj/effect/turf_decal/siding/dark_blue/corner{dir = 1; pixel_y = 0},/turf/open/floor/iron/dark/textured_corner{dir = 1},/area/shuttle/hestia_ferry)
+"ZV" = (/obj/structure/window/reinforced/spawner/directional/north{layer = 2.8},/obj/machinery/power/shuttle_engine/heater{icon_state = "4,7"; dir = 2; pixel_x = 0; pixel_y = 0; name = "hull"; icon = 'modular_nova/modules/advanced_shuttles/icons/evac_shuttle.dmi'},/obj/structure/lattice,/turf/template_noop,/area/shuttle/hestia_ferry)
+
+(1,1,1) = {"
+MZMZDAoaWxVztKMZMZ
+MZVKgNJBlHsHYssLMZ
+MZmghqBMpvcstHOwMZ
+MZoinCZsnHjiTAsAMZ
+WGgFGLhVeUhVJEIqWG
+nUNhwaGydgETwapWzt
+MZHHLfUzWqmBHHLfMZ
+MZETwafrYkRVwaGyMZ
+LzuNYvPNdKFqYvXmyn
+vsUzEvHVPgonHimBaP
+nUIjGlPNdKFqGlLazt
+MZIWYQXaqSJLBmFUMZ
+LzuNYvePdKFqYvXmyn
+vsUzEvnNPgonHimBaP
+nUIjGlePdKFqGlLazt
+MZIWYQXaqSJLBmFUMZ
+LzJgCSdWdKydYvXmyn
+SvMjdSwzPgpSHimBaP
+nUCEmPFxdKydGlLazt
+MZNhwaJwONCxwapWMZ
+MZHHLfUzcDmBHHLfMZ
+sjuNwapWBzNhwaXmTl
+kjgejxgMrRjACmsaaz
+sdIjeOExjLZVoyLasc
+cmXLyUBEzVwDUoOLNz
+WGRsOqLdWGQkrCCRWG
+MZWGLNbrzVdZhPWGMZ
+MZMZMZMZMZMZMZMZMZ
+"}

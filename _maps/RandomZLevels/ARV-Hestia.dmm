@@ -25141,9 +25141,9 @@
 /turf/open/floor/wood/large,
 /area/station/hestia/fore_hall)
 "vez" = (
-/obj/structure/lattice/catwalk,
+/obj/docking_port/stationary/hestia_ferry_away,
 /turf/open/space/basic,
-/area/station/hestia)
+/area/space)
 "veX" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/evac{
 	icon_state = "8,62";
@@ -28920,16 +28920,6 @@
 /obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hestia/kitchen)
-"ylC" = (
-/obj/structure/fluff/metalpole{
-	dir = 4
-	},
-/obj/structure/fluff/metalpole{
-	dir = 8
-	},
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/station/hestia)
 "ylG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -35490,11 +35480,11 @@ mMu
 mMu
 mMu
 mMu
-lrg
-ylC
-vez
-ylC
-lrg
+mMu
+mMu
+mMu
+mMu
+mMu
 mMu
 mMu
 mMu
@@ -42762,11 +42752,11 @@ mMu
 mMu
 mMu
 mMu
-lrg
-ylC
+mMu
+mMu
 vez
-ylC
-lrg
+mMu
+mMu
 mMu
 mMu
 mMu

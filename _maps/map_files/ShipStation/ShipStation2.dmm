@@ -554,6 +554,7 @@
 /obj/effect/turf_decal/stripes/asteroid/end{
 	dir = 4
 	},
+/obj/effect/turf_decal/vg_decals/numbers/one,
 /turf/open/floor/iron/recharge_floor,
 /area/station/cargo/storage)
 "cz" = (
@@ -1624,6 +1625,10 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"ht" = (
+/obj/docking_port/stationary/hestia_ferry_home,
+/turf/open/space/basic,
+/area/space)
 "hu" = (
 /obj/structure/safe,
 /obj/item/book{
@@ -1685,6 +1690,13 @@
 	},
 /turf/open/floor/plating,
 /area/station/security/brig)
+"hG" = (
+/obj/effect/turf_decal/stripes/asteroid/end{
+	dir = 8
+	},
+/obj/effect/turf_decal/vg_decals/numbers/one,
+/turf/open/floor/iron/recharge_floor,
+/area/station/hallway/secondary/exit/departure_lounge)
 "hH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -1701,6 +1713,13 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/science/server)
+"hO" = (
+/obj/effect/turf_decal/stripes/asteroid/end{
+	dir = 4
+	},
+/obj/effect/turf_decal/vg_decals/numbers/zero,
+/turf/open/floor/iron/recharge_floor,
+/area/station/hallway/secondary/exit/departure_lounge)
 "hP" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer1,
 /obj/machinery/meter{
@@ -8931,7 +8950,7 @@
 /obj/effect/turf_decal/stripes/asteroid/end{
 	dir = 8
 	},
-/obj/effect/turf_decal/vg_decals/numbers/zero,
+/obj/effect/turf_decal/vg_decals/numbers/one,
 /turf/open/floor/iron/recharge_floor,
 /area/station/cargo/storage)
 "LQ" = (
@@ -48802,7 +48821,7 @@ SE
 Ru
 Ru
 Ru
-Ru
+hG
 IQ
 gK
 bZ
@@ -49059,7 +49078,7 @@ QS
 Ru
 Ru
 Ru
-Ru
+hO
 lY
 Ru
 hJ
@@ -51120,7 +51139,7 @@ nv
 nv
 nv
 nv
-nv
+ht
 nv
 nv
 nv
