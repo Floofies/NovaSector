@@ -890,3 +890,8 @@
 	name = "Butter Costume"
 	item_path = /obj/item/clothing/suit/costume/butter
 	ckeywhitelist = list("drpmstr", "pyritechimera")
+
+/datum/loadout_item/under/second_skin
+	name = "Anti-Infiltration Skinsuit"
+	item_path = /obj/item/clothing/under/second_skin
+	ckeywhitelist = list("floofies")
