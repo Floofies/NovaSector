@@ -2237,13 +2237,15 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 // Donation reward for Floofies
 /obj/item/clothing/under/second_skin
 	name = "anti-infiltration skinsuit"
-	desc = "It's a skin-tight suit that stays snug around its wearer, but allows freedom of movement.\n\
-	Designed to prevent exposure to hazardous elements."
+	desc = "A skintight body protection suit which prevents exposure to hazards while allowing freedom of movement.\n\
+	It is made out of ceramic and carbon nanotube composite."
+	special_desc = "The armor layer is damaged and useless. Use an armor vest to repair it."
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/uniform.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/uniform_digi.dmi'
 	icon_state = "second_skin"
+	equip_sound = 'modular_nova/modules/modular_items/lewd_items/sounds/latex.ogg'
 	can_adjust = FALSE
-	flags_inv = HIDESEXTOY
+	//flags_inv = HIDESEXTOY
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -2273,14 +2275,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 		deploy_sound = 'modular_nova/master_files/sound/effects/skinsuit_sealed.ogg'
 	else
 		deploy_sound = 'modular_nova/master_files/sound/effects/skinsuit_unsealed.ogg'
-	playsound(src, deploy_sound, EQUIP_SOUND_VOLUME, vary = FALSE, ignore_walls = FALSE, falloff_exponent = 5, falloff_distance = 1)
-	var/mob/wearer = loc
-	wearer.update_body()
-
-/obj/item/clothing/under/second_skin/examine(mob/living/user)
-	. = ..()
-	if(!armor_added)
-		. += "\nThe armor layer is damaged and useless. Use an armor vest on the suit to repair it."
+	playsound(src, deploy_sound, EQUIP_SOUND_VOLUME, vary = FALSE, falloff_exponent = 5, ignore_walls = FALSE, falloff_distance = 1)
+	//var/mob/wearer = loc
+	//wearer.update_body()
 
 /obj/item/clothing/under/second_skin/Initialize(mapload)
 	. = ..()
@@ -2301,26 +2298,27 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 		balloon_alert(user, "armor not damaged!")
 		return
 	set_armor(/datum/armor/clothing_under/second_skin)
+	balloon_alert(user, "armor layer repaired!")
+	playsound(src, 'sound/items/equip/toolbelt_equip.ogg', EQUIP_SOUND_VOLUME, TRUE, ignore_walls = FALSE)
 	armor_added = TRUE
+	name = "armored anti-infiltration skinsuit"
+	special_desc = null
 	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	name = "armored anti-infiltration skinsuit"
-	desc += " The ceramic and carbon nanotube composite layer resists damage from small projectiles, lasers, acid, fire, and dust."
-	playsound(src, 'sound/items/equip/jumpsuit_equip.ogg', EQUIP_SOUND_VOLUME, TRUE, ignore_walls = FALSE)
-	balloon_alert(user, "armor layer repaired!")
 	qdel(armor_vest)
 
 // Donation reward for Floofies
+// Similar to the plasma envirosuit helmet
 /obj/item/clothing/head/helmet/space/second_skin
 	name = "anti-infiltration helmet"
-	desc = "A skin-tight helmet composed of damage-resistant ceramic and carbon nanotube composite material. Resists damage from fire, acid, dust, and hard vacuum.\n\
-	Caution: Lacks solar UV shielding"
+	desc = "An airtight protective helmet which prevents exposure to hazards.\n\
+	It is made out of ceramic and carbon nanotube composite."
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/hats.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/head.dmi'
 	icon_state = "second_skin"
-	flash_protect = FLASH_PROTECTION_NONE
+	slowdown = 0
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	actions_types = list(/datum/action/item_action/toggle_helmet_light, /datum/action/item_action/color_helmet_light)
+	actions_types = list(/datum/action/item_action/toggle_helmet_flashlight, /datum/action/adjust_flashlight_color)
 	light_system = OVERLAY_LIGHT_DIRECTIONAL
 	light_range = 4
 	light_power = 0.8
@@ -2328,47 +2326,32 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	light_on = FALSE
 	var/mutable_appearance/eye_lights
 
-/datum/action/item_action/color_helmet_light
-	name = "Pick Light Color"
-
 /obj/item/clothing/head/helmet/space/second_skin/Initialize()
 	. = ..()
 	eye_lights = emissive_appearance(
 		'modular_nova/master_files/icons/donator/mob/clothing/head.dmi',
 		"second_skin_lights",
-		FLOAT_LAYER,
 		src,
-		ABOVE_LIGHTING_PLANE
+		FLOAT_LAYER,
+		appearance_flags = RESET_COLOR | RESET_TRANSFORM
 	)
-	eye_lights.color = light_color
 	SET_PLANE_EXPLICIT(eye_lights, ABOVE_LIGHTING_PLANE, src)
+	eye_lights.color = light_color
 
-/obj/item/clothing/head/helmet/space/second_skin/worn_overlays()
+/obj/item/clothing/head/helmet/space/second_skin/worn_overlays(mutable_appearance/standing, isinhands = FALSE)
 	. = ..()
-	if(light_on)
-		//SET_PLANE_EXPLICIT(eye_lights, PLANE_TO_TRUE(eye_lights.plane), src)
+	if(light_on && !isinhands)
+		SET_PLANE_EXPLICIT(eye_lights, PLANE_TO_TRUE(eye_lights.plane), src)
 		. += eye_lights
 
 /obj/item/clothing/head/helmet/space/second_skin/attack_self(mob/living/user)
 	set_light_on(!light_on)
 	var/sound/toggle_sound = light_on ? 'sound/items/night_vision_on.ogg' : 'sound/machines/click.ogg'
 	playsound(src, toggle_sound, 30, vary = TRUE, extrarange = -3)
-	update_appearance(UPDATE_ICON | UPDATE_OVERLAYS)
+	update_appearance(UPDATE_OVERLAYS)
 
-/obj/item/clothing/head/helmet/space/second_skin/ui_action_click(mob/living/user, datum/action/actiontype)
-	if(!istype(actiontype, /datum/action/item_action/color_helmet_light))
-		return ..()
-	color_helmet_light(user)
-
-/obj/item/clothing/head/helmet/space/second_skin/proc/color_helmet_light(mob/living/user)
-	var/new_color = input(user, "Choose a new color for [src]'s flashlight.", "Light Color", light_color) as color|null
-	if(!new_color)
-		return
-	if(is_color_dark(new_color, 50))
-		balloon_alert(user, "color too dark!")
-		return
-	set_light_color(new_color)
+/obj/item/clothing/head/helmet/space/second_skin/set_light_color(new_color)
+	. = ..()
 	eye_lights.color = new_color
 	if(light_on)
-		update_appearance(UPDATE_ICON | UPDATE_OVERLAYS)
-
+		update_appearance(UPDATE_OVERLAYS)
