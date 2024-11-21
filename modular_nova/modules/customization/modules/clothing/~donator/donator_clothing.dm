@@ -2237,24 +2237,53 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 // Donation reward for Floofies
 /obj/item/clothing/under/second_skin
 	name = "anti-infiltration skinsuit"
-	desc = "A skintight body protection suit which prevents exposure to hazards while allowing freedom of movement.\n\
+	desc = "A skintight body protection suit with an attached helmet. Designed to prevent foreign matter infiltration.\n\
 	It is made out of ceramic and carbon nanotube composite."
-	special_desc = "The armor layer is damaged and useless. Use an armor vest to repair it."
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/uniform.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/uniform_digi.dmi'
 	icon_state = "second_skin"
 	equip_sound = 'modular_nova/modules/modular_items/lewd_items/sounds/latex.ogg'
 	can_adjust = FALSE
-	//flags_inv = HIDESEXTOY
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
+	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor_type = /datum/armor/clothing_under
-	var/armor_added = FALSE
 	var/helmet_type = /obj/item/clothing/head/helmet/space/second_skin
 	var/datum/component/toggle_attached_clothing/helmet_component
+
+// Unregisters after upgrading
+/obj/item/clothing/under/second_skin/proc/on_examine(atom/source, mob/user, list/examine_list)
+	SIGNAL_HANDLER
+
+	examine_list += span_danger("The armor layer is damaged and useless. Use an armor vest to repair it.")
+
+/obj/item/clothing/under/second_skin/proc/on_helmet_toggled(obj/item/deployable)
+	if(!ismob(loc))
+		return
+	if(!helmet_component.currently_deployed)
+		playsound(src, 'modular_nova/master_files/sound/effects/skinsuit_unsealed.ogg', EQUIP_SOUND_VOLUME, vary = FALSE, extrarange = -3, ignore_walls = FALSE)
+	else
+		var/mob/listener = loc
+		listener.playsound_local(src, 'modular_nova/master_files/sound/effects/skinsuit_sealed.ogg', EQUIP_SOUND_VOLUME, vary = FALSE)
+
+/obj/item/clothing/under/second_skin/Initialize(mapload)
+	. = ..()
+	RegisterSignal(src, COMSIG_ATOM_EXAMINE, PROC_REF(on_examine))
+	var/datum/callback/helmet_callback = CALLBACK(src, PROC_REF(on_helmet_toggled))
+	helmet_component = AddComponent(\
+		/datum/component/toggle_attached_clothing,\
+		deployable_type = helmet_type,\
+		equipped_slot = ITEM_SLOT_HEAD,\
+		action_name = "Toggle Helmet",\
+		on_deployed = helmet_callback,\
+		on_removed = helmet_callback,\
+	)
+	// Prevent automatic helmet deploying
+	helmet_component.UnregisterSignal(src, COMSIG_ITEM_EQUIPPED_AS_OUTFIT)
 
 // Extra stats provided by using armor on the suit.
 /datum/armor/clothing_under/second_skin
@@ -2267,55 +2296,32 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	acid = 50
 	bio = 10
 
-/obj/item/clothing/under/second_skin/proc/on_helmet_toggled()
-	if(!ismob(loc))
-		return
-	var/sound/deploy_sound
-	if(helmet_component.currently_deployed)
-		deploy_sound = 'modular_nova/master_files/sound/effects/skinsuit_sealed.ogg'
-	else
-		deploy_sound = 'modular_nova/master_files/sound/effects/skinsuit_unsealed.ogg'
-	playsound(src, deploy_sound, EQUIP_SOUND_VOLUME, vary = FALSE, falloff_exponent = 5, ignore_walls = FALSE, falloff_distance = 1)
-	//var/mob/wearer = loc
-	//wearer.update_body()
-
-/obj/item/clothing/under/second_skin/Initialize(mapload)
-	. = ..()
-	var/datum/callback/helmet_callback = CALLBACK(src, PROC_REF(on_helmet_toggled))
-	helmet_component = AddComponent(\
-		/datum/component/toggle_attached_clothing,\
-		deployable_type = helmet_type,\
-		equipped_slot = ITEM_SLOT_HEAD,\
-		action_name = "Toggle Helmet",\
-		on_deployed = helmet_callback,\
-		on_removed = helmet_callback,\
-	)
-
+// Upgrade to level 1 armor
 /obj/item/clothing/under/second_skin/attackby(obj/item/clothing/suit/armor/armor_vest, mob/user, params)
 	if(!istype(armor_vest))
 		return ..()
-	if(armor_added)
+	if(istype(armor_type, /datum/armor/clothing_under/second_skin))
 		balloon_alert(user, "armor not damaged!")
 		return
 	set_armor(/datum/armor/clothing_under/second_skin)
+	qdel(armor_vest)
+	UnregisterSignal(src, COMSIG_ATOM_EXAMINE)
 	balloon_alert(user, "armor layer repaired!")
 	playsound(src, 'sound/items/equip/toolbelt_equip.ogg', EQUIP_SOUND_VOLUME, TRUE, ignore_walls = FALSE)
-	armor_added = TRUE
 	name = "armored anti-infiltration skinsuit"
-	special_desc = null
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	qdel(armor_vest)
+	max_integrity = 250
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 
 // Donation reward for Floofies
-// Similar to the plasma envirosuit helmet
 /obj/item/clothing/head/helmet/space/second_skin
 	name = "anti-infiltration helmet"
-	desc = "An airtight protective helmet which prevents exposure to hazards.\n\
+	desc = "An airtight protective helmet designed to prevent foreign matter infiltration.\n\
 	It is made out of ceramic and carbon nanotube composite."
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/hats.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/head.dmi'
 	icon_state = "second_skin"
+	equip_delay_self = 3 SECONDS
 	slowdown = 0
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	actions_types = list(/datum/action/item_action/toggle_helmet_flashlight, /datum/action/adjust_flashlight_color)
@@ -2332,26 +2338,29 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 		'modular_nova/master_files/icons/donator/mob/clothing/head.dmi',
 		"second_skin_lights",
 		src,
-		FLOAT_LAYER,
-		appearance_flags = RESET_COLOR | RESET_TRANSFORM
+		alpha = src.alpha
 	)
 	SET_PLANE_EXPLICIT(eye_lights, ABOVE_LIGHTING_PLANE, src)
-	eye_lights.color = light_color
 
+/obj/item/clothing/head/helmet/space/second_skin/item_action_slot_check(slot, mob/user)
+	if(slot & ITEM_SLOT_HEAD)
+		return TRUE
+
+// TODO: Fix transform on laying down, consider using COMSIG_LIVING_POST_UPDATE_TRANSFORM
 /obj/item/clothing/head/helmet/space/second_skin/worn_overlays(mutable_appearance/standing, isinhands = FALSE)
 	. = ..()
-	if(light_on && !isinhands)
-		SET_PLANE_EXPLICIT(eye_lights, PLANE_TO_TRUE(eye_lights.plane), src)
-		. += eye_lights
-
-/obj/item/clothing/head/helmet/space/second_skin/attack_self(mob/living/user)
-	set_light_on(!light_on)
-	var/sound/toggle_sound = light_on ? 'sound/items/night_vision_on.ogg' : 'sound/machines/click.ogg'
-	playsound(src, toggle_sound, 30, vary = TRUE, extrarange = -3)
-	update_appearance(UPDATE_OVERLAYS)
+	if(!light_on || isinhands)
+		return
+	SET_PLANE_EXPLICIT(eye_lights, PLANE_TO_TRUE(eye_lights.plane), src)
+	eye_lights.color = light_color
+	. += eye_lights
 
 /obj/item/clothing/head/helmet/space/second_skin/set_light_color(new_color)
 	. = ..()
-	eye_lights.color = new_color
-	if(light_on)
+	if(. && light_on)
 		update_appearance(UPDATE_OVERLAYS)
+
+/obj/item/clothing/head/helmet/space/second_skin/attack_self(mob/living/user)
+	set_light_on(!light_on)
+	playsound(src, light_on ? 'sound/items/night_vision_on.ogg' : 'sound/machines/click.ogg', 30, vary = TRUE, extrarange = -3)
+	update_appearance(UPDATE_OVERLAYS)
