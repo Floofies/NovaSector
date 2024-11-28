@@ -893,5 +893,5 @@
 
 /datum/loadout_item/under/second_skin
 	name = "Anti-Infiltration Skinsuit"
-	item_path = /obj/item/clothing/under/second_skin
+	item_path = /obj/item/clothing/under/skinsuit_floofies
 	ckeywhitelist = list("floofies")
