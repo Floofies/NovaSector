@@ -513,7 +513,8 @@
 
 /datum/bodypart_overlay/mutant/genital/breasts
 	feature_key = ORGAN_SLOT_BREASTS
-	layers = EXTERNAL_FRONT_UNDER_CLOTHES | EXTERNAL_BEHIND
+	layers = EXTERNAL_FRONT_UNDER_CLOTHES | EXTERNAL_BEHIND | SHOES_LAYER //BLUEMOON EDIT: The fact that this is necessary makes me want to off myself. Don't remove the shoes layer thing unless your making a permenant fix. Otherwise hands appear over tits. Not bueno.
+
 
 /datum/bodypart_overlay/mutant/genital/breasts/underwear_check()
 	if(!istype(owner))
