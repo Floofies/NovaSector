@@ -127,6 +127,15 @@
 	greyscale_config_worn_digi = /datum/greyscale_config/pencilskirt_checkers/worn/digi
 	body_parts_covered = GROIN|LEGS
 
+/obj/item/clothing/under/suit/nova/pencil/checkered/noshirt/rainbow
+	name = "rainbow checkered pencilskirt"
+	desc = "A tight-fitting rainbow-checkered pencilskirt."
+	icon_state = "pencilskirt_checkers_rainbow"
+	greyscale_colors = "#e0e0e0"
+	greyscale_config = /datum/greyscale_config/pencilskirt_checkers_rainbow
+	greyscale_config_worn = /datum/greyscale_config/pencilskirt_checkers_rainbow/worn
+	greyscale_config_worn_digi = /datum/greyscale_config/pencilskirt_checkers_rainbow/worn/digi
+
 /*
 *	STATIC SUITS (NO GAGS)
 */

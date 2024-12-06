@@ -770,6 +770,19 @@
 	name = "Checkered Pencilskirt (Worn, Digi)"
 	icon_file = 'modular_nova/master_files/icons/mob/clothing/under/suits_digi.dmi'
 
+/datum/greyscale_config/pencilskirt_checkers_rainbow
+	name = "Rainbow Checkered Pencilskirt"
+	icon_file = 'modular_nova/master_files/icons/obj/clothing/under/suits.dmi'
+	json_config = 'modular_nova/modules/GAGS/json_configs/suits/pencilskirt/pencilskirt_rainbow.json'
+
+/datum/greyscale_config/pencilskirt_checkers_rainbow/worn
+	name = "Rainbow Checkered Pencilskirt (Worn)"
+	icon_file = 'modular_nova/master_files/icons/mob/clothing/under/suits.dmi'
+
+/datum/greyscale_config/pencilskirt_checkers_rainbow/worn/digi
+	name = "Rainbow Checkered Pencilskirt (Worn, Digi)"
+	icon_file = 'modular_nova/master_files/icons/mob/clothing/under/suits_digi.dmi'
+
 /datum/greyscale_config/pencilskirt_checkers_withshirt
 	name = "Checkered Pencilskirt + Shirt"
 	icon_file = 'modular_nova/master_files/icons/obj/clothing/under/suits.dmi'

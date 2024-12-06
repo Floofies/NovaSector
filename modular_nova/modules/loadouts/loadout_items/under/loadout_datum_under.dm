@@ -1101,6 +1101,10 @@
 	name = "Checkered Pencilskirt"
 	item_path = /obj/item/clothing/under/suit/nova/pencil/checkered/noshirt
 
+/datum/loadout_item/under/formal/pencil/checkered/noshirt/rainbow
+	name = "Rainbow Checkered Pencilskirt"
+	item_path = /obj/item/clothing/under/suit/nova/pencil/checkered/noshirt/rainbow
+
 /datum/loadout_item/under/formal/pencil/tan
 	name = "Tan Pencilskirt"
 	item_path = /obj/item/clothing/under/suit/nova/pencil/tan
