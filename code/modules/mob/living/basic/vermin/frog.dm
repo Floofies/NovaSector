@@ -4,7 +4,7 @@
 	icon_state = "frog"
 	icon_living = "frog"
 	icon_dead = "frog_dead"
-	mob_biotypes = MOB_ORGANIC|MOB_BEAST
+	mob_biotypes = MOB_ORGANIC|MOB_BEAST|MOB_AQUATIC
 	verb_say = "ribbits"
 	verb_ask = "ribbits inquisitively"
 	verb_exclaim = "croaks"
@@ -49,15 +49,16 @@
 /mob/living/basic/frog/Initialize(mapload)
 	. = ..()
 
-	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
+	add_traits(list(TRAIT_NODROWN, TRAIT_SWIMMER, TRAIT_VENTCRAWLER_ALWAYS), INNATE_TRAIT)
 
 	if(prob(1))
 		make_rare()
-
+	/* // NOVA EDIT REMOVAL START
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
+	*/ // NOVA EDIT REMOVAL END
 	AddElement(/datum/element/venomous, poison_type, poison_per_bite)
 	AddElement(/datum/element/ai_retaliate)
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_FROG, CELL_VIRUS_TABLE_GENERIC_MOB, 1, 5)

@@ -42,13 +42,14 @@
 	///the commands our owner can give us
 	var/static/list/pet_commands = list(
 		/datum/pet_command/idle/minebot,
+		/datum/pet_command/move,
 		/datum/pet_command/protect_owner/minebot,
 		/datum/pet_command/minebot_ability/light,
 		/datum/pet_command/minebot_ability/dump,
 		/datum/pet_command/automate_mining,
 		/datum/pet_command/free/minebot,
 		/datum/pet_command/follow,
-		/datum/pet_command/point_targeting/attack/minebot,
+		/datum/pet_command/attack/minebot,
 	)
 	///possible colors the bot can have
 	var/static/list/possible_colors= list(
@@ -124,9 +125,9 @@
 		user.balloon_alert(user, "successfully repaired!")
 	return TRUE
 
-/mob/living/basic/mining_drone/attackby(obj/item/item_used, mob/user, params)
+/mob/living/basic/mining_drone/attackby(obj/item/item_used, mob/user, list/modifiers)
 	if(item_used.tool_behaviour == TOOL_CROWBAR || istype(item_used, /obj/item/borg/upgrade/modkit))
-		item_used.melee_attack_chain(user, stored_gun, params)
+		item_used.melee_attack_chain(user, stored_gun, modifiers)
 		return
 
 	return ..()

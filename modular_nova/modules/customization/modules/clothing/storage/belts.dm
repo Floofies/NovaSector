@@ -49,18 +49,18 @@
 	AddElement(/datum/element/update_icon_updates_onmob)
 
 //Overrides normal dumping code to instead dump from the pouch item inside
-/datum/storage/belt/crusader/dump_content_at(atom/dest_object, mob/dumping_mob)
+/datum/storage/belt/crusader/dump_content_at(atom/dest_object, dump_loc, mob/user)
 	var/atom/used_belt = parent
 	if(!used_belt)
 		return
 	var/obj/item/storage/belt/storage_pouch/pouch = locate() in real_location
 	if(!pouch)
-		pouch.balloon_alert(dumping_mob, "no pouch!")
+		pouch.balloon_alert(user, "no pouch!")
 		return //oopsie!! If we don't have a pouch! You're fucked!
 	if(locked)
-		pouch.balloon_alert(dumping_mob, "locked!")
+		pouch.balloon_alert(user, "locked!")
 		return
-	pouch.atom_storage.dump_content_at(dest_object, dumping_mob)
+	pouch.atom_storage.dump_content_at(dest_object, user = user)
 
 /obj/item/storage/belt/crusader/item_ctrl_click(mob/user)	//Makes ctrl-click also open the inventory, so that you can open it with full hands without dropping the sword
 	. = ..()
@@ -124,14 +124,19 @@
 	atom_storage.max_slots = 6
 	atom_storage.max_specific_storage = WEIGHT_CLASS_SMALL //Rather than have a huge whitelist, the belt can simply hold anything a pocket can hold - Can easily be changed if it somehow becomes an issue
 
-/obj/item/storage/belt/holster/cowboy
-	icon = 'modular_nova/master_files/icons/obj/clothing/belts.dmi'
-	worn_icon = 'modular_nova/master_files/icons/mob/clothing/belt.dmi'
-	name = "cowboy belt"
-	desc = "Yee haw! The holster on the side of the hip is leather stamped with swirling lines, all leading back to a deer's antlers."
+/obj/item/storage/belt/holster/thigh
+	name = "thigh holster"
+	desc = "A fine leather holster, fastened to the hip and attached to a belt. Can hold a handgun and some ammo."
 	icon_state = "cowboy_belt"
 	worn_icon_state = "cowboy_belt"
+	icon_state_preview = "cowboy_belt_preview"
 	inhand_icon_state = "utility"
+	icon = 'modular_nova/master_files/icons/obj/clothing/belts.dmi'
+	worn_icon = 'modular_nova/master_files/icons/mob/clothing/belt.dmi'
+	greyscale_config = /datum/greyscale_config/thigh_holster
+	greyscale_config_worn = /datum/greyscale_config/thigh_holster/worn
+	greyscale_colors = "#7B3B20#7B3B20"
+	flags_1 = IS_PLAYER_COLORABLE_1
 
 /obj/item/storage/belt/medbandolier
 	icon = 'modular_nova/master_files/icons/obj/clothing/belts.dmi'
@@ -150,12 +155,12 @@
 		/obj/item/dnainjector,
 		/obj/item/reagent_containers/dropper,
 		/obj/item/reagent_containers/cup/bottle,
-		/obj/item/reagent_containers/pill,
+		/obj/item/reagent_containers/applicator/pill,
 		/obj/item/reagent_containers/syringe,
 		/obj/item/reagent_containers/medigel,
 		/obj/item/storage/pill_bottle,
 		/obj/item/implanter,
 		/obj/item/hypospray/mkii,
 		/obj/item/reagent_containers/cup/vial,
-		/obj/item/weaponcell/medical
-		))
+		/obj/item/weaponcell/medical,
+	))

@@ -75,7 +75,7 @@
 	balloon_alert(user, "saved to buffer")
 	return ITEM_INTERACT_SUCCESS
 
-/obj/machinery/launchpad/attackby(obj/item/weapon, mob/user, params)
+/obj/machinery/launchpad/attackby(obj/item/weapon, mob/user, list/modifiers)
 	if(!stationary)
 		return ..()
 
@@ -221,7 +221,7 @@
 	for(var/atom/movable/ROI in source)
 		if(ROI == src)
 			continue
-		if(!istype(ROI) || isdead(ROI) || iscameramob(ROI) || istype(ROI, /obj/effect/dummy/phased_mob))
+		if(!istype(ROI) || isdead(ROI) || iseyemob(ROI) || istype(ROI, /obj/effect/dummy/phased_mob))
 			continue//don't teleport these
 		var/on_chair = ""
 		if(ROI.anchored)// if it's anchored, don't teleport
@@ -312,13 +312,13 @@
 			closed = TRUE
 			update_indicator()
 
-/obj/machinery/launchpad/briefcase/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/launchpad_remote))
-		var/obj/item/launchpad_remote/L = I
-		if(L.pad == WEAKREF(src)) //do not attempt to link when already linked
+/obj/machinery/launchpad/briefcase/attackby(obj/item/item, mob/user, list/modifiers)
+	if(istype(item, /obj/item/launchpad_remote))
+		var/obj/item/launchpad_remote/launch = item
+		if(launch.pad == WEAKREF(src)) //do not attempt to link when already linked
 			return ..()
-		L.pad = WEAKREF(src)
-		to_chat(user, span_notice("You link [src] to [L]."))
+		launch.pad = WEAKREF(src)
+		to_chat(user, span_notice("You link [src] to [launch]."))
 	else
 		return ..()
 
@@ -429,11 +429,13 @@
 		if("set_pos")
 			var/new_x = text2num(params["x"])
 			var/new_y = text2num(params["y"])
+			// sanitizes our ranges for us
 			our_pad.set_offset(new_x, new_y)
 			. = TRUE
 		if("move_pos")
 			var/plus_x = text2num(params["x"])
 			var/plus_y = text2num(params["y"])
+			// sanitizes our ranges for us
 			our_pad.set_offset(
 				x = our_pad.x_offset + plus_x,
 				y = our_pad.y_offset + plus_y
@@ -441,7 +443,7 @@
 			. = TRUE
 		if("rename")
 			. = TRUE
-			var/new_name = params["name"]
+			var/new_name = reject_bad_name(params["name"], allow_numbers = TRUE, max_length = MAX_NAME_LEN, cap_after_symbols = FALSE)
 			if(!new_name)
 				return
 			our_pad.display_name = new_name

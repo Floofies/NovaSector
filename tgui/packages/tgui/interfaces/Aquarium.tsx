@@ -1,4 +1,3 @@
-import { capitalizeFirst } from 'common/string';
 import {
   Box,
   Button,
@@ -12,6 +11,7 @@ import {
   Stack,
 } from 'tgui-core/components';
 import { BooleanLike } from 'tgui-core/react';
+import { capitalizeFirst } from 'tgui-core/string';
 
 import { useBackend } from '../backend';
 import { Window } from '../layouts';
@@ -24,7 +24,7 @@ type Data = {
   fluidTypes: string[];
   fishData: FishData[];
   propData: PropData[];
-  allowBreeding: BooleanLike;
+  safe_mode: BooleanLike;
   feedingInterval: number;
   heartIcon: string;
   heartIconState: string;
@@ -48,7 +48,7 @@ type PropData = {
 };
 
 export const Aquarium = (props) => {
-  const { act, data } = useBackend<Data>();
+  const { data } = useBackend<Data>();
   const { fishData } = data;
 
   return (
@@ -93,8 +93,12 @@ export const Aquarium = (props) => {
   );
 };
 
-const FishInfo = (props) => {
-  const { act, data } = useBackend<Data>();
+type FishInfoProps = {
+  fish: FishData;
+};
+
+const FishInfo = (props: FishInfoProps) => {
+  const { act } = useBackend<Data>();
   const { fish } = props;
 
   return (
@@ -116,12 +120,14 @@ const FishInfo = (props) => {
                 ml={1}
                 style={{ fontSize: '13px', fontWeight: 'bold' }}
               >
-                {fish.fish_name.toUpperCase()}
+                {fish.fish_name}
               </Stack.Item>
               <Stack.Item mt={fish.fish_health > 0 ? -4 : 1}>
-                {(fish.fish_health > 0 && (
+                {fish.fish_health > 0 ? (
                   <CalculateHappiness happiness={fish.fish_happiness} />
-                )) || <Icon ml={2} name="skull-crossbones" textColor="white" />}
+                ) : (
+                  <Icon ml={2} name="skull-crossbones" textColor="white" />
+                )}
               </Stack.Item>
             </Stack>
           </Flex.Item>
@@ -170,9 +176,10 @@ const FishInfo = (props) => {
               mt={1}
               ml={1}
               fluid
-              placeholder="Rename"
+              icon="keyboard"
+              buttonText="Rename"
               color="transparent"
-              onCommit={(e, value) => {
+              onCommit={(value) => {
                 act('rename_fish', {
                   fish_reference: fish.fish_ref,
                   chosen_name: value,
@@ -183,14 +190,8 @@ const FishInfo = (props) => {
                 borderRadius: '1em',
                 background: '#151326',
               }}
-            >
-              <Flex>
-                <Flex.Item ml={3}>
-                  <Icon name="keyboard" />
-                </Flex.Item>
-                <Flex.Item ml={1}>Rename</Flex.Item>
-              </Flex>
-            </Button.Input>
+              value={fish.fish_name}
+            />
           </Flex.Item>
         </Flex>
       </Stack.Item>
@@ -270,7 +271,7 @@ const Settings = (props) => {
     maxTemperature,
     fluidTypes,
     fluidType,
-    allowBreeding,
+    safe_mode,
     feedingInterval,
   } = data;
 
@@ -319,13 +320,14 @@ const Settings = (props) => {
         <Section fill title="Settings">
           <Box mt={2}>
             <LabeledList>
-              <LabeledList.Item label="Reproduction/Growth">
+              <LabeledList.Item label="Safe Mode">
                 <Button
                   textAlign="center"
                   width="75px"
-                  content={allowBreeding ? 'Online' : 'Offline'}
-                  selected={allowBreeding}
-                  onClick={() => act('allow_breeding')}
+                  tooltip="Prevent fish dying in hostile water and temperatures at the cost of features like growth and reproduction"
+                  content={safe_mode ? 'Online' : 'Offline'}
+                  selected={safe_mode}
+                  onClick={() => act('safe_mode')}
                 />
               </LabeledList.Item>
               <LabeledList.Item label="Feeding Interval">
