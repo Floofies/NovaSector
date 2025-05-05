@@ -958,7 +958,7 @@
 	ckeywhitelist = list("tamaya")
 	restricted_roles = list(JOB_SHAFT_MINER)
 
-/datum/loadout_item/under/second_skin
+/datum/loadout_item/under/skinsuit
 	name = "Anti-Infiltration Skinsuit"
 	item_path = /obj/item/clothing/under/skinsuit_floofies
-	ckeywhitelist = list("floofies")
+	ckeywhitelist = list("floofies", "lethalexodus")

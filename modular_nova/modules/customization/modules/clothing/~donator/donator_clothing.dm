@@ -2366,9 +2366,14 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	It is made out of ceramic and carbon nanotube composite."
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/uniform.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/uniform_digi.dmi'
-	icon_state = "floofies_skinsuit"
+	icon_state = "skinsuit"
+	greyscale_config = /datum/greyscale_config/skinsuit_floofies
+	greyscale_config_worn = /datum/greyscale_config/skinsuit_floofies/worn
+	greyscale_colors = "#86989A#F8F8F8"
+	flags_1 = IS_PLAYER_COLORABLE_1
 	equip_sound = 'modular_nova/modules/modular_items/lewd_items/sounds/latex.ogg'
 	can_adjust = FALSE
+	female_sprite_flags = NO_FEMALE_UNIFORM
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	flags_inv = HIDEGLOVES|HIDESEXTOY
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -2391,25 +2396,37 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 		deployable_type = helmet_type,\
 		equipped_slot = ITEM_SLOT_HEAD,\
 		action_name = "Toggle Helmet",\
+		on_created = CALLBACK(src, PROC_REF(on_helmet_created)),\
 		on_deployed = helmet_callback,\
 		on_removed = helmet_callback,\
 	)
 	// Prevent helmet deploying upon spawning and in char previews
 	helmet_component.UnregisterSignal(src, COMSIG_ITEM_EQUIPPED_AS_OUTFIT)
 
+// Update helmet greyscale colors to match the suit
+/obj/item/clothing/under/skinsuit_floofies/set_greyscale(list/colors, new_config, new_worn_config, new_inhand_left, new_inhand_right)
+	. = ..()
+	if(isnull(helmet_component.deployable))
+		return
+	var/obj/item/clothing/head/helmet/space/helmet_floofies/helmet = helmet_component.deployable
+	var/list/suit_colors = SSgreyscale.ParseColorString(greyscale_colors)
+	helmet.set_greyscale(suit_colors)
+	helmet.update_slot_icon()
+
+/obj/item/clothing/under/skinsuit_floofies/proc/on_helmet_created(obj/item/clothing/head/helmet/space/helmet_floofies/helmet)
+	var/list/suit_colors = (SSgreyscale.ParseColorString(greyscale_colors))
+	helmet.set_greyscale(suit_colors)
+
 // Extra stats provided by using armor on the suit.
 /datum/armor/clothing_under/skinsuit_floofies
 	melee = 10
-	bullet = 10
-	laser = 10
-	energy = 10
 	wound = 10
-	fire = 50
-	acid = 50
-	bio = 10
+	bio = 100
+	fire = 95
+	acid = 95
 
-// Upgrades to level 1 armor and unregisters itself
-/obj/item/clothing/under/skinsuit_floofies/proc/on_attackby(obj/item/clothing/suit/armor/armor_vest, mob/user, params)
+// Upgrades armor and unregisters itself
+/obj/item/clothing/under/skinsuit_floofies/proc/on_attackby(datum/source, obj/item/clothing/suit/armor/armor_vest, mob/user)
 	SIGNAL_HANDLER
 
 	if(!istype(armor_vest))
@@ -2435,10 +2452,25 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	if(!ismob(loc))
 		return
 	if(helmet_component.currently_deployed)
-		var/mob/listener = loc
-		listener.playsound_local(src, 'modular_nova/master_files/sound/effects/skinsuit_sealed.ogg', vol = EQUIP_SOUND_VOLUME, vary = FALSE, pressure_affected = FALSE)
+		playsound(
+			src,
+			'modular_nova/master_files/sound/effects/skinsuit_sealed.ogg',
+			vol = EQUIP_SOUND_VOLUME,
+			vary = FALSE,
+			extrarange = SHORT_RANGE_SOUND_EXTRARANGE,
+			falloff_exponent = 4,
+			ignore_walls = FALSE
+		)
 		return
-	playsound(src, 'modular_nova/master_files/sound/effects/skinsuit_unsealed.ogg', vol = EQUIP_SOUND_VOLUME, vary = FALSE, extrarange = -3, ignore_walls = FALSE)
+	playsound(
+		src,
+		'modular_nova/master_files/sound/effects/skinsuit_unsealed.ogg',
+		vol = EQUIP_SOUND_VOLUME,
+		vary = FALSE,
+		extrarange = SHORT_RANGE_SOUND_EXTRARANGE,
+		falloff_exponent = 4,
+		ignore_walls = FALSE
+	)
 
 // Donation reward for Floofies
 /obj/item/clothing/head/helmet/space/helmet_floofies
@@ -2447,7 +2479,11 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	It is made out of ceramic and carbon nanotube composite."
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/hats.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/head.dmi'
-	icon_state = "floofies_skinsuit"
+	icon_state = "skinsuit"
+	greyscale_config = /datum/greyscale_config/skinsuit_floofies/helmet
+	greyscale_config_worn = /datum/greyscale_config/skinsuit_floofies/helmet/worn
+	greyscale_colors = "#86989A#F8F8F8"
+	flags_1 = IS_PLAYER_COLORABLE_1
 	equip_sound = 'sound/vehicles/mecha/mechmove03.ogg'
 	equip_delay_self = 2 SECONDS
 	slowdown = 0
@@ -2462,8 +2498,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	. = ..()
 	AddComponent(\
 		/datum/component/worn_flashlight,\
-		emissive_icon = worn_icon,\
-		emissive_icon_state = "[icon_state]-emissive",\
+		emissive_icon = 'modular_nova/master_files/icons/donator/mob/clothing/head.dmi',\
+		emissive_icon_state = "skinsuit_emissive",\
 		sound_on_enabled = 'sound/items/night_vision_on.ogg',\
 		sound_on_disabled = 'sound/machines/click.ogg',\
 	)

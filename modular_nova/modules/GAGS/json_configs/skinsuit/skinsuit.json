@@ -1,0 +1,21 @@
+{
+	"skinsuit": [
+		{
+			"type": "icon_state",
+			"icon_state": "skinsuit_2",
+			"blend_mode": "overlay",
+			"color_ids": [ 2 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "skinsuit_1",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "skinsuit_0",
+			"blend_mode": "overlay"
+		}
+	]
+}

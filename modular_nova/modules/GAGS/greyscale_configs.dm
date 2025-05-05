@@ -2283,3 +2283,21 @@ TREK
 	name = "Tarkon Uniform (Worn, Digi)"
 	icon_file = 'modular_nova/modules/tarkon/icons/mob/clothing/uniform_digi.dmi'
 	json_config = 'modular_nova/modules/GAGS/json_configs/tarkon/tarkonuniform_worn.json'
+
+// Anti-Intiltration Skinsuit (DONATOR ITEM)
+/datum/greyscale_config/skinsuit_floofies
+	name = "Anti-Infiltration Skinsuit"
+	json_config = 'modular_nova/modules/GAGS/json_configs/skinsuit/skinsuit.json'
+	icon_file = 'modular_nova/master_files/icons/donator/obj/clothing/uniform.dmi'
+
+/datum/greyscale_config/skinsuit_floofies/worn
+	name = "Anti-Infiltration Skinsuit (Worn)"
+	icon_file = 'modular_nova/master_files/icons/donator/mob/clothing/uniform_digi.dmi'
+
+/datum/greyscale_config/skinsuit_floofies/helmet
+	name = "Anti-Infiltration Helmet"
+	icon_file = 'modular_nova/master_files/icons/donator/obj/clothing/hats.dmi'
+
+/datum/greyscale_config/skinsuit_floofies/helmet/worn
+	name = "Anti-Infiltration Helmet (Worn)"
+	icon_file = 'modular_nova/master_files/icons/donator/mob/clothing/head.dmi'
