@@ -1,7 +1,7 @@
 /**
  * Component which allows clothing to behave like a flashlight, manage its atom light, and display a colored emissive overlay.
  * The simplest example is a headlamp that displays a few emissive pixels when turned on.
- * Allows for user customization of light range and color. Implements a sabotage/distruption effect and a rainbow-colored emag effect.
+ * Allows for user customization of light range and color. Implements a sabotage/disruption effect and a rainbow-colored emag effect.
  * You should probably setup the parent item's light_system and light_range variables.
  */
 /datum/component/worn_flashlight
@@ -189,7 +189,7 @@
 	SIGNAL_HANDLER
 
 	if (parent_clothing.slot_flags & slot)
-		RegisterSignal(user, COMSIG_ATOM_EMAG_ACT, PROC_REF(emag_light))
+		RegisterSignal(user, COMSIG_ATOM_EMAG_ACT, PROC_REF(emag_light), override = TRUE)
 		return
 	UnregisterSignal(user, COMSIG_ATOM_EMAG_ACT)
 	disable_light(user = user)
