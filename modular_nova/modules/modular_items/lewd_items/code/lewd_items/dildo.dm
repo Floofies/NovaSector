@@ -90,7 +90,7 @@
 		user.adjust_pleasure(1 * seconds_per_tick)
 
 // Bluemoon edit - Make dildo more ergonomic & Cyborg romance
-/obj/item/clothing/sextoy/dildo/attack(mob/living/target, mob/living/carbon/human/user, params)
+/obj/item/clothing/sextoy/dildo/attack(mob/living/target, mob/living/carbon/human/user, list/modifiers)
 	. = ..()
 	// Bluemoon edit - Cyborg romance
 	var/mob/living/carbon/human/target_human
@@ -127,7 +127,7 @@
 				return FALSE
 
 			// Bluemoon edit - Make dildo more ergonomic
-			if(anus && (LAZYACCESS(params2list(params), RIGHT_CLICK) || !vagina))
+			if(anus && (LAZYACCESS(modifiers, RIGHT_CLICK) || !vagina))
 				message = (user == target) ? pick("puts [src] into [target.p_their()] anus", "slowly inserts [src] into [target.p_their()] ass") : pick("fucks [target]'s ass with [src]", "uses [src] to fuck [target]'s anus", "jams [target]'s ass with [src]", "roughly fucks [target]'s ass with [src], making [target.p_their()] eyes roll back")
 			else if (vagina)
 				message = (user == target) ? pick("rubs [target.p_their()] vagina with [src]", "gently jams [target.p_their()] pussy with [src]", "fucks [target.p_their()] vagina with [src]") : pick("delicately rubs [target]'s vagina with [src]", "uses [src] to fuck [target]'s vagina", "jams [target]'s pussy with [src]", "teasing [target]'s pussy with [src]")
