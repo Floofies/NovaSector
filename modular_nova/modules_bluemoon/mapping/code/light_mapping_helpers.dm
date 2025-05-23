@@ -1,7 +1,7 @@
 /obj/effect/mapping_helpers/light
 	name = "light helper"
-	icon = 'icons/effects/effects.dmi'
-	icon_state = "lighting_marker"
+	icon = 'modular_nova/modules_bluemoon/mapping/icons/mapping_helpers.dmi'
+	icon_state = "lighting_helper"
 
 /obj/effect/mapping_helpers/light/Initialize(mapload)
 	..()
