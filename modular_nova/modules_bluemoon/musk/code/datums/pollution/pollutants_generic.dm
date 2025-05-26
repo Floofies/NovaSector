@@ -43,7 +43,7 @@
 	if(amount < 10)
 		return
 	var/hypno_pref = victim.client.prefs.read_preference(/datum/preference/choiced/erp_status_hypno)
-	if(hypno_pref != "Always/Whenever" || hypno_pref != "Gameplay Only")
+	if(hypno_pref != "Always/Whenever" && hypno_pref != "Gameplay Only")
 		return
 	victim.apply_status_effect(/datum/status_effect/musky_relaxation, 5 MINUTES, FALSE)
 	if(amount < 20)
