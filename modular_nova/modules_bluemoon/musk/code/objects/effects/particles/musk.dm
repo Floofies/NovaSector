@@ -20,7 +20,7 @@
 	scale = generator(GEN_VECTOR, list(0.9,0.9), list(1.1,1.1), NORMAL_RAND)
 	gravity = list(0, -0.01)
 
-/particles/musk/moderate
+/particles/musk/strong
 	count = 64
 	spawning = 0.4
 	color = "#ffffff23"

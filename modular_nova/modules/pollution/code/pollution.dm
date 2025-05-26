@@ -47,6 +47,10 @@
 		var/datum/pollutant/pollutant = singleton_cache[type]
 		if(!(pollutant.pollutant_flags & POLLUTANT_SMELL))
 			continue
+		// Bluemoon edit - Musk
+		if(pollutant.pollutant_flags & POLLUTANT_MUSK)
+			if(isnull(sniffer.client) || !sniffer.client?.prefs?.read_preference(/datum/preference/toggle/erp) || !sniffer.client?.prefs?.read_preference(/datum/preference/toggle/erp/musk))
+				continue
 		var/smelly_power = pollutant.smell_intensity * pollutants[type]
 		if(smelly_power < POLLUTANT_SMELL_THRESHOLD)
 			continue

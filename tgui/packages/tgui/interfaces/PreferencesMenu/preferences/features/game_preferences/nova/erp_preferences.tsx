@@ -1,5 +1,11 @@
 // THIS IS A NOVA SECTOR UI FILE
-import { CheckboxInput, FeatureChoiced, FeatureToggle } from '../../base';
+import {
+  CheckboxInput,
+  Feature,
+  FeatureChoiced,
+  FeatureColorInput,
+  FeatureToggle,
+} from '../../base';
 import { FeatureDropdownInput } from '../../dropdowns';
 
 export const master_erp_pref: FeatureToggle = {
@@ -161,4 +167,14 @@ export const musk_pref: FeatureToggle = {
   category: 'ERP',
   description: 'Toggles whether you can use or be affected by musk.',
   component: CheckboxInput,
+};
+
+export const musk_type: FeatureChoiced = {
+  name: 'Musk Effects',
+  component: FeatureDropdownInput,
+};
+
+export const musk_color: Feature<string> = {
+  name: 'Musk Color',
+  component: FeatureColorInput,
 };
