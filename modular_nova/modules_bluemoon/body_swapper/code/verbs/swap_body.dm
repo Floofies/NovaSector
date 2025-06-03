@@ -1,4 +1,4 @@
-/mob/living/verb/swap_body()
+/mob/verb/swap_body()
 	set name = "Swap Body"
 	set category = "OOC"
 
