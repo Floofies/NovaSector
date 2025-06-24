@@ -9180,6 +9180,7 @@
 #include "modular_nova\modules_bluemoon\generators\code\machinery\turbine.dm"
 #include "modular_nova\modules_bluemoon\generators\code\objects\items\machine_boards.dm"
 #include "modular_nova\modules_bluemoon\headpat_lover_quirk\headpat_lover.dm"
+#include "modular_nova\modules_bluemoon\hedon_cruiser\shuttles.dm"
 #include "modular_nova\modules_bluemoon\hedon_cruiser\machinery\machinery.dm"
 #include "modular_nova\modules_bluemoon\hedon_cruiser\structures\static_plaques.dm"
 #include "modular_nova\modules_bluemoon\jukebox\datums\components\jukebox.dm"
