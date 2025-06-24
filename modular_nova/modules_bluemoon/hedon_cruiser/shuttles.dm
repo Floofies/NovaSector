@@ -5,7 +5,7 @@
 	name = "NTDS 'Hedon'"
 
 /obj/docking_port/stationary/hedon
-	name = "Refueling Station: Port X"
+	name = "Refueling Station: Port 10"
 	shuttle_id = "hedon_home"
 	roundstart_template = /datum/map_template/shuttle/hedon
 	height = 39
@@ -22,70 +22,104 @@
 	name = "NTDS 'Hedon'"
 	port_direction = EAST
 	preferred_direction = EAST
-	shuttle_areas = list(
-		/area/shuttle/hedon/bar,
-		/area/shuttle/hedon/hydro,
-		/area/shuttle/hedon/bridge,
-		/area/shuttle/hedon/engine,
-		/area/shuttle/hedon/fore,
-		/area/shuttle/hedon/freezer,
-		/area/shuttle/hedon/kitchen,
-		/area/shuttle/hedon/midship,
-		/area/shuttle/hedon/pool,
-		/area/shuttle/hedon/port_bath,
-		/area/shuttle/hedon/port_bunks,
-		/area/shuttle/hedon/sauna,
-		/area/shuttle/hedon/service,
-		/area/shuttle/hedon/starboard_bunks,
-		/area/shuttle/hedon/starboard_bath,
-	)
+
+/obj/docking_port/mobile/hedon/Initialize(mapload)
+	shuttle_areas = subtypesof(/area/shuttle/hedon)
+	return ..()
 
 /area/shuttle/hedon
 	name = "NTDS 'Hedon'"
 	requires_power = TRUE
 	fire_detect = FALSE
+	mood_bonus = 10
+	mood_message = "I love partying on the Hedon!"
+	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/shuttle/hedon/bar
-	name = "NTDS 'Hedon' Ratskeller"
+	name = "NTDS 'Hedon' Bar"
+	icon_state = "bar"
+	sound_environment = SOUND_AREA_WOODFLOOR
 
-/area/shuttle/hedon/hydro
-	name = "NTDS 'Hedon' Hydroponics Lab"
+/area/shuttle/hedon/bathroom
+	name = "NTDS 'Hedon' Bathroom"
+	icon_state = "toilet"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/shuttle/hedon/boardroom
+	name = "NTDS 'Hedon' Boardroom"
+	icon_state = "meeting"
+	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
 /area/shuttle/hedon/bridge
 	name = "NTDS 'Hedon' Command Bridge"
+	icon_state = "bridge"
+
+/area/shuttle/hedon/diner
+	name = "NTDS 'Hedon' Cafeteria"
+	icon_state = "cafeteria"
 
 /area/shuttle/hedon/engine
-	name = "NTDS 'Hedon' Engine Compartment"
+	name = "NTDS 'Hedon' Engine Bay"
+	icon_state = "engine"
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	ambience_index = AMBIENCE_ENGI
 
 /area/shuttle/hedon/fore
-	name = "NTDS 'Hedon' Forward Compartment"
+	name = "NTDS 'Hedon' Fore"
+	icon_state = "commons"
+	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/shuttle/hedon/freezer
 	name = "NTDS 'Hedon' Walk-In Freezer"
+	icon_state = "kitchen_cold"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/shuttle/hedon/hydro
+	name = "NTDS 'Hedon' Hydroponics Lab"
+	icon_state = "hydro"
+	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
 /area/shuttle/hedon/kitchen
 	name = "NTDS 'Hedon' Kitchen"
+	icon_state = "kitchen"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/shuttle/hedon/medbay
+	name = "NTDS 'Hedon' Medical Clinic"
+	icon_state = "medbay"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	ambience_index = AMBIENCE_MEDICAL
 
 /area/shuttle/hedon/midship
-	name = "NTDS 'Hedon' Midship Corridor"
+	name = "NTDS 'Hedon' Midship"
+	icon_state = "commons"
 
 /area/shuttle/hedon/pool
 	name = "NTDS 'Hedon' Swimming Pool"
+	icon_state = "pool"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
-/area/shuttle/hedon/port_bath
-	name = "NTDS 'Hedon' Port Bathroom"
+/area/shuttle/hedon/port
+	name = "NTDS 'Hedon' Port"
+	icon_state = "dorms"
+	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
 
 /area/shuttle/hedon/port_bunks
-	name = "NTDS 'Hedon' Port Crew Bunks"
+	name = "NTDS 'Hedon' Port Bunks"
+	icon_state = "dorms"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/shuttle/hedon/sauna
 	name = "NTDS 'Hedon' Sauna"
+	icon_state = "sauna"
+	sound_environment = SOUND_AREA_WOODFLOOR
 
-/area/shuttle/hedon/service
-	name = "NTDS 'Hedon' Service Hall"
+/area/shuttle/hedon/starboard
+	name = "NTDS 'Hedon' Starboard"
+	icon_state = "commons"
+	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
 
 /area/shuttle/hedon/starboard_bunks
-	name = "NTDS 'Hedon' Starboard Crew Bunks"
-
-/area/shuttle/hedon/starboard_bath
-	name = "NTDS 'Hedon' Starboard Bathroom"
+	name = "NTDS 'Hedon' Starboard Bunks"
+	icon_state = "dorms"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
