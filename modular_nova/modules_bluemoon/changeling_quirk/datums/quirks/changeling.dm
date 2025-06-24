@@ -26,8 +26,6 @@
 /datum/quirk/changeling/is_species_appropriate(datum/species/mob_species)
 	if (ispath(mob_species, /datum/species/synthetic))
 		return FALSE
-	if (ispath(mob_species, /datum/species/hemophage))
-		return FALSE
 	if (ispath(mob_species, /datum/species/jelly))
 		return FALSE
 	if (ispath(mob_species, /datum/species/plasmaman))
