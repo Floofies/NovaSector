@@ -23,8 +23,9 @@
 	display_scanner = FALSE
 	resilience = TRAUMA_RESILIENCE_LOBOTOMY
 	///how satisfied the person is, gained through climaxing
+	// Bluemoon edit - Higher Amorous satisfaction, new max is 1000
 	//max is 300, min is 0
-	var/satisfaction = 300
+	var/satisfaction = 1000
 	///how stressed the person is, gained through zero satisfaction
 	//max is 300, min is 0
 	var/stress = 0
@@ -54,37 +55,43 @@
 		return FALSE
 	//we need to feel consequences for being unsatisfied
 	//the message that will be sent to the owner at the end
-	var/lust_message = "Your breath begins to feel warm..."
+	var/lust_message
 	//we are using if statements so that it slowly becomes more and more to the person
 	// Bluemoon edit - Remove emotes from Amorous quirk
 	/*
 	human_owner.manual_emote(pick(lust_emotes))
 	*/
-	if(stress >= 60)
+	// Bluemoon edit - Reduce excessive Armorous flavortext
+	if(stress == 60)
 		human_owner.set_jitter_if_lower(40 SECONDS)
 		lust_message = "You feel a static sensation all across your skin..."
-	if(stress >= 120)
+	// Bluemoon edit - Reduce excessive Armorous flavortext
+	if(stress == 120)
 		human_owner.set_eye_blur_if_lower(20 SECONDS)
 		lust_message = "You vision begins to blur, the heat beginning to rise..."
-	if(stress >= 180)
+	// Bluemoon edit - Reduce excessive Armorous flavortext
+	if(stress == 180)
 		// Bluemoon edit - Remove Hallucinations from Amorous quirk
 		/*
 		owner.adjust_hallucinations(60 SECONDS)
 		*/
 		// Bluemoon edit - Fixed problematic Amorous flavortext
 		lust_message = "You begin to fantasize of what you could with someone..."
-	if(stress >= 240)
+	// Bluemoon edit - Reduce excessive Armorous flavortext
+	if(stress == 240)
 		human_owner.adjustStaminaLoss(30)
 		lust_message = "You body feels so very hot, almost unwilling to cooperate..."
 	// Bluemoon edit - Make Amorous non-lethal
-	if(stress >= 300)
+	if(stress == 300)
 		lust_message = "You feel your neck tightening, straining..."
 	/*
 	if(stress >= 300)
 		human_owner.adjustOxyLoss(40)
 		lust_message = "You feel your neck tightening, straining..."
 	*/
-	to_chat(human_owner, span_purple(lust_message))
+	// Bluemoon edit - Reduce excessive Armorous flavortext
+	if(!isnull(lust_message))
+		to_chat(human_owner, span_purple(lust_message))
 	return TRUE
 
 /**
@@ -135,16 +142,20 @@
 		return
 
 	switch(satisfaction)
-		if(0 to 100)
+		// Bluemoon edit - Reduce excessive Armorous flavortext
+		if(100)
 			to_chat(human_owner, span_purple("You can't STAND it, you need a partner NOW!"))
-		if(101 to 150)
+		// Bluemoon edit - Reduce excessive Armorous flavortext
+		if(150)
 			to_chat(human_owner, span_purple("You'd hit that. Yeah. That's at least a six."))
-		if(151 to 200)
+		// Bluemoon edit - Reduce excessive Armorous flavortext
+		if(200)
 			to_chat(human_owner, span_purple("Your clothes are feeling tight."))
-		if(201 to 250)
+		// Bluemoon edit - Reduce excessive Armorous flavortext
+		if(250)
 			to_chat(human_owner, span_purple("Desire fogs your decisions."))
-		// Bluemoon edit - Suppress Amorous messages when satisifed
-		if(251 to 300)
+		// Bluemoon edit - Reduce excessive Armorous flavortext
+		if(300)
 			to_chat(human_owner, span_purple("Jeez, it's hot in here..."))
 
 /**
@@ -157,6 +168,7 @@
 		return TRUE
 	return FALSE
 
+/* Bluemoon edit - Remove altered speech from Amorous quirk
 /datum/brain_trauma/very_special/amorous/handle_speech(datum/source, list/speech_args)
 	if(!HAS_TRAIT(owner, TRAIT_AMOROUS)) //You have the trauma but not the trait, go ahead and fail here
 		return ..()
@@ -171,6 +183,7 @@
 
 	message = jointext(split_message, " ")
 	speech_args[SPEECH_MESSAGE] = message
+*/
 
 /datum/brain_trauma/very_special/amorous/on_gain()
 	. = ..()
