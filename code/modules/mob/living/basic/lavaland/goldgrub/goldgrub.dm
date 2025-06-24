@@ -127,7 +127,8 @@
 		eggs_added_from_eating = 1,\
 		max_eggs_held = 1,\
 	)
-
+// Bluemoon edit - Reduce goldgrub egg production rate
+/*
 /mob/living/basic/mining/goldgrub/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
 	if(!istype(arrived, /obj/item/stack/ore))
@@ -137,6 +138,7 @@
 	if(!istype(arrived, /obj/item/stack/ore/bluespace_crystal) || prob(60))
 		return
 	new /obj/item/food/egg/green/grub_egg(get_turf(src))
+*/
 
 /mob/living/basic/mining/goldgrub/baby
 	icon = 'icons/mob/simple/lavaland/lavaland_monsters.dmi'
