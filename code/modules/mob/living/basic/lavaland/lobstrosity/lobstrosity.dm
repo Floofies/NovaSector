@@ -77,7 +77,8 @@
 		/datum/pet_command/attack,
 		charge_command,
 		/datum/pet_command/follow/start_active,
-		/datum/pet_command/fish,
+		// Bluemoon edit - Disable Lobstrosity fishing
+		///datum/pet_command/fish,
 	)
 	AddComponent(/datum/component/happiness)
 	AddComponent(/datum/component/obeys_commands, pet_commands)

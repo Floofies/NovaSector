@@ -33,7 +33,8 @@
 		/datum/ai_planning_subtree/attack_obstacle_in_path,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree/lobster,
 		/datum/ai_planning_subtree/find_food,
-		/datum/ai_planning_subtree/fish/fish_from_turfs,
+		// Bluemoon edit - Disable Lobstrosity fishing
+		///datum/ai_planning_subtree/fish/fish_from_turfs,
 		/datum/ai_planning_subtree/find_fingers,
 	)
 
@@ -67,7 +68,8 @@
 		/datum/ai_planning_subtree/attack_obstacle_in_path,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree/lobster,
 		/datum/ai_planning_subtree/find_food,
-		/datum/ai_planning_subtree/fish/fish_from_turfs,
+		// Bluemoon edit - Disable Lobstrosity fishing
+		///datum/ai_planning_subtree/fish/fish_from_turfs,
 		/datum/ai_planning_subtree/find_fingers,
 	)
 
@@ -83,7 +85,8 @@
 		/datum/ai_planning_subtree/attack_obstacle_in_path,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree/lobster,
 		/datum/ai_planning_subtree/find_food,
-		/datum/ai_planning_subtree/fish/fish_from_turfs,
+		// Bluemoon edit - Disable Lobstrosity fishing
+		///datum/ai_planning_subtree/fish/fish_from_turfs,
 		/datum/ai_planning_subtree/find_fingers,
 	)
 
@@ -99,7 +102,8 @@
 		/datum/ai_planning_subtree/attack_obstacle_in_path,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree/lobster,
 		/datum/ai_planning_subtree/find_food,
-		/datum/ai_planning_subtree/fish/fish_from_turfs,
+		// Bluemoon edit - Disable Lobstrosity fishing
+		///datum/ai_planning_subtree/fish/fish_from_turfs,
 		/datum/ai_planning_subtree/find_fingers,
 	)
 
