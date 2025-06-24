@@ -270,14 +270,19 @@
 		return TRUE
 
 	if(user.nextsoundemote > world.time) // NOVA EDIT CHANGE - ORIGINAL: if(user.emotes_used && user.emotes_used[src] + cooldown > world.time)
+		// Bluemoon edit - Reduce emote cooldown
+		/*
 		var/datum/emote/default_emote = /datum/emote
 		if(cooldown > initial(default_emote.cooldown)) // only worry about longer-than-normal emotes
 			to_chat(user, span_danger("You must wait another [DisplayTimeText(user.nextsoundemote - world.time)] before using that emote."))
+		*/
 		return FALSE
 	//if(!user.emotes_used)
 	//	user.emotes_used = list()
 	//user.emotes_used[src] = world.time - NOVA EDIT - ORIGINAL
-	user.nextsoundemote = world.time + cooldown
+	// Bluemoon edit - Reduce emote cooldown
+	//user.nextsoundemote = world.time + cooldown
+	user.nextsoundemote = world.time + 0.5 SECONDS
 	//NOVA EDIT CHANGE END
 	return TRUE
 
