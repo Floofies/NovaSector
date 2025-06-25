@@ -249,12 +249,6 @@
 	if(prob(8) && owner.health > owner.crit_threshold)
 		owner.emote("snore")
 
-	// Bluemoon edit - Prolong sleep indefinitely when client disconnects
-	if(owner.lastKnownIP && !owner.client)
-		pause_expiry = TRUE
-	else
-		pause_expiry = FALSE
-
 /atom/movable/screen/alert/status_effect/asleep
 	name = "Asleep"
 	desc = "You've fallen asleep. Wait a bit and you should wake up. Unless you don't, considering how helpless you are."
