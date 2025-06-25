@@ -20,13 +20,12 @@
 		#include "map_files\NSVBlueshift\Blueshift.dmm"
 		#include "map_files\Ouroboros\Ouroboros.dmm"
 		#include "map_files\SerenityStation\SerenityStation.dmm"
-		// NOVA EDIT END
-
+		#include "map_files\Snowglobe\snowglobe.dmm"
+		// NOVA EDIT ADDITION END
 		// Bluemoon edit - Add Kilostation map
 		#include "map_files\KiloStation\KiloStation.dmm"
-
-		#ifdef CIBUILDING
-			#include "templates.dm"
-		#endif
+	#endif
+	#ifdef ALL_TEMPLATES
+		#include "templates.dm"
 	#endif
 #endif

@@ -51,7 +51,7 @@
 		return
 
 	on = FALSE
-	update(FALSE, TRUE, FALSE)
+	update(FALSE, instant = TRUE, play_sound = FALSE)
 
 	constant_flickering = TRUE
 
@@ -71,7 +71,7 @@
 		return
 	if(has_power())
 		on = enable
-		update(FALSE, TRUE, FALSE)
+		update(FALSE, instant = TRUE, play_sound = FALSE)
 
 /obj/machinery/light/proc/flicker_on()
 	alter_flicker(TRUE)

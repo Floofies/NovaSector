@@ -24,19 +24,16 @@
 /obj/effect/mob_spawn/ghost_role/robot/ghostcafe/special(mob/living/silicon/robot/new_spawn)
 	. = ..()
 	if(new_spawn.client)
-		new_spawn.custom_name = null
-		new_spawn.updatename(new_spawn.client)
-		new_spawn.transfer_brain_pref(new_spawn.client)
-		new_spawn.transfer_emote_pref(new_spawn.client)
 		// Bluemoon edit - Cyborg romance
 		new_spawn.set_sex(new_spawn.client)
 		// Bluemoon edit - Remove transform action from ghost cafe cyborgs
 		var/datum/action/action_to_remove = locate(/datum/action/cyborg_transform) in new_spawn.actions
 		if(action_to_remove)
 			qdel(action_to_remove)
-		/*
+		new_spawn.custom_name = null
+		new_spawn.updatename(new_spawn.client)
+		new_spawn.transfer_silicon_prefs(new_spawn.client)
 		new_spawn.gender = NEUTER
-		*/
 		var/area/A = get_area(src)
 		//new_spawn.AddElement(/datum/element/ghost_role_eligibility, free_ghosting = TRUE) SKYRAT PORT -- Needs to be completely rewritten
 		new_spawn.AddElement(/datum/element/dusts_on_catatonia)

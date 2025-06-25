@@ -25,18 +25,18 @@
 	var/mod_index = get_selected_module()
 	active_hand_index = !mod_index ? 1 : mod_index
 
-/mob/living/silicon/robot/unequip_module_from_slot(obj/item/item_module, module_num)
+/mob/living/silicon/robot/doUnEquip(obj/item/item_dropping, force, atom/newloc, no_move, invdrop, silent)
 	// we're dropping an item that we picked up. normally this runtimes, but clearly we don't want that, we just want to drop the stupid item.
 	// look this sucks and there's code duplication involved here but it'd be semi-modular otherwise
-	if(!(item_module in model.modules))
-		dropItemToGround(item_module)
-
+	. = ..()
+	if(!(item_dropping in model.modules))
 		if(client)
-			client.screen -= item_module
+			client.screen -= item_dropping
 
-		if(module_active == item_module)
+		if(module_active == item_dropping)
 			module_active = null
 
+		var/module_num = get_selected_module()
 		switch(module_num)
 			if(BORG_CHOOSE_MODULE_ONE)
 				if(!(disabled_modules & BORG_MODULE_ALL_DISABLED))
@@ -49,10 +49,7 @@
 					inv3.icon_state = initial(inv3.icon_state)
 
 		hud_used.persistent_inventory_update()
-		observer_screen_update(item_module, FALSE)
-		return
-
-	return ..()
+		observer_screen_update(item_dropping, FALSE)
 
 /mob/living/silicon/robot/can_hold_items(obj/item/I)
 	return ..()
