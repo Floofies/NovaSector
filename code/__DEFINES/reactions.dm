@@ -63,8 +63,12 @@
 /*
 #define HYDROGEN_MINIMUM_BURN_TEMPERATURE FIRE_MINIMUM_TEMPERATURE_TO_EXIST
 */
+// Bluemoon edit - Decrease energy released by hydrogen
 /// The amount of energy released by burning one mole of hydrogen.
+#define FIRE_HYDROGEN_ENERGY_RELEASED 2.8e5
+/*
 #define FIRE_HYDROGEN_ENERGY_RELEASED 2.8e6
+*/
 /// Multiplier for hydrogen fire with O2 moles * HYDROGEN_OXYGEN_FULLBURN for the maximum fuel consumption
 #define HYDROGEN_OXYGEN_FULLBURN 10
 /// The divisor for the maximum hydrogen burn rate. (1/2 of the hydrogen can burn in one reaction tick.)
