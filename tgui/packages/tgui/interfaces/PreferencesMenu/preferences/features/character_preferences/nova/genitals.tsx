@@ -236,3 +236,9 @@ export const erp_status_pref_mechanics: FeatureChoiced = {
   name: 'ERP Mechanical Status',
   component: FeatureDropdownInput,
 };
+
+// Bluemoon edit- Cyborg sex preference
+export const sex_cyborg: FeatureChoiced = {
+  name: 'Cyborg Sex',
+  component: FeatureDropdownInput,
+};
