@@ -17,3 +17,6 @@
 	pixel_shift = 0
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sink/kitchen/counter, 0)
+
+/obj/structure/inflatable/window_airbag
+	opacity = FALSE
