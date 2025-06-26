@@ -323,6 +323,14 @@ const GASES = [
     color: 'green',
   },
   // NOVA EDIT ADDITION END
+  // Bluemoon edit - Methane gas
+  {
+    id: 'methane',
+    path: '/datum/gas/methane',
+    name: 'Methane',
+    label: 'CH₄',
+    color: 'orange',
+  },
 ] as const;
 
 // Returns gas label based on gasId
