@@ -1,3 +1,5 @@
+// Bluemoon edit - Disable SQL whitelist
+/*
 #define WHITELISTFILE "[global.config.directory]/whitelist.txt"
 
 GLOBAL_LIST_EMPTY(whitelist)
@@ -164,3 +166,4 @@ ADMIN_VERB_CUSTOM_EXIST_CHECK(revoke_whitelist)
 
 
 #undef WHITELISTFILE
+*/

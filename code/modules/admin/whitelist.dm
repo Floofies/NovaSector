@@ -1,4 +1,5 @@
-/** NOVA EDIT REMOVAL - Moved to modular for SQL implementation.
+// Bluemoon edit - Enable plaintext whitelist
+///** NOVA EDIT REMOVAL - Moved to modular for SQL implementation.
 #define WHITELISTFILE "[global.config.directory]/whitelist.txt"
 
 GLOBAL_LIST(whitelist)
@@ -28,4 +29,5 @@ var/whitelist_modtime = 0
 	. = (ckey in GLOB.whitelist)
 
 #undef WHITELISTFILE
-*/ // NOVA EDIT END
+// Bluemoon edit - Enable plaintext whitelist
+//*/ // NOVA EDIT END
