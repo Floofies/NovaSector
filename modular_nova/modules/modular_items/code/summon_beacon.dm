@@ -167,6 +167,8 @@
 		/obj/machinery/portable_atmospherics/canister/oxygen = /obj/machinery/atmospherics/miner/oxygen,
 		/obj/machinery/portable_atmospherics/canister/plasma = /obj/machinery/atmospherics/miner/plasma,
 		/obj/machinery/portable_atmospherics/canister/water_vapor = /obj/machinery/atmospherics/miner/water_vapor,
+		// Bluemoon edit - Methane gas
+		/obj/machinery/portable_atmospherics/canister/methane = /obj/machinery/atmospherics/miner/methane,
 	)
 
 	area_string = /*"atmospherics"*/ "any" // BLUEMOON EDIT - Gas Miners Anywhere - Allows gas miner beacons to summon the gas miner anywhere!
