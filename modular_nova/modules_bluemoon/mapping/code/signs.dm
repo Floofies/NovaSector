@@ -61,7 +61,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/departments/laundry, 32)
 
 /obj/structure/sign/departments/laundry_alt
 	name = "\improper Washing Machine sign"
-	sign_change_name = "Location - Laundry Room"
+	sign_change_name = "Location - Laundry Machine Room"
 	desc = "A sign labeling an area containing washing machines."
 	icon = 'modular_nova/modules_bluemoon/mapping/icons/signs.dmi'
 	icon_state = "laundry2"
