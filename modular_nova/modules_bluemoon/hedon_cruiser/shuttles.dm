@@ -8,10 +8,10 @@
 	name = "Refueling Station: Port 10"
 	shuttle_id = "hedon_home"
 	roundstart_template = /datum/map_template/shuttle/hedon
-	height = 39
-	width = 80
-	dwidth = 1
-	dheight = 25
+	height = 37
+	width = 85
+	dheight = 2
+	dwidth = 72
 
 /obj/docking_port/mobile/hedon
 	callTime = 5 MINUTES
@@ -35,6 +35,11 @@
 	mood_message = "I love partying on the Hedon!"
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
+/area/shuttle/hedon/exterior
+	static_lighting = TRUE
+	base_lighting_alpha = 0
+	base_lighting_color = null
+
 /area/shuttle/hedon/bar
 	name = "NTDS 'Hedon' Bar"
 	icon_state = "bar"
@@ -54,15 +59,31 @@
 	name = "NTDS 'Hedon' Command Bridge"
 	icon_state = "bridge"
 
+/area/shuttle/hedon/captain_quarters
+	name = "NTDS 'Hedon' Captain Quarters"
+	icon_state = "bridge"
+
 /area/shuttle/hedon/diner
 	name = "NTDS 'Hedon' Cafeteria"
 	icon_state = "cafeteria"
 
 /area/shuttle/hedon/engine
 	name = "NTDS 'Hedon' Engine Bay"
-	icon_state = "engine"
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	icon_state = "engi_lobby"
 	ambience_index = AMBIENCE_ENGI
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/shuttle/hedon/reactor
+	name = "NTDS 'Hedon' RB-MK2 Reactor Bay"
+	icon_state = "engine"
+	ambience_index = AMBIENCE_ENGI
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/shuttle/hedon/engine_storage
+	name = "NTDS 'Hedon' Engine Storage"
+	icon_state = "engine_storage_shared"
+	ambience_index = AMBIENCE_ENGI
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
 
 /area/shuttle/hedon/fore
 	name = "NTDS 'Hedon' Fore"
@@ -84,6 +105,11 @@
 	icon_state = "kitchen"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
+/area/shuttle/hedon/locker_room
+	name = "NTDS 'Hedon' Locker Room & Cryopods"
+	icon_state = "dorms"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
 /area/shuttle/hedon/medbay
 	name = "NTDS 'Hedon' Medical Clinic"
 	icon_state = "medbay"
@@ -99,11 +125,6 @@
 	icon_state = "pool"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
-/area/shuttle/hedon/port
-	name = "NTDS 'Hedon' Port"
-	icon_state = "dorms"
-	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
-
 /area/shuttle/hedon/port_bunks
 	name = "NTDS 'Hedon' Port Bunks"
 	icon_state = "dorms"
@@ -114,12 +135,41 @@
 	icon_state = "sauna"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
-/area/shuttle/hedon/starboard
-	name = "NTDS 'Hedon' Starboard"
-	icon_state = "commons"
-	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
+/area/shuttle/hedon/mainframe
+	name = "NTDS 'Hedon' Mainframe"
+	icon_state = "ai"
+	sound_environment = SOUND_ENVIRONMENT_ROOM
 
 /area/shuttle/hedon/starboard_bunks
 	name = "NTDS 'Hedon' Starboard Bunks"
 	icon_state = "dorms"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/shuttle/hedon/bunks
+	name = "NTDS 'Hedon' Bunks"
+	icon_state = "dorms"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/shuttle/hedon/bunks/one
+	name = "NTDS 'Hedon' Bunk 1"
+
+/area/shuttle/hedon/bunks/two
+	name = "NTDS 'Hedon' Bunk 2"
+
+/area/shuttle/hedon/bunks/three
+	name = "NTDS 'Hedon' Bunk 3"
+
+/area/shuttle/hedon/bunks/four
+	name = "NTDS 'Hedon' Bunk 4"
+
+/area/shuttle/hedon/bunks/five
+	name = "NTDS 'Hedon' Bunk 5"
+
+/area/shuttle/hedon/bunks/six
+	name = "NTDS 'Hedon' Bunk 6"
+
+/area/shuttle/hedon/bunks/seven
+	name = "NTDS 'Hedon' Bunk 7"
+
+/area/shuttle/hedon/bunks/eight
+	name = "NTDS 'Hedon' Bunk 8"
