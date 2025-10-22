@@ -16,8 +16,8 @@
 	allow_objects = TRUE
 	allow_dense = TRUE
 	dense_when_open = TRUE
-	open_sound_volume = 0
-	close_sound_volume = 0
+	open_sound = null
+	close_sound = null
 	mob_storage_capacity = 1
 
 /obj/structure/closet/proc/close_pod(mob/living/user, mob/living/occupant)
