@@ -501,7 +501,9 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	welded = FALSE
 	unlock()
 	if(special_effects)
-		playsound(loc, open_sound, open_sound_volume, TRUE, -3)
+	// Bluemoon edit - Allow closets to be silent
+		if(!isnull(open_sound))
+			playsound(loc, open_sound, open_sound_volume, TRUE, -3)
 	opened = TRUE
 	if(!dense_when_open)
 		set_density(FALSE)
@@ -573,7 +575,9 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	if(!before_close(user) || (SEND_SIGNAL(src, COMSIG_CLOSET_PRE_CLOSE, user) & BLOCK_CLOSE))
 		return FALSE
 	take_contents()
-	playsound(loc, close_sound, close_sound_volume, TRUE, -3)
+	// Bluemoon edit - Allow closets to be silent
+	if(!isnull(close_sound))
+		playsound(loc, close_sound, close_sound_volume, TRUE, -3)
 	opened = FALSE
 	set_density(TRUE)
 	animate_door(TRUE)
