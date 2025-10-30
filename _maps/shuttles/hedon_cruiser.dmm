@@ -168,6 +168,9 @@
 "aN" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/shuttle/hedon/medbay)
+"aO" = (
+/turf/open/floor/plating/airless,
+/area/shuttle/hedon/reactor)
 "aP" = (
 /turf/open/floor/iron/shuttle/exploration/hazard,
 /area/shuttle/hedon/engine_storage)
@@ -990,6 +993,15 @@
 "eh" = (
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/hedon/engine_storage)
+"ej" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 8;
+	name = "Saturn J-3000 engine";
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/hedon/reactor)
 "ep" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
@@ -1042,7 +1054,7 @@
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "eA" = (
 /obj/machinery/rnd/production/protolathe/department/engineering,
 /obj/item/food/vendor_snacks/moth_bag{
@@ -2208,7 +2220,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "ju" = (
 /obj/effect/turf_decal/trimline/dark_green/corner{
 	dir = 1
@@ -2709,7 +2721,7 @@
 	name = "Saturn J-3000 engine"
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "mf" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
@@ -2771,6 +2783,9 @@
 /turf/closed/wall/prefab_plastic{
 	color = "#424352"
 	},
+/area/shuttle/hedon/fore)
+"mw" = (
+/turf/open/floor/plating/airless,
 /area/shuttle/hedon/fore)
 "mx" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
@@ -3293,15 +3308,6 @@
 	color = "#424352"
 	},
 /area/shuttle/hedon/mainframe)
-"oR" = (
-/obj/machinery/power/shuttle_engine/propulsion{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/shuttle/hedon/exterior)
 "oV" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -3806,6 +3812,14 @@
 	color = "#8ab1ec"
 	},
 /area/shuttle/hedon/bunks/eight)
+"qQ" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 4;
+	name = "Saturn J-3000 engine";
+	pixel_y = 0
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/hedon/kitchen)
 "qS" = (
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/door/window/survival_pod/left/directional/east{
@@ -4451,7 +4465,7 @@
 /area/shuttle/hedon/bridge)
 "tP" = (
 /turf/open/floor/plating,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "tQ" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
@@ -5307,6 +5321,9 @@
 /obj/structure/cable,
 /turf/open/floor/plastic,
 /area/shuttle/hedon/diner)
+"xZ" = (
+/turf/open/floor/plating/airless,
+/area/shuttle/hedon/kitchen)
 "yc" = (
 /obj/effect/turf_decal/tile/dark/diagonal_centre,
 /obj/effect/turf_decal/siding/dark{
@@ -5958,7 +5975,7 @@
 /area/shuttle/hedon/fore)
 "AN" = (
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/engine_storage)
 "AO" = (
 /obj/machinery/stasissleeper{
 	dir = 4
@@ -6126,7 +6143,7 @@
 	},
 /obj/effect/turf_decal/stripes/red/line,
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "Bz" = (
 /obj/effect/turf_decal/siding/thinplating_new/light{
 	dir = 1
@@ -6457,7 +6474,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "Dd" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden/layer2{
 	dir = 5
@@ -6499,7 +6516,7 @@
 "Dh" = (
 /obj/effect/turf_decal/stripes/red/line,
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "Dj" = (
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
@@ -6918,7 +6935,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/plating,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "EZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7456,8 +7473,8 @@
 	pixel_y = 0;
 	pixel_x = -32
 	},
-/turf/open/floor/plating,
-/area/shuttle/hedon/exterior)
+/turf/open/floor/plating/airless,
+/area/shuttle/hedon/engine_storage)
 "HK" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
@@ -8093,6 +8110,15 @@
 /obj/machinery/smartfridge/wooden/produce_bin,
 /turf/open/floor/bamboo/tatami,
 /area/shuttle/hedon/hydro)
+"KM" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/hedon/engine_storage)
 "KR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/showroomfloor,
@@ -8102,7 +8128,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "KU" = (
 /obj/machinery/computer/camera_advanced,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -8782,7 +8808,7 @@
 "Od" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "Of" = (
 /obj/structure/sign/directions/roomnum/directional/south{
 	dir = 5
@@ -9255,8 +9281,8 @@
 	name = "Saturn J-3000 engine";
 	pixel_y = 0
 	},
-/turf/open/floor/plating,
-/area/shuttle/hedon/exterior)
+/turf/open/floor/plating/airless,
+/area/shuttle/hedon/fore)
 "QA" = (
 /obj/machinery/duct,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
@@ -9889,7 +9915,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "TB" = (
 /obj/structure/table/wood/fancy/purple,
 /obj/machinery/light/cold/directional/west,
@@ -11069,7 +11095,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/reactor)
 "YO" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -11149,7 +11175,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hedon/exterior)
+/area/shuttle/hedon/engine_storage)
 "Zi" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -11421,14 +11447,14 @@ Gh
 Gh
 Gh
 ul
-tP
+AN
 HJ
 EM
 KS
 mb
 js
 Db
-AN
+aO
 Dh
 KS
 KS
@@ -11571,10 +11597,10 @@ Gh
 Gh
 Gh
 ul
-oR
-tP
-EX
-oR
+KM
+AN
+Zg
+KM
 SU
 fr
 bA
@@ -11595,8 +11621,8 @@ aN
 XL
 QN
 TA
-AN
-Zg
+aO
+ej
 TA
 IZ
 Gh
@@ -13402,8 +13428,8 @@ Gh
 Gh
 Gh
 qC
-tP
-Qz
+xZ
+qQ
 cn
 ui
 Wj
@@ -13431,7 +13457,7 @@ YR
 mv
 OE
 OE
-tP
+mw
 Qz
 Yi
 Gh
