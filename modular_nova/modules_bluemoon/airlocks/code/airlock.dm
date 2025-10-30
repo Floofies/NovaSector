@@ -71,6 +71,17 @@
 /obj/machinery/door/airlock/external/wagon/command
 	doorDeni = 'modular_nova/modules_bluemoon/airlocks/sound/vault_airlock/deniedbeep.ogg'
 
+/obj/machinery/door/airlock/shuttle/ferry
+	doorOpen = 'modular_nova/modules_bluemoon/airlocks/sound/colony_prefab/airlock.ogg'
+	doorClose = 'modular_nova/modules_bluemoon/airlocks/sound/colony_prefab/airlockclose.ogg'
+	doorDeni = 'modular_nova/modules_bluemoon/airlocks/sound/colony_prefab/deniedbeep.ogg'
+	boltUp = 'modular_nova/modules_bluemoon/airlocks/sound/colony_prefab/boltsup.ogg'
+	boltDown = 'modular_nova/modules_bluemoon/airlocks/sound/colony_prefab/boltsdown.ogg'
+	doorDeni = 'modular_nova/modules_bluemoon/airlocks/sound/vault_airlock/deniedbeep.ogg'
+	opacity = FALSE
+	glass = TRUE
+	quiet = FALSE
+
 /obj/machinery/door/airlock/survival_pod
 	doorOpen = 'modular_nova/modules_bluemoon/airlocks/sound/colony_prefab/airlock.ogg'
 	doorClose = 'modular_nova/modules_bluemoon/airlocks/sound/colony_prefab/airlockclose.ogg'
