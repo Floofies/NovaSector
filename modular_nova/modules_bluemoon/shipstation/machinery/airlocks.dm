@@ -17,3 +17,10 @@
 /obj/machinery/door/airlock/keyed/marina/manager
 	greyscale_accent_color = "#C4004E"
 	access_id = "marina_manager"
+
+/obj/machinery/door/airlock/public/glass/incinerator/atmos_exterior/shipstation
+	name = "Left Turbine Exterior Airlock"
+
+/obj/machinery/door/airlock/public/glass/incinerator/atmos_exterior/shipstation/secondary
+	name = "Right Turbine Exterior Airlock"
+	id_tag = INCINERATOR_ATMOS_AIRLOCK_EXTERIOR_SECONDARY

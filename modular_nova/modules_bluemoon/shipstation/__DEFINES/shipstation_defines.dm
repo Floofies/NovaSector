@@ -1,0 +1,11 @@
+#define INCINERATOR_ATMOS_IGNITER_SECONDARY "atmos_incinerator_igniter_secondary"
+
+#define INCINERATOR_ATMOS_DP_VENTPUMP_SECONDARY "atmos_incinerator_airlock_pump_secondary"
+
+#define INCINERATOR_ATMOS_AIRLOCK_EXTERIOR_SECONDARY "atmos_incinerator_airlock_exterior_secondary"
+#define INCINERATOR_ATMOS_AIRLOCK_INTERIOR_SECONDARY "atmos_incinerator_airlock_interior_secondary"
+
+#define INCINERATOR_ATMOS_AIRLOCK_CONTROLLER_SECONDARY "atmos_incinerator_airlock_controller_secondary"
+#define INCINERATOR_ATMOS_AIRLOCK_SENSOR_SECONDARY "atmos_incinerator_airlock_sensor_secondary"
+
+#define ATMOS_GAS_MONITOR_INCINERATOR_SECONDARY "incinerator_secondary"
