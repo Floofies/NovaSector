@@ -32,7 +32,6 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/shipstation)
 "ai" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning,
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/secure_closet/hos,
 /obj/item/storage/box/deputy,
@@ -104,16 +103,12 @@
 /turf/open/floor/wood/large,
 /area/shuttle/shipstation)
 "av" = (
-/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
-	dir = 8
-	},
 /obj/structure/sign/calendar/directional/west,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
-/obj/machinery/brm,
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "bluemoon_mining"
-	},
+/obj/structure/closet/secure_closet/quartermaster,
+/obj/item/circuitboard/machine/bluespace_miner,
+/obj/item/screwdriver,
+/obj/item/extendohand/acme,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/shipstation)
 "aw" = (
@@ -168,15 +163,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/shuttle/shipstation)
-"aD" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
-/obj/machinery/bouldertech/refinery,
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "bluemoon_mining"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle/shipstation)
 "aF" = (
 /obj/effect/turf_decal/siding/thinplating_new/light{
 	dir = 8
@@ -223,14 +209,6 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/shuttle/shipstation)
-"aL" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "bluemoon_mining"
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle/shipstation)
 "aN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -256,9 +234,6 @@
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "aS" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 1
-	},
 /obj/machinery/light/directional/north,
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/pod/dark,
@@ -761,18 +736,8 @@
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "cX" = (
-/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 4
-	},
 /obj/machinery/camera/autoname/directional/north,
-/obj/machinery/bouldertech/refinery/smelter,
-/obj/machinery/conveyor/inverted{
-	dir = 6;
-	id = "bluemoon_mining"
-	},
+/obj/machinery/computer/order_console/mining,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/shipstation)
 "cZ" = (
@@ -1229,12 +1194,6 @@
 /turf/open/floor/pod/light,
 /area/shuttle/shipstation)
 "eM" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 1
-	},
 /obj/structure/table/reinforced,
 /obj/machinery/fax{
 	fax_name = "Head of Personnel's Office";
@@ -1463,13 +1422,16 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/shipstation)
 "gL" = (
-/obj/effect/turf_decal/trimline/brown/filled/line,
-/obj/structure/window/reinforced/survival_pod/spawner/directional/south{
-	pixel_y = -4
+/obj/structure/table/wood,
+/obj/item/folder/yellow{
+	pixel_x = -5;
+	pixel_y = 6
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/machinery/computer/order_console/mining,
-/turf/open/floor/pod/dark,
+/obj/item/storage/medkit/frontier/stocked{
+	pixel_y = 3;
+	pixel_x = 5
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle/shipstation)
 "gO" = (
 /obj/machinery/duct,
@@ -1544,14 +1506,14 @@
 /obj/effect/turf_decal/trimline/brown/filled/warning{
 	dir = 9
 	},
-/obj/structure/closet/secure_closet/quartermaster,
-/obj/item/circuitboard/machine/bluespace_miner,
-/obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/item/screwdriver,
-/obj/item/extendohand/acme,
+/obj/structure/chair/comfy/brown{
+	color = "#A46106";
+	dir = 4
+	},
+/obj/effect/landmark/start/quartermaster,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "hr" = (
@@ -1651,18 +1613,16 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
-/obj/machinery/suit_storage_unit/industrial/loader,
-/turf/open/floor/pod/dark,
+/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "hI" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/delivery,
 /obj/effect/turf_decal/trimline/brown/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+/obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
 /turf/open/floor/iron/smooth_large,
@@ -1838,11 +1798,11 @@
 /area/shuttle/shipstation)
 "iN" = (
 /obj/structure/table/wood,
-/obj/item/toy/figure/qm{
-	pixel_y = 11;
-	pixel_x = 8
+/obj/item/folder/red{
+	pixel_x = 5;
+	pixel_y = 5
 	},
-/obj/item/folder/yellow,
+/obj/item/folder/blue,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "iQ" = (
@@ -1948,10 +1908,6 @@
 /turf/open/floor/wood/large,
 /area/shuttle/shipstation)
 "jD" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning,
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 4
-	},
 /obj/machinery/ammo_workbench,
 /obj/effect/turf_decal/bot,
 /obj/item/stack/sheet/iron/fifty,
@@ -2157,16 +2113,16 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/storage/medkit/frontier/stocked{
-	pixel_y = 3;
-	pixel_x = 5
-	},
 /obj/item/reagent_containers/cup/glass/mug/tea{
 	pixel_x = -6;
 	pixel_y = 9
 	},
 /obj/effect/spawner/random/food_or_drink/donkpockets_single{
 	pixel_x = -9
+	},
+/obj/item/toy/figure/qm{
+	pixel_y = 11;
+	pixel_x = 8
 	},
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
@@ -2441,6 +2397,9 @@
 "mK" = (
 /obj/machinery/camera/autoname/directional/east,
 /obj/machinery/light/directional/east,
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/shuttle/shipstation)
 "mL" = (
@@ -2981,9 +2940,6 @@
 /obj/item/storage/box/pdas,
 /obj/item/multitool,
 /obj/effect/turf_decal/bot,
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 1
-	},
 /obj/item/storage/lockbox/loyalty,
 /obj/structure/sign/departments/telecomms/directional/north,
 /turf/open/floor/pod/dark,
@@ -3264,7 +3220,6 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/shipstation)
 "sn" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning,
 /obj/machinery/light/directional/south,
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/mineral/plastitanium,
@@ -3276,14 +3231,10 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/bot,
-/obj/structure/closet/wardrobe/miner,
-/obj/item/gps/mining,
-/obj/item/mining_voucher,
-/obj/item/suit_voucher,
-/obj/item/suit_voucher,
-/obj/item/suit_voucher,
-/turf/open/floor/pod/dark,
+/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "sp" = (
 /obj/machinery/hydroponics/constructable,
@@ -3954,9 +3905,6 @@
 /area/shuttle/shipstation)
 "wq" = (
 /obj/effect/turf_decal/bot,
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 1
-	},
 /obj/structure/closet/secure_closet/nanotrasen_consultant,
 /obj/item/storage/briefcase/secure/white,
 /obj/item/clothing/accessory/medal/gold/ordom,
@@ -4217,6 +4165,14 @@
 	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/shipstation)
+"yg" = (
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/smooth_half,
+/area/shuttle/shipstation)
 "yh" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
@@ -4270,22 +4226,14 @@
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
 	},
-/obj/structure/closet/wardrobe/cargotech,
-/obj/item/clothing/gloves/cargo_gauntlet{
-	pixel_y = 1
-	},
-/obj/item/clothing/gloves/cargo_gauntlet{
-	pixel_y = 4
-	},
-/obj/item/clothing/gloves/cargo_gauntlet{
-	pixel_y = 7
-	},
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
-/obj/effect/turf_decal/bot,
-/turf/open/floor/pod/dark,
+/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "yt" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
@@ -4468,15 +4416,8 @@
 /turf/open/floor/iron/dark/herringbone,
 /area/shuttle/shipstation)
 "zs" = (
-/obj/effect/turf_decal/trimline/brown/filled/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
-/obj/machinery/suit_storage_unit/industrial/loader,
-/turf/open/floor/pod/dark,
+/obj/structure/ore_box,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle/shipstation)
 "zD" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
@@ -4909,9 +4850,6 @@
 /turf/open/floor/iron/dark/smooth_half,
 /area/shuttle/shipstation)
 "Cm" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 4
-	},
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/machinery/computer/prisoner/management,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -4956,7 +4894,10 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/red/real_red/warning{
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_red/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/smooth_corner{
@@ -4998,7 +4939,10 @@
 "CN" = (
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/effect/turf_decal/trimline/red/real_red/warning{
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_red/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/smooth_corner{
@@ -5314,7 +5258,7 @@
 /area/shuttle/shipstation)
 "Ev" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/time_clock/directional/north,
+/obj/machinery/modular_computer/preset/time_clock/directional/north,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/shipstation)
 "Ew" = (
@@ -5694,9 +5638,6 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/shipstation)
 "GG" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning{
-	dir = 4
-	},
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/machinery/computer/accounting{
 	dir = 1
@@ -5889,10 +5830,10 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/shipstation)
 "Hu" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning{
+/obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/wood,
 /area/shuttle/shipstation)
 "Hv" = (
 /obj/effect/turf_decal/siding/thinplating_new/light{
@@ -6098,17 +6039,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/textured_large,
 /area/shuttle/shipstation)
-"IJ" = (
-/obj/effect/turf_decal/trimline/brown/filled/warning{
-	dir = 8
-	},
-/obj/structure/chair/comfy/brown{
-	color = "#A46106";
-	dir = 4
-	},
-/obj/effect/landmark/start/quartermaster,
-/turf/open/floor/iron/smooth_large,
-/area/shuttle/shipstation)
 "IV" = (
 /obj/structure/window/reinforced/tinted/frosted/spawner/directional/west,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -6156,20 +6086,6 @@
 	},
 /obj/machinery/duct,
 /turf/open/floor/iron/white/textured_large,
-/area/shuttle/shipstation)
-"Jh" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/brown/filled/warning{
-	dir = 1
-	},
-/obj/machinery/conveyor_switch/oneway{
-	id = "bluemoon_mining";
-	dir = 1;
-	pixel_x = 10
-	},
-/turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "Jl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -6857,24 +6773,14 @@
 /obj/structure/closet/secure_closet/miner,
 /obj/item/tank/internals/oxygen/yellow,
 /obj/item/tank/internals/oxygen/yellow,
-/obj/item/tank/internals/oxygen/yellow,
-/obj/item/shovel,
 /obj/item/shovel,
 /obj/item/pickaxe/mini,
-/obj/item/pickaxe/mini,
-/obj/item/radio/headset/headset_cargo/mining,
 /obj/item/radio/headset/headset_cargo/mining,
 /obj/item/storage/bag/ore,
-/obj/item/storage/bag/ore,
-/obj/item/t_scanner/adv_mining_scanner/lesser,
 /obj/item/t_scanner/adv_mining_scanner/lesser,
 /obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
-/obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
 /obj/item/survivalcapsule,
-/obj/item/survivalcapsule,
-/obj/item/assault_pod/mining,
 /obj/item/assault_pod/mining,
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
@@ -7016,6 +6922,16 @@
 	dir = 8
 	},
 /turf/open/floor/iron/smooth_large,
+/area/shuttle/shipstation)
+"Ok" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood,
 /area/shuttle/shipstation)
 "Op" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -7856,7 +7772,6 @@
 /turf/open/floor/wood,
 /area/shuttle/shipstation)
 "UJ" = (
-/obj/effect/turf_decal/trimline/red/real_red/warning,
 /obj/structure/closet/secure_closet/warden,
 /obj/effect/turf_decal/bot,
 /obj/item/storage/box/deputy,
@@ -8514,6 +8429,16 @@
 	dir = 8
 	},
 /area/shuttle/shipstation)
+"XZ" = (
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_red/warning{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/smooth_half,
+/area/shuttle/shipstation)
 "Yc" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/trimline/brown/filled/mid_joiner,
@@ -8710,7 +8635,7 @@
 /turf/open/floor/iron/dark/smooth_half,
 /area/shuttle/shipstation)
 "Zz" = (
-/obj/machinery/time_clock/directional/east,
+/obj/machinery/modular_computer/preset/time_clock/directional/east,
 /turf/open/floor/iron/dark/small,
 /area/shuttle/shipstation)
 "ZB" = (
@@ -8843,7 +8768,7 @@ wd
 Hj
 av
 hm
-IJ
+BU
 Qr
 ZE
 PQ
@@ -8870,7 +8795,7 @@ Hj
 "}
 (4,1,1) = {"
 ed
-aD
+gL
 kU
 iN
 Sf
@@ -8899,8 +8824,8 @@ ed
 "}
 (5,1,1) = {"
 cB
-aL
-Jh
+zs
+hI
 Zq
 fu
 Ko
@@ -8960,7 +8885,7 @@ cB
 cR
 bi
 Zq
-gL
+Nv
 ys
 aR
 CS
@@ -8990,7 +8915,7 @@ rx
 cV
 Zq
 YN
-zs
+ys
 yI
 oN
 Bw
@@ -9894,12 +9819,12 @@ ZX
 cB
 io
 Nt
-Pg
-mM
-mM
+Ok
+Hu
+Hu
 mK
-mM
-mM
+Hu
+Hu
 xl
 Ld
 io
@@ -10041,9 +9966,9 @@ kp
 FA
 FB
 Hc
-Lu
+XZ
 DB
-KR
+yg
 mS
 FB
 Kq
@@ -10212,15 +10137,15 @@ bQ
 zh
 cB
 eM
-Hu
-Hu
+Am
+Am
 GG
 Ct
 DB
 CN
 Cm
-Hu
-Hu
+Am
+Am
 jD
 cB
 la
