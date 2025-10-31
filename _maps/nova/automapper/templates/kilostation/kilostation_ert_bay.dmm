@@ -29,7 +29,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/fore/lesser)
 "bj" = (
-/obj/machinery/bluespace_vendor/directional/east,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/public/glass{
 	name = "Salon Hallway"
@@ -1447,7 +1446,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "KA" = (
-/obj/machinery/photocopier,
+/obj/machinery/photocopier/prebuilt,
 /obj/machinery/button/door/directional/north{
 	id = "nt_rep_priv_2";
 	name = "Privacy Shutters Control"

@@ -853,7 +853,7 @@
 	},
 /area/shuttle/shipstation)
 "dt" = (
-/obj/machinery/photocopier,
+/obj/machinery/photocopier/prebuilt,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/pod/dark,

@@ -6726,11 +6726,6 @@
 /obj/machinery/meter/layer2,
 /turf/open/space/basic,
 /area/station/engineering/atmos/space_catwalk)
-"Aj" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable,
-/turf/open/space,
-/area/station/solars/starboard/fore)
 "Ak" = (
 /turf/open/floor/plating,
 /area/station/cargo/storage)
@@ -7311,11 +7306,6 @@
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/plating/reinforced,
 /area/station/maintenance/disposal/incinerator)
-"Cw" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/marker_beacon/burgundy,
-/turf/open/space,
-/area/space/nearstation)
 "Cx" = (
 /obj/machinery/atmospherics/miner/nitrogen,
 /obj/machinery/light/floor,
@@ -8349,7 +8339,6 @@
 "GI" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/incinerator_input{
 	dir = 8;
-	chamber_id = "incinerator2";
 	piping_layer = 5
 	},
 /turf/open/floor/engine/vacuum,
@@ -10595,11 +10584,6 @@
 	},
 /turf/open/floor/iron/checker,
 /area/station/commons/dorms/barracks)
-"Pq" = (
-/obj/structure/cable,
-/obj/structure/lattice/catwalk,
-/turf/open/space,
-/area/station/solars/starboard/fore)
 "Pr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -46310,7 +46294,7 @@ nv
 nv
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 nv
@@ -46567,7 +46551,7 @@ Jm
 nv
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 nv
@@ -46824,7 +46808,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -47081,7 +47065,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -47338,7 +47322,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -47595,7 +47579,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -47852,7 +47836,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -48109,7 +48093,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -48366,7 +48350,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -48623,7 +48607,7 @@ Wm
 Lc
 RI
 Lc
-Pq
+Wm
 Lc
 RI
 Lc
@@ -48880,7 +48864,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -50422,7 +50406,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -50679,7 +50663,7 @@ Wm
 Lc
 RI
 Lc
-Pq
+Wm
 Lc
 RI
 Lc
@@ -50936,7 +50920,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -51193,7 +51177,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -51450,7 +51434,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -51707,7 +51691,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -51964,7 +51948,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -52221,7 +52205,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -52478,7 +52462,7 @@ Wm
 Lc
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 Lc
@@ -52735,7 +52719,7 @@ Jm
 nv
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 nv
@@ -52992,7 +52976,7 @@ nv
 nv
 nv
 Lc
-Pq
+Wm
 Lc
 nv
 nv
@@ -53249,7 +53233,7 @@ nv
 nv
 nv
 nv
-Cw
+Jm
 nv
 nv
 nv
@@ -54038,7 +54022,7 @@ gp
 gp
 RI
 RI
-Aj
+Uq
 RI
 RI
 gp
