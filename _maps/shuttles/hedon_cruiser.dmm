@@ -954,14 +954,6 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/grass,
 /area/shuttle/hedon/hydro)
-"dW" = (
-/obj/structure/sign/flag/nri/directional/south,
-/obj/effect/turf_decal/siding/dark_green,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/smooth_half,
-/area/shuttle/hedon/midship)
 "dX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3440,7 +3432,7 @@
 "pF" = (
 /obj/structure/cable,
 /obj/structure/sign/warning/radiation,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
 /area/shuttle/hedon/reactor)
 "pH" = (
 /turf/open/floor/iron/smooth_corner{
@@ -3924,7 +3916,7 @@
 	},
 /area/shuttle/hedon/hydro)
 "rh" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
 /area/shuttle/hedon/engine)
 "rm" = (
 /obj/structure/chair/sofa/corp/right{
@@ -4953,9 +4945,6 @@
 /obj/structure/cable,
 /turf/open/floor/carpet/neon/simple/lime,
 /area/shuttle/hedon/starboard_bunks)
-"wp" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/shuttle/hedon/medbay)
 "ws" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7453,9 +7442,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_corner,
 /area/shuttle/hedon/fore)
-"HF" = (
-/turf/closed/wall/r_wall/syndicate,
-/area/shuttle/hedon/reactor)
 "HG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
@@ -9122,7 +9108,7 @@
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/hedon/reactor)
 "PI" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
 /area/shuttle/hedon/reactor)
 "PM" = (
 /turf/closed/wall/prefab_plastic{
@@ -9679,14 +9665,11 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line,
 /obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner,
 /obj/effect/turf_decal/siding/dark_green,
-/obj/machinery/computer/centcom_announcement/nri_raider{
-	dir = 1;
-	desc = "A console used for making priority Nanotrasen Diplomacy reports.";
-	command_name = "NTDS Hedon Starship Telegram";
-	name = "diplomatic mission announcement console"
-	},
 /obj/effect/turf_decal/bot_white{
 	color = "#00FF00"
+	},
+/obj/machinery/computer/centcom_announcement{
+	dir = 1
 	},
 /turf/open/floor/iron/dark/smooth_half,
 /area/shuttle/hedon/bridge)
@@ -10304,7 +10287,7 @@
 	dir = 1
 	},
 /obj/structure/sign/warning/radiation,
-/turf/closed/wall/r_wall/syndicate,
+/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
 /area/shuttle/hedon/reactor)
 "Vi" = (
 /obj/effect/turf_decal/siding/dark_green{
@@ -11491,11 +11474,11 @@ bA
 PI
 Od
 ez
-HF
+PI
 nK
 nK
 nK
-HF
+PI
 Od
 Od
 PI
@@ -11538,7 +11521,7 @@ Vh
 jK
 jK
 PI
-wp
+aN
 aN
 XL
 Gh
@@ -11577,7 +11560,7 @@ qr
 ax
 Vg
 PI
-wp
+aN
 aN
 XL
 Gh
@@ -11616,7 +11599,7 @@ WN
 ti
 Du
 PI
-wp
+aN
 aN
 XL
 QN
@@ -11655,7 +11638,7 @@ ym
 ti
 ZJ
 PI
-wp
+kP
 kP
 kP
 Ue
@@ -11694,7 +11677,7 @@ Uu
 nS
 Eu
 PI
-wp
+kP
 Ar
 VH
 QU
@@ -11733,7 +11716,7 @@ MH
 sW
 Dd
 PI
-wp
+kP
 ar
 EQ
 EQ
@@ -11772,7 +11755,7 @@ CV
 Eu
 IR
 PI
-wp
+kP
 cj
 EQ
 EQ
@@ -11811,7 +11794,7 @@ eQ
 dC
 JM
 PI
-wp
+kP
 wk
 Ru
 kN
@@ -11850,7 +11833,7 @@ rh
 rh
 rh
 rh
-wp
+kP
 gG
 EQ
 EQ
@@ -11889,7 +11872,7 @@ eA
 mi
 he
 rh
-wp
+kP
 Na
 Mh
 dD
@@ -11928,7 +11911,7 @@ Hl
 Hl
 FU
 rh
-wp
+kP
 Bm
 EQ
 EQ
@@ -11967,7 +11950,7 @@ Hl
 Hl
 Hj
 rh
-wp
+kP
 je
 hK
 hK
@@ -12006,7 +11989,7 @@ KZ
 pp
 kX
 rh
-wp
+kP
 jQ
 nH
 ge
@@ -12820,7 +12803,7 @@ UX
 Ap
 Hk
 dc
-dW
+qK
 np
 jE
 Bl
