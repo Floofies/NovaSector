@@ -15531,10 +15531,9 @@
 /turf/open/floor/iron/showroomfloor,
 /area/awaymission/university/dormitorybunks/bunk4)
 "Xa" = (
-/obj/machinery/door/window/left/directional/south{
+/obj/machinery/door/window/left/directional/north{
 	name = "Library Desk";
-	req_access = list("library");
-	dir = 1
+	req_access = list("library")
 	},
 /obj/structure/sign/poster/timeclock_psa/directional/east,
 /turf/open/floor/wood/large,

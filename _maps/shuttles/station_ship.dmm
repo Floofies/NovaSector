@@ -411,7 +411,7 @@
 /turf/open/floor/wood,
 /area/shuttle/shipstation)
 "bQ" = (
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "Secondary AI Core Access";
@@ -420,8 +420,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 10
 	},
-/obj/machinery/door/window/survival_pod{
-	dir = 8;
+/obj/machinery/door/window/survival_pod/left/directional/west{
 	name = "Datacenter Access";
 	req_one_access = list("tcomms", "ai_upload")
 	},
@@ -815,7 +814,7 @@
 	dir = 10;
 	id = "shipgarbage"
 	},
-/obj/machinery/door/window/survival_pod{
+/obj/machinery/door/window/survival_pod/left/directional/south{
 	name = "Danger: Conveyor Access"
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark,
@@ -860,8 +859,7 @@
 /area/shuttle/shipstation)
 "dv" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/door/window/survival_pod{
-	dir = 1;
+/obj/machinery/door/window/survival_pod/left/directional/north{
 	name = "Science Desk";
 	req_access = list("science")
 	},
@@ -1358,7 +1356,7 @@
 /area/shuttle/shipstation)
 "go" = (
 /obj/machinery/ntnet_relay,
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "Telecommunications Access";
@@ -2072,8 +2070,7 @@
 /turf/open/floor/iron/checker,
 /area/shuttle/shipstation)
 "kK" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 8;
+/obj/machinery/door/window/survival_pod/left/directional/west{
 	name = "Delivery Pad"
 	},
 /obj/effect/turf_decal/stripes/white/line{
@@ -2085,7 +2082,7 @@
 /turf/open/floor/engine,
 /area/shuttle/shipstation)
 "kL" = (
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "Secondary AI Core Access";
@@ -2160,7 +2157,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "le" = (
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "Telecommunications Access";
@@ -2466,7 +2463,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/shipstation)
 "ne" = (
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "Telecommunications Access";
@@ -3108,7 +3105,7 @@
 	spawn_loot_count = 3;
 	spawn_scatter_radius = 1
 	},
-/obj/machinery/door/window/survival_pod{
+/obj/machinery/door/window/survival_pod/left/directional/south{
 	name = "Danger: Conveyor Access"
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark,
@@ -3169,10 +3166,9 @@
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 1
 	},
-/obj/machinery/door/window/brigdoor/security/cell{
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/north{
 	id = "bluemooncell1";
-	name = "Brig Cell 1";
-	dir = 1
+	name = "Brig Cell 1"
 	},
 /obj/effect/turf_decal/trimline/red/filled/mid_joiner{
 	dir = 4
@@ -3587,8 +3583,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/shipstation)
 "uz" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 8;
+/obj/machinery/door/window/survival_pod/left/directional/west{
 	name = "Cargo Hold Deliveries";
 	req_access = list("cargo")
 	},
@@ -3698,8 +3693,7 @@
 /turf/open/floor/iron/white/textured_large,
 /area/shuttle/shipstation)
 "vf" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 8;
+/obj/machinery/door/window/survival_pod/left/directional/west{
 	name = "Cargo Hold Desk";
 	req_access = list("cargo")
 	},
@@ -3736,8 +3730,7 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 1
 	},
-/obj/machinery/door/window/survival_pod{
-	dir = 8;
+/obj/machinery/door/window/survival_pod/left/directional/west{
 	req_access = list("armory");
 	name = "Armory"
 	},
@@ -4378,7 +4371,7 @@
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/shipstation)
 "zc" = (
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "AI Upload Access";
@@ -4645,7 +4638,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/shipstation)
 "AZ" = (
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "Primary AI Core Access";
@@ -4731,10 +4724,9 @@
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 4
 	},
-/obj/machinery/door/window/brigdoor/security/cell{
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/north{
 	id = "bluemooncell2";
-	name = "Brig Cell 2";
-	dir = 1
+	name = "Brig Cell 2"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -7648,8 +7640,7 @@
 	},
 /area/shuttle/shipstation)
 "TQ" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 4;
+/obj/machinery/door/window/survival_pod/left/directional/east{
 	name = "Delivery Pad"
 	},
 /obj/effect/turf_decal/stripes/white/line{
@@ -7686,8 +7677,7 @@
 /area/shuttle/shipstation)
 "Ub" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/door/window/survival_pod{
-	dir = 8;
+/obj/machinery/door/window/survival_pod/left/directional/west{
 	name = "Service Bay Desk";
 	req_access = list("engineering")
 	},
@@ -8354,7 +8344,7 @@
 /area/shuttle/shipstation)
 "XH" = (
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/machinery/door/window{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "leftsecure";
 	icon_state = "leftsecure";
 	name = "AI Upload Access";

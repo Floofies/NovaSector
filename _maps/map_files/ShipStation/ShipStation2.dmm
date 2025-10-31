@@ -2193,8 +2193,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "ja" = (
-/obj/machinery/door/window/brigdoor/security/holding/right/directional/west{
-	dir = 1;
+/obj/machinery/door/window/brigdoor/security/holding/right/directional/north{
 	name = "Holding Cell"
 	},
 /obj/effect/turf_decal/tile/dark_blue{
@@ -5436,8 +5435,7 @@
 "uG" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "Engineering Desk";
 	req_access = list("engineering")
 	},
@@ -5966,8 +5964,7 @@
 /area/station/engineering/atmos)
 "xh" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "Engineering Desk";
 	req_access = list("engineering")
 	},
