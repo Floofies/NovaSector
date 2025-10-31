@@ -29,11 +29,9 @@
 
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/methane_input
 	name = "methane tank input injector"
-	chamber_id = ATMOS_GAS_MONITOR_METHANE
 
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/methane_output
 	name = "methane tank output inlet"
-	chamber_id = ATMOS_GAS_MONITOR_METHANE
 
 /obj/machinery/atmospherics/components/trinary/filter/atmos/methane
 	name = "methane filter"

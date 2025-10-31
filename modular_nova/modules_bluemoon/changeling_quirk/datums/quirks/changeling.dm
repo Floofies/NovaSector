@@ -5,14 +5,14 @@
 	value = 0
 	medical_record_text = ""
 	quirk_flags = QUIRK_HIDE_FROM_SCAN
-	veteran_only = TRUE
+	nova_stars_only = TRUE
 
 /datum/quirk/changeling/add_unique(client/client_source)
 	var/datum/mind/target_mind = quirk_holder.mind
 	var/datum/antagonist/changeling/quirk/changeling_datum = target_mind.has_antag_datum(/datum/antagonist/changeling/quirk)
 	if(isnull(changeling_datum))
 		changeling_datum = target_mind.add_antag_datum(/datum/antagonist/changeling/quirk)
-		target_mind.special_role = ROLE_CHANGELING
+		LAZYADD(target_mind.special_roles, ROLE_CHANGELING)
 
 /datum/quirk/changeling/remove(client/client_source)
 	var/datum/mind/target_mind = quirk_holder.mind
@@ -21,7 +21,8 @@
 	var/datum/antagonist/changeling/quirk/changeling_datum = target_mind.has_antag_datum(/datum/antagonist/changeling/quirk)
 	if(!isnull(changeling_datum))
 		target_mind.remove_antag_datum(/datum/antagonist/changeling/quirk)
-		target_mind.special_role = null
+
+		LAZYREMOVE(target_mind.special_roles, ROLE_CHANGELING)
 
 /datum/quirk/changeling/is_species_appropriate(datum/species/mob_species)
 	if (ispath(mob_species, /datum/species/synthetic))

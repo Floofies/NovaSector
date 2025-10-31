@@ -150,6 +150,7 @@
 /obj/item/summon_beacon/gas_miner
 	name = "gas miner beacon"
 	desc = "Once a gas miner type is selected, delivers a gas miner to the target location."
+	icon = 'modular_nova/modules/modular_items/icons/remote.dmi'
 
 	allowed_areas = list(
 		/area, // BLUEMOON EDIT - Gas Miners Anywhere - Allows gas miner beacons to summon the gas miner anywhere!

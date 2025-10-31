@@ -20,11 +20,13 @@
 		/datum/reagent/medicine/cordiolis_hepatico,
 		/datum/reagent/medicine/synaphydramine,
 		/datum/reagent/medicine/diphenhydramine,
-		/datum/reagent/medicine/sansufentanyl
+		/datum/reagent/medicine/sansufentanyl,
+		/datum/reagent/medicine/salglu_solution,
+		/datum/reagent/medicine/albuterol,
 		)
 	var/allergy_string
 
-/datum/quirk/item_quirk/allergic/add_unique(client/client_source)
+/datum/quirk/item_quirk/allergic/add(client/client_source)
 	var/list/chem_list = subtypesof(/datum/reagent/medicine) - blacklist
 	var/list/allergy_chem_names = list()
 	for(var/i in 0 to 5)
@@ -36,10 +38,11 @@
 	name = "Extreme [allergy_string] Allergies"
 	medical_record_text = "Patient's immune system responds violently to [allergy_string]"
 
+/datum/quirk/item_quirk/allergic/add_unique(client/client_source)
 	var/mob/living/carbon/human/human_holder = quirk_holder
 	var/obj/item/clothing/accessory/dogtag/allergy/dogtag = new(get_turf(human_holder), allergy_string)
 
-	give_item_to_holder(dogtag, list(LOCATION_BACKPACK, LOCATION_HANDS), flavour_text = "Make sure medical staff can see this...")
+	give_item_to_holder(dogtag, list(LOCATION_BACKPACK, LOCATION_HANDS), flavour_text = "Make sure medical staff can see this...", notify_player = TRUE)
 
 /datum/quirk/item_quirk/allergic/post_add()
 	quirk_holder.add_mob_memory(/datum/memory/key/quirk_allergy, allergy_string = allergy_string)

@@ -214,6 +214,12 @@
 	name = "Queen Insect"
 	icon_state = "queeninsect"
 
+/datum/sprite_accessory/tails/mammal/insectoid
+	name = "Insectoid"
+	icon_state = "insectoid"
+	color_src = USE_ONE_COLOR
+	default_color = DEFAULT_PRIMARY
+
 /datum/sprite_accessory/tails/mammal/wagging/kangaroo
 	name = "Kangaroo"
 	icon_state = "kangaroo"
@@ -331,6 +337,11 @@
 /datum/sprite_accessory/tails/mammal/wagging/big/shade/striped
 	name = "Shade (Striped)"
 	icon_state = "shadekinlongstriped_large"
+
+/datum/sprite_accessory/tails/mammal/wagging/big/shade/fluffy
+	name = "Shade (Fluffy)"
+	icon_state = "bigandfluffy"
+	color_src = USE_MATRIXED_COLORS
 
 /datum/sprite_accessory/tails/mammal/wagging/big/ringtail
 	name = "Ring Tail (Long)"
@@ -510,3 +521,14 @@
 /datum/sprite_accessory/tails/fish/chonky
 	name = "Chonky (Fish Infusion)"
 
+/datum/sprite_accessory/tails/mammal/wagging/chemlight
+	name = "Striped Tail"
+	icon_state = "chemlight"
+
+/datum/sprite_accessory/tails/mammal/wagging/chemlight_alt
+	name = "Striped Tail (Alt)"
+	icon_state = "chemlight_alt"
+
+/datum/sprite_accessory/tails/mammal/insectunder
+	name = "Insect (Underbelly)"
+	icon_state = "insectunder"

@@ -72,7 +72,7 @@
 
 		// Bluemoon edit - Climax in containers
 		for(var/obj/item/reagent_containers/iterating_container in atoms_in_view)
-			if((iterating_container.reagent_flags & OPENCONTAINER) || (iterating_container.reagent_flags & DUNKABLE))
+			if((iterating_container.reagents.flags & OPENCONTAINER) || (iterating_container.reagents.flags & DUNKABLE))
 				fillable_inrange_containers += iterating_container
 
 		var/list/buttons = list(CLIMAX_ON_FLOOR)

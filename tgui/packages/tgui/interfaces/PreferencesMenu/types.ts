@@ -1,11 +1,12 @@
-import { BooleanLike } from 'tgui-core/react';
+import type { BooleanLike } from 'tgui-core/react';
 
-import { sendAct } from '../../backend';
-import {
+import type { sendAct } from '../../backend';
+import type {
   LoadoutCategory,
   LoadoutList,
+  typePath,
 } from './CharacterPreferences/loadout/base';
-import { Gender } from './preferences/gender';
+import type { Gender } from './preferences/gender';
 
 export enum Food {
   Alcohol = 'ALCOHOL',
@@ -42,6 +43,7 @@ export type Name = {
   can_randomize: BooleanLike;
   explanation: string;
   group: string;
+  prefixes?: string[]; // NOVA EDIT ADDITION - Drone Prefixes
 };
 
 export type Species = {
@@ -55,7 +57,7 @@ export type Species = {
 
   enabled_features: string[];
 
-  veteran_only: boolean; // NOVA EDIT - Veteran quirks
+  nova_stars_only: boolean; // NOVA EDIT - Nova star quirks
 
   perks: {
     positive: Perk[];
@@ -84,7 +86,7 @@ export type Job = {
   description: string;
   department: string;
   // NOVA EDIT
-  veteran?: boolean;
+  nova_star?: boolean;
   alt_titles?: string[];
   // NOVA EDIT END
 };
@@ -96,7 +98,7 @@ export type Quirk = {
   value: number;
   customizable: boolean;
   customization_options?: string[];
-  veteran_only: boolean; // NOVA EDIT ADDITION - Veteran quirks
+  nova_stars_only: boolean; // NOVA EDIT ADDITION - Nova star quirks
   erp_quirk: boolean; // NOVA EDIT ADDITION - Purple ERP quirks
 };
 
@@ -146,6 +148,16 @@ export type QuirkInfo = {
   points_enabled: boolean;
 };
 
+export type Personality = {
+  name: string;
+  description: string;
+  pos_gameplay_description: string | null;
+  neg_gameplay_description: string | null;
+  neut_gameplay_description: string | null;
+  path: typePath;
+  groups: string[] | null;
+};
+
 export enum RandomSetting {
   AntagOnly = 1,
   Disabled = 2,
@@ -184,7 +196,7 @@ export type PreferencesMenuData = {
   preview_options: string[]; // NOVA EDIT ADDITION
   preview_selection: string; // NOVA EDIT ADDITION
 
-  is_veteran: BooleanLike; // NOVA EDIT - Veteran status
+  is_nova_star: BooleanLike; // NOVA EDIT - Star status
   erp_pref: BooleanLike; // NOVA EDIT ADDITION
 
   character_preferences: {
@@ -247,7 +259,11 @@ export type PreferencesMenuData = {
   // NOVA EDIT END
   keybindings: Record<string, string[]>;
   overflow_role: string;
+  default_quirk_balance: number;
   selected_quirks: string[];
+  selected_personalities: typePath[] | null;
+  max_personalities: number;
+  mood_enabled: BooleanLike;
   species_disallowed_quirks: string[];
 
   antag_bans?: string[];
@@ -269,6 +285,10 @@ export type ServerData = {
     types: Record<string, Name>;
   };
   quirks: QuirkInfo;
+  personality: {
+    personalities: Personality[];
+    personality_incompatibilities: Record<string, string[]>;
+  };
   random: {
     randomizable: string[];
   };

@@ -17,11 +17,6 @@ endmap
 
 # Production-level maps.
 
-map birdshot
-	disabled
-	maxplayers 0
-endmap
-
 map deltastation
 	minplayers 0
 	votable
