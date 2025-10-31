@@ -5,7 +5,7 @@
 /obj/item/organ/cyberimp/arm/hacker/l
 	zone = BODY_ZONE_L_ARM
 
-/datum/augment_item/implant/r_arm/hacker/l
+/datum/augment_item/implant/l_arm/hacker
 	name = "Left Hacking Implant"
 	path = /obj/item/organ/cyberimp/arm/hacker/l
 
@@ -16,7 +16,7 @@
 /obj/item/organ/cyberimp/arm/botany/l
 	zone = BODY_ZONE_L_ARM
 
-/datum/augment_item/implant/r_arm/botany
+/datum/augment_item/implant/l_arm/botany
 	name = "Left Botany Implant"
 	path = /obj/item/organ/cyberimp/arm/botany/l
 
@@ -73,7 +73,7 @@
 
 /datum/augment_item/implant/l_arm/armblade
 	name = "Left Armblade Implant"
-	path = /obj/item/organ/cyberimp/arm/armblade
+	path = /obj/item/organ/cyberimp/arm/armblade/l
 
 /datum/augment_item/implant/r_arm/esword
 	name = "Right Arm-Mounted Energy Sword Implant"
@@ -148,7 +148,7 @@
 /obj/item/organ/cyberimp/arm/razorwire/l
 	zone = BODY_ZONE_L_ARM
 
-/datum/augment_item/implant/l_arm/razorwire/l
+/datum/augment_item/implant/l_arm/razorwire
 	name = "Left Razorwire Spool Implant"
 	path = /obj/item/organ/cyberimp/arm/razorwire/l
 
@@ -159,6 +159,6 @@
 /obj/item/organ/cyberimp/arm/shell_launcher/l
 	zone = BODY_ZONE_L_ARM
 
-/datum/augment_item/implant/l_arm/shell_launcher/l
+/datum/augment_item/implant/l_arm/shell_launcher
 	name = "Left Shell Launcher Implant"
 	path = /obj/item/organ/cyberimp/arm/shell_launcher/l
