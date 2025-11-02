@@ -23,10 +23,6 @@
 	port_direction = EAST
 	preferred_direction = EAST
 
-/obj/docking_port/mobile/hedon/Initialize(mapload)
-	shuttle_areas = subtypesof(/area/shuttle/hedon)
-	return ..()
-
 /area/shuttle/hedon
 	name = "NTDS 'Hedon'"
 	requires_power = TRUE
