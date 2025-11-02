@@ -1747,15 +1747,13 @@
 /turf/open/floor/iron/shuttle/exploration/blanktile,
 /area/shuttle/crimson)
 "Hg" = (
-/obj/machinery/portable_atmospherics/pump,
-/obj/effect/turf_decal/shuttle/exploration/hazardstripe{
-	dir = 8
-	},
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/machinery/light/small/red/directional/east,
-/turf/open/floor/plating/reinforced,
+/obj/machinery/portable_atmospherics/pump,
+/turf/open/floor/iron/shuttle/cargo{
+	icon_state = "floor_maintb"
+	},
 /area/shuttle/crimson)
 "Hk" = (
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe{
@@ -1867,6 +1865,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
+/obj/machinery/portable_atmospherics/scrubber,
 /turf/open/floor/iron/shuttle/cargo{
 	icon_state = "floor_maintb"
 	},
@@ -2106,12 +2105,6 @@
 	dir = 2;
 	pixel_x = -32;
 	pixel_y = -8
-	},
-/obj/machinery/button/door/directional/east{
-	name = "Cabin Door Lock";
-	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	id = "ShipCabin4"
 	},
 /turf/open/floor/iron/shuttle/exploration/corner,
 /area/shuttle/crimson)
@@ -2722,7 +2715,6 @@
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "YA" = (
-/obj/machinery/portable_atmospherics/scrubber,
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe{
 	dir = 8
 	},
@@ -3301,7 +3293,7 @@ Lt
 Cf
 Cf
 sd
-IW
+Hg
 os
 Ad
 ST
@@ -3669,7 +3661,7 @@ WC
 Ax
 hZ
 Uf
-Hg
+YA
 IA
 YA
 DL
