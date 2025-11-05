@@ -31,6 +31,12 @@
 	mood_message = "I love partying on the Hedon!"
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
+/area/shuttle/hedon/external
+	static_lighting = TRUE
+	base_lighting_alpha = 0
+	base_lighting_color = null
+	sound_environment = SOUND_AREA_SPACE
+
 /area/shuttle/hedon/bar
 	name = "NTDS 'Hedon' Bar"
 	icon_state = "bar"
