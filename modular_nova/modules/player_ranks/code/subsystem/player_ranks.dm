@@ -96,6 +96,9 @@ SUBSYSTEM_DEF(player_ranks)
 	if(!istype(user))
 		CRASH("Invalid user type provided to is_nova_star(), expected 'client' and obtained '[user ? user.type : "null"]'.")
 
+	// Bluemoon edit - Bypass veteran check
+	return TRUE
+	/*
 	if(GLOB.nova_star_list[user.ckey])
 		return TRUE
 
@@ -103,6 +106,7 @@ SUBSYSTEM_DEF(player_ranks)
 		return TRUE
 
 	return FALSE
+	*/
 
 
 /// Handles loading donators either via SQL or using the legacy system,

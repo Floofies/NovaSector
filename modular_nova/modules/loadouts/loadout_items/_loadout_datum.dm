@@ -118,16 +118,18 @@
 			if(client)
 				to_chat(target, span_warning("You were unable to get a loadout item ([initial(item_path.name)]) due to species restrictions!"))
 			return FALSE
-
+	/* Bluemoon edit - Bypass donator check
 	if(donator_only && !SSplayer_ranks.is_donator(client))
 		if(client)
 			to_chat(target, span_warning("You were unable to get a loadout item ([initial(item_path.name)]) due to not being a donator!"))
 		return FALSE
 
+	// Bluemoon edit - Bypass veteran check
 	if(nova_stars_only && !SSplayer_ranks.is_nova_star(client))
 		if(client)
 			to_chat(target, span_warning("You were unable to get a loadout item ([initial(item_path.name)]) due to not being a Nova star!"))
 		return FALSE
+	*/
 
 	if(LAZYLEN(ckeywhitelist) && !(client?.ckey in ckeywhitelist))
 		if(client)

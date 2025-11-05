@@ -169,7 +169,7 @@
 		return JOB_UNAVAILABLE_LANGUAGE
 	if(job.has_banned_quirk(client.prefs))
 		return JOB_UNAVAILABLE_QUIRK
-	/* Bluemoon edit - Remove veteran requirements
+	/* Bluemoon edit - Bypass veteran check
 	if(job.nova_stars_only && !SSplayer_ranks.is_nova_star(client))
 		return JOB_NOT_NOVA_STAR
 	*/

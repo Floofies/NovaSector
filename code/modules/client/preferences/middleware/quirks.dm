@@ -104,7 +104,7 @@
 	var/quirk_name = params["quirk"]
 
 	//NOVA EDIT ADDITION
-	/* Bluemoon edit - Remove veteran requirement
+	/* Bluemoon edit - Bypass veteran check
 	var/list/quirks = SSquirks.get_quirks()
 	var/datum/quirk/quirk = quirks[quirk_name]
 	if(initial(quirk.nova_stars_only) && !SSplayer_ranks.is_nova_star(preferences?.parent))
@@ -147,7 +147,7 @@
 
 	for (var/quirk in preferences.all_quirks)
 		//NOVA EDIT ADDITION
-		/* Bluemoon edit - Remove veteran requirements
+		/* Bluemoon edit - Bypass veteran check
 		var/list/quirks = SSquirks.get_quirks()
 		var/datum/quirk/quirk_datum = quirks[quirk]
 		if(initial(quirk_datum.nova_stars_only) && !SSplayer_ranks.is_nova_star(preferences?.parent))
