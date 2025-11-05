@@ -1684,11 +1684,7 @@
 "gF" = (
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/airalarm/directional/south,
-/obj/machinery/vending/engivend,
-/obj/effect/turf_decal/bot_white{
-	color = "#00FF00"
-	},
-/turf/open/floor/iron/shuttle/cargo,
+/turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/hedon/engine_storage)
 "gG" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted{
@@ -2827,6 +2823,8 @@
 /obj/machinery/atmospherics/components/binary/pump/on/o2supply/visible/layer4{
 	name = "Oxygen Supply Pump"
 	},
+/obj/machinery/duct,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/hedon/engine_storage)
 "lN" = (
@@ -3463,6 +3461,7 @@
 	id = "hedon_engine";
 	name = "engine compartment blast door"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 4
 	},
@@ -3602,6 +3601,10 @@
 /obj/effect/mapping_helpers/apc/cell_10k,
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger_multi,
+/obj/machinery/light_switch/directional/east{
+	pixel_x = 36;
+	pixel_y = 0
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
 	},
@@ -3705,15 +3708,11 @@
 /turf/open/floor/grass,
 /area/shuttle/hedon/medbay)
 "pW" = (
-/obj/machinery/atmospherics/components/tank/oxygen{
-	name = "Oxygen Holding Tank";
-	pipe_color = "#00FF00";
-	piping_layer = 4;
-	dir = 8
+/obj/effect/turf_decal/bot_white{
+	color = "#00FF00"
 	},
-/turf/open/floor/iron/shuttle/cargo{
-	icon_state = "floor_box"
-	},
+/obj/machinery/space_heater,
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/hedon/engine_storage)
 "pX" = (
 /obj/structure/chair/sofa/bench/left{
@@ -5281,7 +5280,9 @@
 	dir = 1;
 	color = "#52B4E9"
 	},
-/obj/machinery/stasis,
+/obj/machinery/stasis{
+	dir = 8
+	},
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/white/small,
 /area/shuttle/hedon/medbay)
@@ -5678,6 +5679,12 @@
 /obj/machinery/vending/wardrobe/bar_wardrobe,
 /turf/open/floor/iron/white/diagonal,
 /area/shuttle/hedon/kitchen)
+"yd" = (
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_corner{
+	dir = 1
+	},
+/area/shuttle/hedon/engine_storage)
 "yf" = (
 /obj/effect/turf_decal/siding/white{
 	color = "#8D8C9D"
@@ -6285,11 +6292,11 @@
 /turf/open/floor/iron/terracotta/small,
 /area/shuttle/hedon/pool)
 "AA" = (
-/obj/machinery/vending/wardrobe/engi_wardrobe,
+/obj/machinery/vending/engivend,
 /obj/effect/turf_decal/bot_white{
 	color = "#00FF00"
 	},
-/turf/open/floor/iron/shuttle/cargo,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/hedon/engine_storage)
 "AC" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
@@ -6361,6 +6368,10 @@
 /area/shuttle/hedon/fore)
 "AT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/vending/wardrobe/atmos_wardrobe,
+/obj/effect/turf_decal/bot_white{
+	color = "#00FF00"
+	},
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/hedon/engine_storage)
 "AU" = (
@@ -6926,6 +6937,7 @@
 "De" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/hedon/engine)
 "Df" = (
@@ -7118,6 +7130,7 @@
 "DO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/hedon/engine)
 "DQ" = (
@@ -7323,14 +7336,12 @@
 /area/shuttle/hedon/bunks/seven)
 "EC" = (
 /obj/machinery/light/directional/east,
-/obj/structure/reagent_dispensers/plumbed{
-	name = "stationary very-high-capacity water tank";
-	desc = "A stationary, plumbed, very-high-capacity water tank.";
-	dir = 8;
-	prevent_rcd_deconstruction = 1;
-	tank_volume = 5000
+/obj/machinery/atmospherics/components/tank/oxygen{
+	name = "Oxygen Holding Tank";
+	pipe_color = "#00FF00";
+	piping_layer = 4;
+	dir = 8
 	},
-/obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/hedon/engine_storage)
 "EG" = (
@@ -7490,6 +7501,10 @@
 /area/shuttle/hedon/fore)
 "Fq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
+/obj/machinery/vending/wardrobe/engi_wardrobe,
+/obj/effect/turf_decal/bot_white{
+	color = "#00FF00"
+	},
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/hedon/engine_storage)
 "Fr" = (
@@ -7958,7 +7973,6 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 1
 	},
-/turf/open/floor/iron/white/small,
 /turf/open/floor/iron/terracotta/small,
 /area/shuttle/hedon/pool)
 "HE" = (
@@ -8649,7 +8663,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	pipe_color = "#00FF00"
 	},
-/turf/open/floor/iron/smooth_large,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/shuttle/hedon/engine_storage)
 "KE" = (
 /turf/closed/wall/mineral/titanium/spaceship/overspace{
@@ -8751,7 +8767,9 @@
 /area/shuttle/hedon/pool)
 "Lh" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/iron/smooth_large,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/shuttle/hedon/engine_storage)
 "Li" = (
 /obj/machinery/light/directional/east,
@@ -10080,6 +10098,12 @@
 /obj/machinery/duct,
 /turf/open/floor/plastic,
 /area/shuttle/hedon/diner)
+"Rl" = (
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_edge{
+	dir = 4
+	},
+/area/shuttle/hedon/engine_storage)
 "Ro" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
@@ -10203,11 +10227,7 @@
 	name = "Reactor Blast Door Control";
 	id = "hedon_reactor"
 	},
-/obj/machinery/vending/wardrobe/atmos_wardrobe,
-/obj/effect/turf_decal/bot_white{
-	color = "#00FF00"
-	},
-/turf/open/floor/iron/shuttle/cargo,
+/turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/hedon/engine_storage)
 "Sa" = (
 /obj/effect/turf_decal/siding/dark_green{
@@ -10490,13 +10510,22 @@
 	pixel_x = 8;
 	pixel_y = 3
 	},
-/turf/open/floor/iron/shuttle/cargo,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/hedon/engine_storage)
 "To" = (
-/obj/machinery/space_heater,
 /obj/effect/turf_decal/bot_white{
 	color = "#00FF00"
 	},
+/obj/structure/rack/shelf,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = 1;
+	pixel_y = -4
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 3;
+	pixel_x = 1
+	},
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/hedon/engine_storage)
 "Tq" = (
@@ -11360,7 +11389,8 @@
 "Wy" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/duct,
+/obj/machinery/meter/layer4,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/hedon/engine_storage)
 "WB" = (
@@ -11429,6 +11459,15 @@
 	},
 /turf/open/floor/iron/colony/texture,
 /area/shuttle/hedon/reactor)
+"WO" = (
+/obj/effect/turf_decal/bot_white{
+	color = "#00FF00"
+	},
+/obj/machinery/space_heater,
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/hedon/engine_storage)
 "WQ" = (
 /obj/machinery/duct,
 /obj/effect/turf_decal/siding/dark_green/corner{
@@ -11566,7 +11605,7 @@
 "XC" = (
 /obj/structure/sign/flag/nanotrasen/directional/north,
 /obj/structure/table/reinforced,
-/turf/open/floor/iron/shuttle/cargo,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/hedon/engine_storage)
 "XD" = (
 /obj/structure/moisture_trap{
@@ -11793,6 +11832,13 @@
 	dir = 8
 	},
 /area/shuttle/hedon/pool)
+"YG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
+/obj/machinery/duct,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/shuttle/hedon/engine)
 "YJ" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/effect/mapping_helpers/apc/full_charge,
@@ -11979,18 +12025,14 @@
 /turf/open/floor/catwalk_floor,
 /area/shuttle/hedon/reactor)
 "Zn" = (
-/obj/structure/rack/shelf,
-/obj/item/storage/toolbox/mechanical{
-	pixel_x = 1;
-	pixel_y = -4
+/obj/structure/reagent_dispensers/plumbed{
+	name = "stationary very-high-capacity water tank";
+	desc = "A stationary, plumbed, very-high-capacity water tank.";
+	dir = 8;
+	prevent_rcd_deconstruction = 1;
+	tank_volume = 5000
 	},
-/obj/item/storage/toolbox/electrical{
-	pixel_y = 3;
-	pixel_x = 1
-	},
-/obj/effect/turf_decal/bot_white{
-	color = "#00FF00"
-	},
+/obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/hedon/engine_storage)
 "Zt" = (
@@ -12494,7 +12536,7 @@ KG
 Qg
 Qg
 Qg
-Qg
+nJ
 EP
 TY
 sU
@@ -12532,8 +12574,8 @@ CD
 Qf
 eh
 eh
-eh
-eh
+KG
+Gt
 Ts
 kW
 TK
@@ -12610,8 +12652,8 @@ MP
 XC
 Tk
 Qf
-eh
-eh
+Qf
+AA
 Ts
 gF
 rh
@@ -12652,7 +12694,7 @@ Gt
 KD
 Fq
 EP
-AA
+kW
 rh
 CJ
 cu
@@ -12688,9 +12730,9 @@ Su
 Qf
 eh
 eh
-eh
-eh
-Wy
+pH
+nJ
+EP
 eI
 yE
 PO
@@ -12727,15 +12769,15 @@ nM
 pH
 Dj
 Dj
-Dj
-bA
+Rl
+yd
 Wy
 lL
 oC
 De
 De
 DO
-Da
+YG
 Ly
 Kv
 Hl
@@ -12766,7 +12808,7 @@ MP
 jH
 bM
 To
-To
+WO
 pW
 EC
 Zn
