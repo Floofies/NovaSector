@@ -688,16 +688,16 @@
 			use_energy(50 JOULES)
 			// Bluemoon edit - Custom airlock sounds
 			if(quiet)
-				playsound(src, soundin = doorOpen, vol = 15, vary = TRUE, ignore_walls = FALSE)
+				playsound(src, soundin = doorOpen, vol = 15, vary = FALSE, ignore_walls = FALSE)
 			else
-				playsound(src, soundin = doorOpen, vol = 30, vary = TRUE, ignore_walls = FALSE)
+				playsound(src, soundin = doorOpen, vol = 30, vary = FALSE, ignore_walls = FALSE)
 		if(DOOR_CLOSING_ANIMATION)
 			use_energy(50 JOULES)
 			// Bluemoon edit - Custom airlock sounds
 			if(quiet)
-				playsound(src, soundin = doorClose, vol = 15, vary = TRUE, ignore_walls = FALSE)
+				playsound(src, soundin = doorClose, vol = 15, vary = FALSE, ignore_walls = FALSE)
 			else
-				playsound(src, soundin = doorClose, vol = 30, vary = TRUE, ignore_walls = FALSE)
+				playsound(src, soundin = doorClose, vol = 30, vary = FALSE, ignore_walls = FALSE)
 		if(DOOR_DENY_ANIMATION)
 			if(feedback)
 				playsound(src, soundin = doorDeni, vol = 50, vary = FALSE, extrarange = 3)
