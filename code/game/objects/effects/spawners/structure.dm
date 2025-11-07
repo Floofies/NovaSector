@@ -11,7 +11,12 @@ again.
 /obj/effect/spawner/structure/Initialize(mapload)
 	. = ..()
 	for(var/spawn_type in spawn_list)
-		new spawn_type(loc)
+		// Bluemoon edit - Allow custom colors on structure spawners
+		if(!isnull(color))
+			new spawn_type(loc)
+			return
+		var/obj/structure/spawned_structure = new spawn_type(loc)
+		spawned_structure.color = color
 
 //normal windows
 
