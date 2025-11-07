@@ -26,15 +26,3 @@
 	mid_length = 5.1 SECONDS
 	end_sound = 'modular_nova/modules_bluemoon/generators/sound/generator_stop.ogg'
 	in_order = TRUE
-
-/datum/looping_sound/port_turbine
-	mid_sounds = list(
-		'modular_nova/modules_bluemoon/generators/sound/port_turbine_run1.wav' = 1,
-		'modular_nova/modules_bluemoon/generators/sound/port_turbine_run2.wav' = 1,
-		'modular_nova/modules_bluemoon/generators/sound/port_turbine_run3.wav' = 1,
-		'modular_nova/modules_bluemoon/generators/sound/port_turbine_run4.wav' = 1,
-	)
-	mid_length = 3 SECONDS
-	volume = 40
-	falloff_exponent = 3
-	in_order = TRUE
