@@ -2,16 +2,30 @@
 
 This build script is the recommended way to compile the game, including not only the DM code but also the JavaScript and any other dependencies.
 
-- VSCode:
+The script will skip build steps whose inputs have not changed since the last run.
+
+> [!WARNING]
+> **Building tgstation in DreamMaker directly is deprecated and might produce errors**, such as `'tgui.bundle.js': cannot find file`.
+
+## How To Compile
+
+### Option A: Visual Studio Code
+
+- In Visual Studio Code:
   a) Press `Ctrl+Shift+B` to build.
-  b) Press `F5` to build and run with debugger attached.
-- Windows:
+  b) Optionally, press `F5` to run with debugger attached.
+
+### Option B: Execute `BUILD.bat`
+
+- **Windows:**
   a) Double-click `BUILD.bat` in the repository root to build (will wait for a key press before it closes).
   b) Double-click `tools/build/build.bat` to build (will exit as soon as it finishes building).
-- Linux:
+- **Linux:**
   a) Run `tools/build/build.sh` from the repository root.
 
-The script will skip build steps whose inputs have not changed since the last run.
+### Option C: Execute `bin/build.cmd`
+
+- **Option C**: Find `bin/build.cmd` in this folder, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile. If it closes, it means it has finished its job. You can then [setup the server](.github/guides/RUNNING_A_SERVER.md) normally by opening `tgstation.dmb` in DreamDaemon.
 
 ## Getting list of available targets
 

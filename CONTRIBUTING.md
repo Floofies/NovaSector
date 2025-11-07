@@ -1,11 +1,20 @@
 # How To Contribute
 
-- There are no contribution policies except for a single "pottery barn rule". Relax and have fun!
+- There are no contribution policies except for a single ["pottery barn rule"](#the-pottery-barn-rule). Relax and have fun!
 - Create GitHub [issues](https://github.com/Floofies/NovaSector/issues) when you encounter bugs or have questions.
 - Create GitHub [pull requests](https://github.com/Floofies/NovaSector/pulls) to fix bugs or add new features.
-- Attempt to help a first-time contributor to create and merge a pull request.
 
-## Pottery Barn Rule
+## Guides
+
+- [/tg/station Development Guide](https://hackmd.io/@tgstation/HJ8OdjNBc#tgstation-Development-Guide)
+- [How To Download](.github/guides/DOWNLOADING.md)
+- [How to Compile](tools/build/README.md)
+- [How To Run a Server](.github/guides/RUNNING_A_SERVER.md)
+- [How To Create Modules](./modular_nova/readme.md)
+- [About Maps & Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
+- [Game Design Documentation](https://hackmd.io/@tgstation)
+
+## The Pottery Barn Rule
 
 ["You break it, you buy it."](https://en.wikipedia.org/wiki/Pottery_Barn_rule)
 
