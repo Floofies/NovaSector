@@ -9,19 +9,22 @@ The script will skip build steps whose inputs have not changed since the last ru
 
 ## How To Compile
 
+**Option A** is the reccomended and most convenient choice.
+
 ### Option A: Visual Studio Code
 
-- In Visual Studio Code:
-  a) Press `Ctrl+Shift+B` to build.
-  b) Optionally, press `F5` to run with debugger attached.
+1. Press `Ctrl+Shift+B` to build.
+2. Optionally, press `F5` to run with debugger attached.
 
 ### Option B: Execute `BUILD.bat`
 
-- **Windows:**
-  a) Double-click `BUILD.bat` in the repository root to build (will wait for a key press before it closes).
-  b) Double-click `tools/build/build.bat` to build (will exit as soon as it finishes building).
-- **Linux:**
-  a) Run `tools/build/build.sh` from the repository root.
+#### Windows:
+1. Double-click `BUILD.bat` in the repository root to build (will wait for a key press before it closes).
+2. Double-click `tools/build/build.bat` to build (will exit as soon as it finishes building).
+
+#### Linux:
+
+Run `tools/build/build.sh` from the repository root.
 
 ### Option C: Execute `bin/build.cmd`
 
