@@ -29,21 +29,20 @@
 		return
 
 	// Copy pasted from TG's /obj/machinery/light/update() proc - only way to avoid this would to be to refactor this portion upstream to be in its own proc.
+	/* Bluemoon edit - Reliable light bulbs
 	if( prob( min(60, (switchcount**2)*0.01) ) )
-		// Bluemoon edit - Reliable light bulbs
-		/*
 		if(trigger)
 			burn_out()
-		*/
 	else
-		use_power = ACTIVE_POWER_USE
-		set_light(
-			l_range = brightness_set,
-			l_power = power_set,
-			l_color = color_set
-			)
-		if(play_sound)
-			playsound(src.loc, 'modular_nova/modules/aesthetics/lights/sound/light_on.ogg', 65, 1)
+	*/
+	use_power = ACTIVE_POWER_USE
+	set_light(
+		l_range = brightness_set,
+		l_power = power_set,
+		l_color = color_set
+	)
+	if(play_sound)
+		playsound(src.loc, 'modular_nova/modules/aesthetics/lights/sound/light_on.ogg', 65, 1)
 
 /obj/machinery/light/proc/start_flickering()
 	// Bluemoon edit - Flicker-proof lights
