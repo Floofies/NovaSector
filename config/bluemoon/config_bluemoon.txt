@@ -1,0 +1,5 @@
+## Uncomment to disable dynamic
+#FORCED_EXTENDED
+
+## Uncomment to disable tutorials
+#TUTORIAL_DISABLED
