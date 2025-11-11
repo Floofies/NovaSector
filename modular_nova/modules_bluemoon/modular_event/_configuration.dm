@@ -10,3 +10,6 @@
 //Sets the cooldown in seconds for self-adminheal
 /datum/config_entry/number/self_aheal_cooldown
 	default = 30
+
+//Allows players to use the summon item spell
+/datum/config_entry/flag/self_summon
