@@ -21,7 +21,7 @@
 		if(is_type_in_list(user_area, aheal_area_blacklist))
 			to_chat(user, span_boldwarning("You cannot use this ability inside [user_area]!"))
 			return FALSE
-	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, 'sound/machines/defib/defib_charge.ogg', 50, FALSE, SHORT_RANGE_SOUND_EXTRARANGE), 1.5 SECONDS)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), user, 'sound/machines/defib/defib_charge.ogg', 50, FALSE, SHORT_RANGE_SOUND_EXTRARANGE), 1.5 SECONDS)
 	playsound(user, 'sound/machines/defib/defib_ready.ogg', 50, FALSE, SHORT_RANGE_SOUND_EXTRARANGE)
 	if(!do_after(user, 6 SECONDS))
 		return
