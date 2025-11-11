@@ -1,15 +1,15 @@
 ## Uncomment to disable dynamic
-FORCE_EXTENDED
+#FORCE_EXTENDED
 
 ## Uncomment to disable tutorials
-DISABLE_TUTORIAL
+#DISABLE_TUTORIAL
 
 ## Uncomment to allow all players to admin heal themselves.
-SELF_AHEAL
+#SELF_AHEAL
 
 ## Sets the seconds of cooldown for self-ahealing.
 ## By default it has a 30 second cooldown.
 SELF_AHEAL_COOLDOWN 30
 
 ## Uncomment to allow all players to use the summon item spell.
-SELF_SUMMON
+#SELF_SUMMON
