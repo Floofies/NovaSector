@@ -28,7 +28,7 @@ map icebox
 endmap
 
 map catwalkstation
-	minplayers 25
+	minplayers 0
 	votable
 endmap
 
@@ -45,7 +45,7 @@ map tramstation
 endmap
 
 map nebulastation
-	minplayers 35
+	minplayers 0
 	votable
 endmap
 
@@ -111,6 +111,12 @@ endmap
 
 # Bluemoon edit - Add University Dorms map
 map unidorms
+	minplayers 0
+	votable
+endmap
+
+# Bluemoon edit - Add Box Station map
+map boxstation
 	minplayers 0
 	votable
 endmap
