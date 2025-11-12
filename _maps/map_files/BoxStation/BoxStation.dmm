@@ -1575,7 +1575,7 @@
 	pixel_y = 21
 	},
 /obj/machinery/door/window/brigdoor/left/directional/south{
-	req_access = list("ai/upload");
+	req_access = list("ai/upload/chamber");
 	name = "Primary AI Core Access"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3559,7 +3559,7 @@
 /area/station/command/vault)
 "alv" = (
 /turf/closed/wall/r_wall,
-/area/station/ai/upload/foyer)
+/area/station/ai/upload/chamber/foyer)
 "alx" = (
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
@@ -14334,7 +14334,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload/foyer)
+/area/station/ai/upload/chamber/foyer)
 "aYB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/siding/wood{
@@ -14745,7 +14745,7 @@
 /obj/structure/table,
 /obj/item/ai_module/supplied/freeform,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "aZT" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "AI Upload Access"
@@ -14754,11 +14754,11 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload,
+/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload/chamber,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "aZU" = (
 /obj/effect/landmark/start/medical_doctor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -15436,7 +15436,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bch" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/wood,
@@ -15734,7 +15734,7 @@
 /obj/machinery/airalarm/directional/west,
 /obj/effect/landmark/start/cyborg,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bdg" = (
 /obj/structure/cable,
 /obj/machinery/holopad/secure,
@@ -15743,7 +15743,7 @@
 	color = "#486091"
 	},
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bdi" = (
 /obj/effect/spawner/random/entertainment/arcade{
 	dir = 4
@@ -15965,16 +15965,16 @@
 /area/station/command/meeting_room/council)
 "bec" = (
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bee" = (
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bef" = (
 /obj/effect/turf_decal/bot_white,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bei" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
@@ -16326,7 +16326,7 @@
 /area/station/command/meeting_room/council)
 "bfv" = (
 /turf/closed/wall/r_wall,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bfy" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
@@ -16651,10 +16651,10 @@
 /obj/machinery/door/airlock/command/glass{
 	name = "AI Core"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload,
+/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload/chamber,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "bgP" = (
 /obj/machinery/disposal/bin/tagger,
 /obj/effect/turf_decal/trimline/yellow/end{
@@ -32062,7 +32062,7 @@
 /obj/machinery/airalarm/directional/south,
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload/foyer)
+/area/station/ai/upload/chamber/foyer)
 "col" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron,
@@ -32230,7 +32230,7 @@
 /area/station/engineering/supermatter/room)
 "cpy" = (
 /obj/machinery/turretid{
-	control_area = "/area/station/ai/upload";
+	control_area = "/area/station/ai/upload/chamber";
 	name = "AI Upload turret control";
 	pixel_y = -25
 	},
@@ -32242,7 +32242,7 @@
 	},
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload/foyer)
+/area/station/ai/upload/chamber/foyer)
 "cpA" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -32463,7 +32463,7 @@
 "cqw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "cqx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -32961,13 +32961,13 @@
 	},
 /obj/effect/landmark/start/cyborg,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "cvk" = (
 /turf/closed/wall,
 /area/station/security/courtroom)
 "cvl" = (
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "cvv" = (
 /turf/open/floor/wood/large,
 /area/station/command/meeting_room/council)
@@ -32985,7 +32985,7 @@
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/effect/spawner/random/aimodule/neutral,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "cvJ" = (
 /obj/machinery/light/floor,
 /turf/open/floor/iron/dark/smooth_large,
@@ -33743,7 +33743,7 @@
 /obj/machinery/light/directional/south,
 /obj/structure/sign/departments/aisat/directional/south,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "cBg" = (
 /obj/machinery/smartfridge/food,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -34197,7 +34197,7 @@
 	id = "AI"
 	},
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "cDt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -35087,7 +35087,7 @@
 /obj/structure/table,
 /obj/effect/spawner/random/aimodule/harmless,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "cLd" = (
 /obj/machinery/atmospherics/pipe/smart/simple/orange/visible{
 	dir = 5
@@ -35879,7 +35879,7 @@
 	name = "Private Channel"
 	},
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "daG" = (
 /obj/effect/landmark/generic_maintenance_landmark,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -36002,7 +36002,7 @@
 	pixel_y = 11
 	},
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "ddD" = (
 /obj/machinery/monkey_recycler,
 /obj/effect/turf_decal/stripes/line{
@@ -36186,10 +36186,10 @@
 	name = "AI Core"
 	},
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload,
+/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload/chamber,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "djf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -42627,7 +42627,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "gQw" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -45652,7 +45652,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "iKa" = (
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/camera/directional/west{
@@ -48617,7 +48617,7 @@
 /obj/structure/table,
 /obj/item/ai_module/reset,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "kxR" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -50208,7 +50208,7 @@
 	dir = 8
 	},
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "lxN" = (
 /obj/structure/chair/stool/directional/north,
 /obj/machinery/light/directional/west,
@@ -50661,7 +50661,7 @@
 "lKL" = (
 /obj/machinery/door/window/brigdoor/right/directional/east{
 	name = "Tertiary AI Core Access";
-	req_access = list("ai/upload")
+	req_access = list("ai/upload/chamber")
 	},
 /turf/open/floor/circuit,
 /area/station/ai)
@@ -51065,7 +51065,7 @@
 /obj/structure/cable,
 /obj/effect/landmark/start/cyborg,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "lWK" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/carbon_input{
 	dir = 8
@@ -51976,7 +51976,7 @@
 "mAN" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "mAV" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -52434,7 +52434,7 @@
 "mPs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "mPt" = (
 /obj/structure/sink/kitchen/directional/south,
 /obj/effect/turf_decal/tile/red/opposingcorners,
@@ -54449,7 +54449,7 @@
 	dir = 4
 	},
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "oaV" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
@@ -56765,7 +56765,7 @@
 "ptf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "pts" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -58282,7 +58282,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "qrE" = (
 /obj/structure/chair/sofa/corner/maroon{
 	dir = 8
@@ -61865,11 +61865,11 @@
 /obj/effect/landmark/navigate_destination/aiupload{
 	location = "AI Upload and Chamber"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload,
+/obj/effect/mapping_helpers/airlock/access/all/command/ai/upload/chamber,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload/foyer)
+/area/station/ai/upload/chamber/foyer)
 "sMp" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -61967,7 +61967,7 @@
 "sOS" = (
 /obj/machinery/door/window/brigdoor/left/directional/west{
 	name = "Secondary AI Core Access";
-	req_access = list("ai/upload")
+	req_access = list("ai/upload/chamber")
 	},
 /turf/open/floor/circuit,
 /area/station/ai)
@@ -63479,7 +63479,7 @@
 /obj/machinery/light/directional/north,
 /obj/effect/landmark/start/cyborg,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "tHL" = (
 /obj/structure/reagent_dispensers/plumbed{
 	name = "service reservoir"
@@ -64332,7 +64332,7 @@
 "ulc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "ulf" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchenhydro";
@@ -68050,7 +68050,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "wDV" = (
 /obj/effect/turf_decal/siding/blue/corner,
 /obj/effect/turf_decal/tile/neutral{
@@ -70138,7 +70138,7 @@
 "xXI" = (
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/circuit,
-/area/station/ai/upload)
+/area/station/ai/upload/chamber)
 "xXU" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 8
