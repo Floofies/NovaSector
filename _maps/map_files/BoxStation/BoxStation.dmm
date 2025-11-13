@@ -10750,7 +10750,6 @@
 	wound_bonus = 0;
 	tool_behaviour = null;
 	toolspeed = 0;
-	bare_wound_bonus = 0;
 	force = 0
 	},
 /obj/effect/decal/cleanable/dirt,
