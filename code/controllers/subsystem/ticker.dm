@@ -376,9 +376,11 @@ SUBSYSTEM_DEF(ticker)
 	GLOB.start_state = new /datum/station_state()
 	GLOB.start_state.count()
 
+	/* Bluemoon club - Disable roundstart admin notification
 	var/list/adm = get_admin_counts()
 	var/list/allmins = adm["present"]
 	send2adminchat("Server", "Round [GLOB.round_id ? "#[GLOB.round_id]" : ""] has started[allmins.len ? ".":" with no active admins online!"]")
+	*/
 	setup_done = TRUE
 
 	for(var/i in GLOB.start_landmarks_list)
@@ -763,9 +765,11 @@ SUBSYSTEM_DEF(ticker)
 			if(emergency_reason)
 				news_message = "[decoded_station_name] has been evacuated after transmitting \
 					the following distress beacon:\n\n[decoded_emergency_reason]"
+			/* Bluemoon edit - Reduce round end notification length
 			else
 				news_message = "The crew of [decoded_station_name] has been \
 					evacuated amid unconfirmed reports of enemy activity."
+			*/
 		// A blob won
 		if(BLOB_WIN)
 			news_message = "[decoded_station_name] was overcome by an unknown biological outbreak, killing \
@@ -837,6 +841,7 @@ SUBSYSTEM_DEF(ticker)
 		if(SUPERMATTER_CASCADE)
 			news_message = "Officials are advising nearby colonies about a newly declared exclusion zone in \
 				the sector surrounding [decoded_station_name]."
+	/* Bluemoon edit - Reduce round end notification length
 	// NOVA EDIT ADDITION- START
 	if(SSblackbox.first_death)
 		var/list/ded = SSblackbox.first_death
@@ -846,6 +851,7 @@ SUBSYSTEM_DEF(ticker)
 			news_message += " NT Sanctioned Psykers proudly confirm reports that nobody died this shift!"
 	. = news_message || "We regret to inform you that shit be whack, yo. None of our reporters have any idea of what may or may not have gone on."
 	// NOVA EDIT ADDITION END
+	*/
 
 	if(news_message)
 		send2otherserver(news_source, news_message, "News_Report")
