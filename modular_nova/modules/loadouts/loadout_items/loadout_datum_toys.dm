@@ -8,9 +8,11 @@
 	/// How many toys are allowed at maximum.
 	VAR_PRIVATE/max_allowed = 3
 
+/* Bluemoon edit - Disable loadout item limits
 /datum/loadout_category/toys/New()
 	. = ..()
 	category_info = "([max_allowed] allowed)"
+*/
 
 /datum/loadout_category/toys/handle_duplicate_entires(
 	datum/preference_middleware/loadout/manager,
@@ -22,10 +24,12 @@
 	for(var/datum/loadout_item/toys/other_toy in all_loadout_items)
 		other_toys += other_toy
 
+	/* Bluemoon edit - Disable loadout item limits
 	if(length(other_toys) >= max_allowed)
 		// We only need to deselect something if we're above the limit
 		// (And if we are we prioritize the first item found, FIFO)
 		manager.deselect_item(other_toys[1])
+	*/
 	return TRUE
 
 /datum/loadout_item/toys

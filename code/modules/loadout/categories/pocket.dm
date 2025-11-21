@@ -7,9 +7,11 @@
 	/// How many pocket items are allowed
 	VAR_PRIVATE/max_allowed = 3 // NOVA EDIT - Expanded loadout framework - ORIGINAL: VAR_PRIVATE/max_allowed = 2
 
+/* Bluemoon edit - Disable loadout item limits
 /datum/loadout_category/pocket/New()
 	. = ..()
 	category_info = "([max_allowed] allowed)"
+*/
 
 /datum/loadout_category/pocket/handle_duplicate_entires(
 	datum/preference_middleware/loadout/manager,
@@ -21,10 +23,12 @@
 	for(var/datum/loadout_item/pocket_items/other_pocket_item in all_loadout_items)
 		other_pocket_items += other_pocket_item
 
+	/* Bluemoon edit - Disable loadout item limits
 	if(length(other_pocket_items) >= max_allowed)
 		// We only need to deselect something if we're above the limit
 		// (And if we are we prioritize the first item found, FIFO)
 		manager.deselect_item(other_pocket_items[1])
+	*/
 	return TRUE
 
 /datum/loadout_item/pocket_items
