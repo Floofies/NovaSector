@@ -8,9 +8,6 @@
 	datum/loadout_item/added_item,
 	list/datum/loadout_item/all_loadout_items,
 )
-	var/list/datum/loadout_item/weapons/weapons_list = list()
-	for(var/datum/loadout_item/weapons/other_weapon in all_loadout_items)
-		weapons_list += other_weapon
 	return TRUE
 
 /datum/loadout_item/weapons/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE)
