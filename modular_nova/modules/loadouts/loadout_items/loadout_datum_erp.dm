@@ -17,11 +17,11 @@
 	datum/loadout_item/added_item,
 	list/datum/loadout_item/all_loadout_items,
 )
+	/* Bluemoon edit - Disable loadout item limits
 	var/list/datum/loadout_item/erp/other_items = list()
 	for(var/datum/loadout_item/erp/other_item in all_loadout_items)
 		other_items += other_item
 
-	/* Bluemoon edit - Disable loadout item limits
 	if(length(other_items) >= MAX_ALLOWED_ERP_ITEMS)
 		manager.deselect_item(other_items[1])
 	*/

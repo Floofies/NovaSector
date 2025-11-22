@@ -19,11 +19,11 @@
 	datum/loadout_item/added_item,
 	list/datum/loadout_item/all_loadout_items,
 )
+	/* Bluemoon edit - Disable loadout item limits
 	var/list/datum/loadout_item/pocket_items/other_pocket_items = list()
 	for(var/datum/loadout_item/pocket_items/other_pocket_item in all_loadout_items)
 		other_pocket_items += other_pocket_item
 
-	/* Bluemoon edit - Disable loadout item limits
 	if(length(other_pocket_items) >= max_allowed)
 		// We only need to deselect something if we're above the limit
 		// (And if we are we prioritize the first item found, FIFO)
