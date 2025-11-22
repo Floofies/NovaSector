@@ -763,8 +763,9 @@ SUBSYSTEM_DEF(ticker)
 		if(STATION_EVACUATED)
 			// Had an emergency reason supplied to pass along
 			if(emergency_reason)
+				// Bluemoon edit - Fix round end news report spacing
 				news_message = "[decoded_station_name] has been evacuated after transmitting \
-					the following distress beacon:\n\n[decoded_emergency_reason]"
+					the following distress beacon:\n[decoded_emergency_reason]"
 			/* Bluemoon edit - Reduce round end notification length
 			else
 				news_message = "The crew of [decoded_station_name] has been \
