@@ -2,5 +2,8 @@
 	. = ..()
 	var/mob/living/carbon/human/brain_owner = owner
 	if(istype(brain_owner, /mob/living/carbon/human) && brain_owner.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
+		// Bluemoon edit - Disable handle_arousal for brains in non-carbon mobs
+		if(isnull(brain_owner.has_dna()))
+			return
 		if(!(organ_flags & ORGAN_FAILING))
 			brain_owner.dna.species.handle_arousal(brain_owner, seconds_per_tick, times_fired)
