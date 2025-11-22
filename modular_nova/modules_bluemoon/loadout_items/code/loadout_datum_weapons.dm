@@ -88,7 +88,7 @@
 
 /datum/loadout_item/weapons/handguns/gyropistol
 	name = /obj/item/gun/ballistic/automatic/gyropistol::name
-	item_path = /obj/item/storage/toolbox/guncase/nova/pistol/trappiste_small_case/bluvolva/with_ammo
+	item_path = /obj/item/storage/toolbox/guncase/nova/ntcase/pistol/gyropistol
 	ui_icon = /obj/item/gun/ballistic/automatic/gyropistol::icon
 	ui_icon_state = /obj/item/gun/ballistic/automatic/gyropistol::icon_state
 
