@@ -36,8 +36,8 @@
 	ammo_to_spawn = /obj/item/ammo_box/c38
 	extra_to_spawn = /obj/item/ammo_box/speedloader/c38
 
-/obj/item/storage/toolbox/guncase/nova/ntcase/pistol/gryopistol
-	name = "\improper NT/E \"Laevateinn\" revolver gunset"
+/obj/item/storage/toolbox/guncase/nova/ntcase/pistol/gyropistol
+	name = "\improper prototype M75 gryojet pistol gunset"
 	weapon_to_spawn = /obj/item/gun/ballistic/automatic/gyropistol
 	ammo_to_spawn = /obj/item/ammo_box/a75
 	extra_to_spawn = /obj/item/ammo_box/magazine/m75
