@@ -2260,15 +2260,6 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/shuttle/hedon/medbay)
-"jf" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
-/obj/structure/cable,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/large,
-/area/shuttle/hedon/fore)
 "jg" = (
 /obj/structure/bed/double/pod,
 /obj/effect/spawner/random/bedsheet/double,
@@ -14482,7 +14473,7 @@ LG
 NO
 LG
 BM
-jf
+EN
 VB
 YO
 JX
