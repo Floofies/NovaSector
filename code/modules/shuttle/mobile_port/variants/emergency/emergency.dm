@@ -166,7 +166,8 @@
 					return
 				mode = SHUTTLE_DOCKED
 				setTimer(SSshuttle.emergency_dock_time)
-				send2adminchat("Server", "The Emergency Shuttle has docked with the station.")
+				// Bluemoon edit - Disable round end admin notifications
+				// send2adminchat("Server", "The Emergency Shuttle has docked with the station.")
 				priority_announce(
 					text = "[SSshuttle.emergency] has docked with the station. You have [DisplayTimeText(SSshuttle.emergency_dock_time)] to board the emergency shuttle.",
 					title = "Emergency Shuttle Arrival",

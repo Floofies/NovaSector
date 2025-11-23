@@ -22,6 +22,8 @@
 	name = "NTDS 'Hedon'"
 	port_direction = EAST
 	preferred_direction = EAST
+	after_takeoff_sound = sound('modular_nova/modules_bluemoon/hedon_cruiser/sound/hyperspace_begin_large.wav')
+	shuttle_area_basetype = /area/shuttle/hedon
 
 /area/shuttle/hedon
 	name = "NTDS 'Hedon'"

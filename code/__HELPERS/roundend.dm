@@ -250,10 +250,13 @@ GLOBAL_LIST_INIT(achievements_unlocked, list())
 	to_chat(world, span_infoplain(span_big(span_bold("<BR><BR><BR>The round has ended."))))
 	log_game("The round has ended.")
 	for(var/channel_tag in CONFIG_GET(str_list/channel_announce_end_game))
-		send2chat(new /datum/tgs_message_content("[GLOB.round_id ? "Round [GLOB.round_id]" : "The round has"] just ended."), channel_tag)
-		send2chat("The current round has ended. Please standby for your shift interlude Nanotrasen News Network's report!", channel_tag) // NOVA EDIT ADDITION
+		// Bluemoon edit - Custom round end notification
+		send2chat(new /datum/tgs_message_content("[GLOB.round_id ? "Round [GLOB.round_id]" : "The round has"] has ended on [SSmapping.current_map.map_name], [CONFIG_GET(string/servername)]."), channel_tag)
+		// Bluemoon edit - Reduce round end notification length
+		//send2chat("The current round has ended. Please standby for your shift interlude Nanotrasen News Network's report!", channel_tag) // NOVA EDIT ADDITION
 		send2chat(send_news_report(), channel_tag) // NOVA EDIT ADDITION
-	send2adminchat("Server", "Round just ended.")
+	// Bluemoon edit - Disable round end admin notifications
+	//send2adminchat("Server", "Round just ended.")
 
 	/* //NOVA EDIT REMOVAL START
 	MOVED CHECK INTO TICKER.DM

@@ -32,6 +32,10 @@
 		// NOVA EDIT ADDITION END
 		// Bluemoon edit - Add Kilostation map
 		#include "map_files\KiloStation\KiloStation.dmm"
+		// Bluemoon edit - Add Marina Station map
+		#include "map_files\ShipStation\ShipStation2.dmm"
+		// Bluemoon edit - Add Box Station map
+		#include "map_files\BoxStation\BoxStation.dmm"
 	#endif
 	#ifdef ALL_TEMPLATES
 		#include "templates.dm"

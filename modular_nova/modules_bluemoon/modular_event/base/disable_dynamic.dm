@@ -1,4 +1,4 @@
-/datum/controller/subsystem/dynamic/New()
+/datum/controller/subsystem/dynamic/OnConfigLoad()
 	. = ..()
 	if(CONFIG_GET(flag/force_extended))
 		force_extended()
