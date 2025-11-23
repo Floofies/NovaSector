@@ -9529,6 +9529,7 @@
 #include "modular_nova\modules_bluemoon\mapping\code\grille.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\light_mapping_helpers.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\mapping_helpers.dm"
+#include "modular_nova\modules_bluemoon\mapping\code\mobile_port.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\reinf_walls.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\signs.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\structure.dm"

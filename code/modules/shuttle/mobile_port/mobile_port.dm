@@ -489,6 +489,8 @@
 			else
 				mode = SHUTTLE_CALL
 				setTimer(callTime * engine_coeff)
+				// Bluemoon edit - Play hyperspace takeoff sound from shuttle areas
+				play_engine_sound(src, TRUE, SHUTTLE_IGNITING)
 				enterTransit()
 				return
 
@@ -505,7 +507,8 @@
 			if(tl <= SHUTTLE_RIPPLE_TIME)
 				create_ripples(destination, tl)
 				play_engine_sound(src, FALSE) // NOVA EDIT ADDITION
-				play_engine_sound(destination, FALSE) // NOVA EDIT ADDITION
+				// Bluemoon edit Play hyperspace takeoff sound from shuttle areas
+				play_engine_sound(destination, FALSE, SHUTTLE_CALL) // NOVA EDIT ADDITION
 
 	var/obj/docking_port/stationary/S0 = get_docked()
 	if(istype(S0, /obj/docking_port/stationary/transit) && timeLeft(1) <= PARALLAX_LOOP_TIME)
