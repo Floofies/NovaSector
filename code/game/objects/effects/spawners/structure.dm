@@ -12,11 +12,11 @@ again.
 	. = ..()
 	for(var/spawn_type in spawn_list)
 		// Bluemoon edit - Allow custom colors on structure spawners
-		if(!isnull(color))
+		if(isnull(color))
 			new spawn_type(loc)
-			return
-		var/obj/structure/spawned_structure = new spawn_type(loc)
-		spawned_structure.color = color
+		else
+			var/obj/structure/spawned_structure = new spawn_type(loc)
+			spawned_structure.color = color
 
 //normal windows
 
