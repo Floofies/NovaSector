@@ -28,7 +28,7 @@
 	descriptor = "arousing scent"
 
 /datum/pollutant/musk/effect/aphrodisiac/touch_act(mob/living/carbon/victim, amount)
-	if(victim.has_quirk(/datum/quirk/olfactophile))
+	if(..() && victim.has_quirk(/datum/quirk/olfactophile))
 		astype(victim, /mob/living/carbon/human)?.adjust_arousal(0.1 * amount)
 
 /datum/pollutant/musk/effect/hypnotic
