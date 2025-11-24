@@ -506,8 +506,8 @@
 			var/tl = timeLeft(1)
 			if(tl <= SHUTTLE_RIPPLE_TIME)
 				create_ripples(destination, tl)
-				play_engine_sound(src, FALSE) // NOVA EDIT ADDITION
 				// Bluemoon edit Play hyperspace takeoff sound from shuttle areas
+				play_engine_sound(src, FALSE, SHUTTLE_CALL) // NOVA EDIT ADDITION
 				play_engine_sound(destination, FALSE, SHUTTLE_CALL) // NOVA EDIT ADDITION
 
 	var/obj/docking_port/stationary/S0 = get_docked()
