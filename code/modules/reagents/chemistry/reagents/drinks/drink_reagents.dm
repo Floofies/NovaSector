@@ -1167,7 +1167,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/consumable/strawberry_banana
-	name = "strawberry banana smoothie"
+	name = "Strawberry Banana Smoothie"
 	description = "A classic smoothie made from strawberries and bananas."
 	color = "#FF9999"
 	nutriment_factor = 0
@@ -1175,7 +1175,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/consumable/berry_blast
-	name = "berry blast smoothie"
+	name = "Berry Blast Smoothie"
 	description = "A classic smoothie made from mixed berries."
 	color = "#A76DC5"
 	nutriment_factor = 0
@@ -1183,7 +1183,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/consumable/funky_monkey
-	name = "funky monkey smoothie"
+	name = "Funky Monkey Smoothie"
 	description = "A classic smoothie made from chocolate and bananas."
 	color = COLOR_BROWNER_BROWN
 	nutriment_factor = 0
@@ -1191,7 +1191,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/consumable/green_giant
-	name = "green giant smoothie"
+	name = "Green Giant Smoothie"
 	description = "A green vegetable smoothie, made without vegetables."
 	color = COLOR_VERY_DARK_LIME_GREEN
 	nutriment_factor = 0
@@ -1199,7 +1199,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/consumable/melon_baller
-	name = "melon baller smoothie"
+	name = "Melon Baller Smoothie"
 	description = "A classic smoothie made from melons."
 	color = "#D22F55"
 	nutriment_factor = 0
@@ -1207,7 +1207,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/consumable/vanilla_dream
-	name = "vanilla dream smoothie"
+	name = "Vanilla Dream Smoothie"
 	description = "A classic smoothie made from vanilla and fresh cream."
 	color = "#FFF3DD"
 	nutriment_factor = 0
