@@ -10,6 +10,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
+/obj/item/dog_bone,
 /turf/open/floor/carpet/red,
 /area/shuttle/crimson)
 "aN" = (
@@ -24,6 +25,9 @@
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/stripes/red/line,
 /turf/open/floor/iron/shuttle/exploration/textured_flat,
+/area/shuttle/crimson)
+"bm" = (
+/turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "bB" = (
 /obj/structure/fake_stairs/directional/north,
@@ -65,7 +69,11 @@
 	},
 /area/shuttle/crimson)
 "bY" = (
-/obj/machinery/power/shuttle_engine/propulsion/left,
+/obj/machinery/power/shuttle_engine/large{
+	name = "Saturn J-3000 engine";
+	pixel_x = 0;
+	pixel_y = -32
+	},
 /turf/closed/wall/mineral/titanium/spaceship{
 	color = "#ecb38a"
 	},
@@ -75,6 +83,10 @@
 /obj/machinery/recharger{
 	pixel_x = -7;
 	pixel_y = 9
+	},
+/obj/item/gun/energy/e_gun/mini{
+	pixel_x = 3;
+	pixel_y = 6
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/crimson)
@@ -92,7 +104,9 @@
 "cJ" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/rnd/production/techfab,
-/turf/open/floor/iron/shuttle/cargo,
+/turf/open/floor/iron/shuttle/cargo{
+	icon_state = "floor_box"
+	},
 /area/shuttle/crimson)
 "cK" = (
 /obj/machinery/light/warm/directional/south,
@@ -113,22 +127,7 @@
 /area/shuttle/crimson)
 "cP" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/toolbox/mechanical{
-	pixel_y = 11;
-	pixel_x = 17
-	},
-/obj/item/multitool{
-	pixel_x = -3;
-	pixel_y = 12
-	},
-/obj/item/storage/belt/utility/full/powertools{
-	pixel_x = -4;
-	pixel_y = 1
-	},
-/obj/item/storage/toolbox/electrical{
-	pixel_y = 1;
-	pixel_x = 17
-	},
+/obj/machinery/cell_charger_multi,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/crimson)
 "cV" = (
@@ -237,9 +236,16 @@
 /area/shuttle/crimson)
 "es" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/crimson)
+"eI" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 10
 	},
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 8
+	},
+/turf/open/floor/engine,
 /area/shuttle/crimson)
 "fg" = (
 /turf/open/floor/iron/shuttle/exploration/corner{
@@ -305,10 +311,8 @@
 	},
 /area/shuttle/crimson)
 "hp" = (
-/obj/machinery/mecha_part_fabricator{
-	drop_direction = 1
-	},
 /obj/machinery/camera/directional/west,
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/iron/shuttle/cargo{
 	icon_state = "floor_box"
 	},
@@ -343,7 +347,12 @@
 	},
 /area/shuttle/crimson)
 "hZ" = (
-/turf/open/floor/iron/shuttle/exploration/textured_flat,
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/caution/stand_clear/white,
+/obj/effect/turf_decal/stripes/red/line,
+/turf/open/floor/engine,
 /area/shuttle/crimson)
 "ia" = (
 /obj/effect/turf_decal/siding/white{
@@ -409,6 +418,7 @@
 "ji" = (
 /obj/effect/turf_decal/shuttle/exploration/bot,
 /obj/structure/bookcase,
+/obj/structure/sign/poster/contraband/dolphin/directional/north,
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 8
 	},
@@ -422,9 +432,21 @@
 "jl" = (
 /obj/structure/cable,
 /obj/structure/table/reinforced,
-/obj/item/storage/belt/utility/xenoarch{
-	pixel_x = 8;
-	pixel_y = 3
+/obj/item/multitool{
+	pixel_x = -8;
+	pixel_y = 12
+	},
+/obj/item/storage/belt/utility/full/powertools{
+	pixel_x = -4;
+	pixel_y = 1
+	},
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 11;
+	pixel_x = 8
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 1;
+	pixel_x = 9
 	},
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 4
@@ -450,6 +472,11 @@
 "kl" = (
 /obj/effect/turf_decal/shuttle/exploration/bot,
 /obj/structure/rack/shelf,
+/obj/item/storage/box/lights/mixed,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 4
+	},
+/obj/item/crowbar/large/twenty_force,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 4
 	},
@@ -460,6 +487,10 @@
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 4
 	},
+/area/shuttle/crimson)
+"kr" = (
+/obj/machinery/holopad,
+/turf/open/floor/iron/shuttle/exploration/blanktile,
 /area/shuttle/crimson)
 "kV" = (
 /obj/structure/cable,
@@ -516,12 +547,11 @@
 /turf/open/floor/circuit/red/anim,
 /area/shuttle/crimson)
 "lk" = (
-/obj/effect/turf_decal/shuttle/exploration/hazardstripe{
-	dir = 4
-	},
+/obj/effect/turf_decal/shuttle/exploration/bot,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
 	},
+/obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "lp" = (
@@ -606,17 +636,19 @@
 /turf/template_noop,
 /area/shuttle/crimson)
 "mS" = (
-/obj/machinery/power/rtg/advanced,
-/obj/structure/cable,
-/obj/structure/railing{
-	dir = 6
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
 	},
-/obj/structure/sign/warning/electric_shock/directional/west,
-/turf/open/floor/iron/recharge_floor,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/turf/open/floor/engine,
 /area/shuttle/crimson)
 "mY" = (
-/obj/machinery/power/shuttle_engine/large,
-/turf/template_noop,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "ni" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle/spaceship{
@@ -647,15 +679,20 @@
 "nq" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
+/obj/effect/turf_decal/loading_area/white{
+	dir = 4;
+	color = "#C48F39"
+	},
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 4
 	},
 /area/shuttle/crimson)
 "nw" = (
-/obj/machinery/cell_charger_multi,
 /obj/machinery/light/directional/west,
-/obj/structure/table/reinforced,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/machinery/rnd/production/circuit_imprinter,
+/turf/open/floor/iron/shuttle/cargo{
+	icon_state = "floor_box"
+	},
 /area/shuttle/crimson)
 "nJ" = (
 /obj/effect/turf_decal/shuttle/exploration/bot,
@@ -689,6 +726,8 @@
 /area/shuttle/crimson)
 "nY" = (
 /obj/structure/railing,
+/obj/machinery/power/rtg/advanced,
+/obj/structure/cable,
 /turf/open/floor/iron/shuttle/exploration/equipmentrail1,
 /area/shuttle/crimson)
 "os" = (
@@ -715,7 +754,7 @@
 	color = "#991111";
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/syndiemoth/directional/west,
+/obj/structure/sign/poster/contraband/self_ai_liberation/directional/west,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 4
 	},
@@ -732,7 +771,6 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/structure/sign/warning/radiation/rad_area/directional/east,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
@@ -759,6 +797,7 @@
 "pw" = (
 /obj/effect/turf_decal/tile/dark/opposingcorners,
 /obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/sign/poster/contraband/wildcat/directional/east,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 8
 	},
@@ -815,7 +854,6 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/structure/sign/warning/radiation/rad_area/directional/west,
 /obj/machinery/power/port_gen/pacman/pre_loaded,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
@@ -843,6 +881,10 @@
 "rb" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle/spaceship{
 	color = "#8ab1ec"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "crimson_bridgedoors";
+	name = "Bridge Blast Door"
 	},
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
@@ -917,15 +959,18 @@
 	pixel_y = 8
 	},
 /obj/effect/turf_decal/siding/thinplating_new/light{
-	dir = 1
+	dir = 5
+	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
 	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "rv" = (
-/obj/structure/closet/crate/cargo/mining,
-/turf/open/floor/iron/shuttle/cargo{
-	icon_state = "floor_box"
-	},
+/obj/machinery/suit_storage_unit/mining/eva,
+/obj/effect/turf_decal/shuttle/exploration/bot,
+/obj/machinery/recharge_station,
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/crimson)
 "rE" = (
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe{
@@ -945,6 +990,10 @@
 	nightshift_allowed = 0;
 	fire_colour = "#ff1100"
 	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1;
+	name = "co-pilot seat"
+	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/crimson)
 "rQ" = (
@@ -956,11 +1005,24 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /turf/open/floor/iron/shuttle/exploration/equipmentrail3,
 /area/shuttle/crimson)
-"sM" = (
-/obj/effect/turf_decal/siding/thinplating_new/light{
-	dir = 1
+"sH" = (
+/obj/machinery/power/shuttle_engine/large{
+	name = "Saturn J-3000 engine";
+	pixel_x = 0;
+	pixel_y = -32
 	},
+/turf/closed/wall/mineral/titanium/spaceship{
+	color = "#8ab1ec"
+	},
+/area/shuttle/crimson)
+"sM" = (
 /obj/machinery/camera/directional/west,
+/obj/effect/turf_decal/siding/thinplating_new/light{
+	dir = 9
+	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "sN" = (
@@ -974,8 +1036,15 @@
 /turf/open/floor/iron/shuttle/exploration/textured_flat,
 /area/shuttle/crimson)
 "sU" = (
-/obj/machinery/power/shuttle_engine/huge,
-/turf/template_noop,
+/obj/structure/cable,
+/obj/effect/turf_decal/shuttle/exploration/hazardstripe{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -4
+	},
+/turf/open/floor/iron/shuttle/exploration/equipmentrail3{
+	dir = 4
+	},
 /area/shuttle/crimson)
 "sX" = (
 /obj/structure/cable,
@@ -1042,6 +1111,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/shuttle/exploration/side,
 /area/shuttle/crimson)
+"uk" = (
+/obj/structure/cable,
+/obj/machinery/power/rtg/advanced,
+/turf/open/floor/iron/shuttle/exploration/hazard,
+/area/shuttle/crimson)
 "uq" = (
 /turf/open/floor/iron/shuttle/exploration/corner_invcorner{
 	dir = 1
@@ -1052,7 +1126,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/shuttle/exploration/bot,
-/obj/structure/tank_dispenser/oxygen,
+/obj/structure/rack,
 /turf/open/floor/iron/shuttle/exploration/textured_flat,
 /area/shuttle/crimson)
 "uH" = (
@@ -1238,13 +1312,13 @@
 /turf/open/floor/iron/shuttle/exploration/side,
 /area/shuttle/crimson)
 "xt" = (
-/obj/structure/window/reinforced/shuttle/spaceship{
-	color = "#8ab1ec"
+/obj/machinery/power/shuttle_engine/huge{
+	name = "Rolls-Royce N66 Cyclone engine";
+	pixel_x = 0;
+	pixel_y = -32
 	},
-/obj/structure/grille/lattice,
-/obj/machinery/door/poddoor/preopen{
-	id = "crimson_bridgedoors";
-	name = "Bridge Blast Door"
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
 	},
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
@@ -1279,6 +1353,12 @@
 /obj/machinery/computer/operating{
 	dir = 1
 	},
+/obj/effect/turf_decal/siding/thinplating_new/light{
+	dir = 10
+	},
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 8
+	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "ya" = (
@@ -1292,6 +1372,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/holopad,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/crimson)
 "yq" = (
@@ -1301,13 +1382,18 @@
 "yu" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /obj/structure/table/reinforced/rglass,
+/obj/item/storage/medkit/regular,
 /obj/item/reagent_containers/spray/cleaner{
 	pixel_x = -9;
 	pixel_y = 2
 	},
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
+/obj/effect/turf_decal/siding{
+	dir = 4
 	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "yx" = (
 /obj/structure/cable,
@@ -1338,10 +1424,26 @@
 	dir = 1
 	},
 /area/shuttle/crimson)
+"za" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south{
+	pixel_y = -4
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/shuttle/crimson)
 "zr" = (
 /obj/structure/table/reinforced,
 /obj/machinery/xenoarch/researcher{
 	pixel_y = 5
+	},
+/obj/item/storage/belt/utility/xenoarch{
+	pixel_x = 0;
+	pixel_y = -1
 	},
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 1
@@ -1361,12 +1463,18 @@
 	},
 /area/shuttle/crimson)
 "zz" = (
-/obj/machinery/power/rtg/advanced,
-/obj/structure/cable,
-/obj/structure/railing{
-	dir = 5
+/obj/effect/turf_decal/shuttle/exploration/bot,
+/obj/structure/closet/crate/science/robo,
+/obj/item/mod/core/standard{
+	pixel_x = -4
 	},
-/turf/open/floor/iron/recharge_floor,
+/obj/item/mod/core/standard{
+	pixel_x = 4
+	},
+/obj/item/mod/core/standard{
+	pixel_y = 4
+	},
+/turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "zA" = (
 /obj/structure/table/reinforced,
@@ -1393,21 +1501,30 @@
 /obj/machinery/camera/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/sign/flag/terragov/directional/south,
 /turf/open/floor/iron/shuttle/exploration/doubleside,
 /area/shuttle/crimson)
 "Ac" = (
 /obj/structure/railing/corner,
 /obj/machinery/light/red/directional/south,
+/obj/structure/sign/warning/electric_shock/directional/south,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "Ad" = (
 /obj/structure/railing,
+/obj/machinery/power/rtg/advanced,
+/obj/structure/cable,
+/obj/item/toy/plush/nova/engihound{
+	pixel_x = -14;
+	pixel_y = 3
+	},
 /turf/open/floor/iron/shuttle/exploration/equipmentrail3,
 /area/shuttle/crimson)
 "Aj" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/holopad,
 /turf/open/floor/iron/shuttle/cargo{
 	icon_state = "floor_maintb"
 	},
@@ -1463,9 +1580,7 @@
 "AL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
-	},
+/turf/open/floor/mineral/titanium/white,
 /area/shuttle/crimson)
 "AT" = (
 /obj/structure/cable,
@@ -1518,9 +1633,13 @@
 /obj/item/storage/box/bodybags,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
+/obj/effect/turf_decal/siding{
+	dir = 4
 	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "BO" = (
 /obj/structure/plaque/static_plaque/crimson,
@@ -1580,17 +1699,20 @@
 /area/shuttle/crimson)
 "Ds" = (
 /obj/machinery/stasis/survival_pod,
-/obj/structure/sign/flag/terragov/directional/north,
+/obj/structure/sign/poster/contraband/double_rainbow/directional/north,
 /turf/open/floor/iron/shuttle/exploration/corner,
 /area/shuttle/crimson)
 "Dv" = (
-/obj/effect/turf_decal/shuttle/exploration/hazardstripe{
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south{
+	pixel_y = -4
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 5
+	},
+/obj/effect/turf_decal/stripes/red/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/turf/open/floor/plating/reinforced,
+/turf/open/floor/engine,
 /area/shuttle/crimson)
 "Dy" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
@@ -1614,12 +1736,18 @@
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "DL" = (
-/obj/machinery/power/rtg/advanced,
-/obj/structure/cable,
-/obj/structure/railing{
-	dir = 9
-	},
-/turf/open/floor/iron/recharge_floor,
+/obj/machinery/light/small/red/directional/east,
+/obj/effect/turf_decal/shuttle/exploration/bot,
+/obj/structure/closet/crate/engineering,
+/obj/item/stack/sheet/mineral/titanium/fifty,
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/rods/fifty,
+/obj/item/stack/sheet/plastitaniumglass/fifty,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "Eh" = (
 /obj/structure/cable,
@@ -1678,18 +1806,24 @@
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "FN" = (
-/obj/machinery/stasis{
-	dir = 1
+/obj/machinery/sleeper/syndie/fullupgrade/nt{
+	dir = 4;
+	deconstructable = 1
 	},
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
+/obj/effect/turf_decal/siding{
+	dir = 8
 	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "FV" = (
-/obj/machinery/power/shuttle_engine/propulsion/right,
-/turf/closed/wall/mineral/titanium/spaceship{
-	color = "#ecb38a"
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 6
 	},
+/obj/effect/turf_decal/stripes/red/corner,
+/turf/open/floor/engine,
 /area/shuttle/crimson)
 "Gx" = (
 /obj/structure/sink/directional/south,
@@ -1770,10 +1904,8 @@
 	},
 /area/shuttle/crimson)
 "Hl" = (
-/obj/structure/cable,
-/turf/open/floor/iron/shuttle/exploration/equipmentrail3{
-	dir = 4
-	},
+/obj/effect/turf_decal/stripes/red/box,
+/turf/open/floor/engine,
 /area/shuttle/crimson)
 "Hz" = (
 /obj/machinery/camera/directional/east,
@@ -1832,6 +1964,11 @@
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/crimson)
+"HL" = (
+/obj/machinery/power/rtg/advanced,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/exploration/hazard,
+/area/shuttle/crimson)
 "HQ" = (
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 8
@@ -1849,9 +1986,13 @@
 /area/shuttle/crimson)
 "IA" = (
 /obj/structure/sign/warning/radiation/rad_area/directional/east,
-/obj/machinery/power/rtg/advanced,
-/obj/structure/cable,
-/turf/open/floor/iron/recharge_floor,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/machinery/computer/cargo/express,
+/obj/item/disk/cargo/bluespace_pod,
+/obj/effect/turf_decal/shuttle/exploration/bot,
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/crimson)
 "IU" = (
 /obj/structure/cable,
@@ -1948,6 +2089,22 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/shuttle/exploration/hazard,
 /area/shuttle/crimson)
+"Kq" = (
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/white/line,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/caution/stand_clear/white,
+/obj/machinery/door/window/survival_pod/left/directional/south{
+	pixel_x = 0;
+	pixel_y = -4;
+	name = "Delivery Pad"
+	},
+/turf/open/floor/engine,
+/area/shuttle/crimson)
 "Lb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/siding/wood{
@@ -1963,6 +2120,7 @@
 /area/shuttle/crimson)
 "Lm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
+/obj/machinery/holopad,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 4
 	},
@@ -2040,16 +2198,20 @@
 	},
 /area/shuttle/crimson)
 "MG" = (
+/obj/effect/turf_decal/siding/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/corner{
+	dir = 1
+	},
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe{
 	dir = 1
 	},
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
-	},
+/turf/open/floor/mineral/titanium/white,
 /area/shuttle/crimson)
 "MK" = (
-/obj/structure/grille/lattice,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/obj/structure/grille/lattice,
 /turf/open/floor/circuit/red/anim,
 /area/shuttle/crimson)
 "MP" = (
@@ -2060,9 +2222,9 @@
 	},
 /area/shuttle/crimson)
 "MZ" = (
-/obj/machinery/autolathe/hacked,
-/turf/open/floor/iron/shuttle/cargo{
-	icon_state = "floor_box"
+/obj/structure/sign/warning/radiation/rad_area,
+/turf/closed/wall/mineral/titanium/spaceship/interior{
+	color = "#8ab1ec"
 	},
 /area/shuttle/crimson)
 "Nb" = (
@@ -2116,11 +2278,41 @@
 /obj/effect/spawner/structure/window/reinforced/shuttle/spaceship{
 	color = "#8ab1ec"
 	},
+/obj/machinery/door/poddoor/preopen{
+	id = "crimson_bridgedoors";
+	name = "Bridge Blast Door"
+	},
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "Ny" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
+	},
+/obj/structure/closet/emcloset/wall{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/obj/effect/turf_decal/trimline/white/end{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/white/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/mid_joiner,
+/obj/effect/turf_decal/trimline/white/mid_joiner{
+	dir = 8
+	},
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
+	},
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
+	},
+/obj/item/clothing/suit/hazardvest{
+	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
+	name = "emergency lifejacket"
 	},
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 8
@@ -2142,6 +2334,17 @@
 /obj/effect/spawner/random/bedsheet,
 /obj/structure/bed/pod,
 /turf/open/floor/iron/shuttle/exploration/corner,
+/area/shuttle/crimson)
+"NS" = (
+/obj/machinery/anesthetic_machine,
+/obj/item/tank/internals/anesthetic,
+/obj/effect/turf_decal/siding{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "Od" = (
 /obj/machinery/camera/directional/east,
@@ -2252,15 +2455,23 @@
 	pixel_y = 18
 	},
 /obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
+/obj/effect/turf_decal/siding{
+	dir = 5
 	},
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "Qv" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /obj/structure/table/reinforced/rglass,
 /obj/item/storage/backpack/duffelbag/med,
 /obj/machinery/light/cold/directional/south,
+/obj/effect/turf_decal/siding/thinplating_new/light{
+	dir = 6
+	},
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "Qx" = (
@@ -2280,6 +2491,7 @@
 /obj/effect/turf_decal/shuttle/exploration/bot,
 /obj/structure/rack/gunrack,
 /obj/item/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/carbine,
 /turf/open/floor/iron/shuttle/exploration/corner,
 /area/shuttle/crimson)
 "QO" = (
@@ -2294,26 +2506,32 @@
 	},
 /area/shuttle/crimson)
 "Rh" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/storage/medkit/regular,
 /obj/machinery/light/cold/directional/north,
-/turf/open/floor/iron/shuttle/evac{
-	icon_state = "floormed"
+/obj/machinery/sleeper/syndie/fullupgrade/nt{
+	dir = 4;
+	deconstructable = 1
 	},
+/obj/effect/turf_decal/siding{
+	dir = 9
+	},
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "Ro" = (
-/obj/machinery/rnd/production/circuit_imprinter,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/machinery/mecha_part_fabricator{
+	drop_direction = 1
+	},
+/turf/open/floor/iron/shuttle/cargo{
+	icon_state = "floor_box"
+	},
 /area/shuttle/crimson)
 "RC" = (
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/shuttle/crimson)
 "RF" = (
-/obj/effect/turf_decal/loading_area/white{
-	dir = 4;
-	color = "#C48F39"
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2342,6 +2560,7 @@
 "Su" = (
 /obj/structure/railing,
 /obj/structure/cable,
+/obj/machinery/power/rtg/advanced,
 /turf/open/floor/iron/shuttle/exploration/equipmentrail2,
 /area/shuttle/crimson)
 "Sx" = (
@@ -2423,7 +2642,12 @@
 /area/shuttle/crimson)
 "Tn" = (
 /obj/structure/cable,
-/turf/open/floor/iron/shuttle/exploration/textured_flat,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/holopad,
+/turf/open/floor/iron/shuttle/exploration/side{
+	dir = 8
+	},
 /area/shuttle/crimson)
 "To" = (
 /obj/structure/railing,
@@ -2465,43 +2689,27 @@
 /turf/open/floor/iron/shuttle/exploration/textured_flat,
 /area/shuttle/crimson)
 "Uc" = (
-/obj/effect/turf_decal/trimline/white/end{
-	dir = 4
+/obj/machinery/light/floor{
+	bulb_colour = "#FF3232";
+	no_low_power = 1;
+	nightshift_allowed = 0;
+	fire_colour = "#ff1100"
 	},
-/obj/effect/turf_decal/trimline/white/mid_joiner{
-	dir = 4
+/obj/structure/chair/comfy/shuttle{
+	dir = 1;
+	name = "pilot seat"
 	},
-/obj/effect/turf_decal/trimline/white/mid_joiner,
-/obj/effect/turf_decal/trimline/white/mid_joiner{
-	dir = 1
-	},
-/obj/structure/closet/emcloset/wall{
-	pixel_x = -32
-	},
-/obj/item/clothing/suit/hazardvest{
-	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
-	name = "emergency lifejacket"
-	},
-/obj/item/clothing/suit/hazardvest{
-	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
-	name = "emergency lifejacket"
-	},
-/obj/item/clothing/suit/hazardvest{
-	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
-	name = "emergency lifejacket"
-	},
-/turf/open/floor/iron/shuttle/exploration/corner{
-	dir = 4
-	},
+/turf/open/floor/iron/shuttle/evac,
 /area/shuttle/crimson)
 "Uf" = (
-/obj/machinery/power/rtg/advanced,
-/obj/structure/cable,
-/obj/structure/railing{
-	dir = 10
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
 	},
-/obj/structure/sign/warning/electric_shock/directional/east,
-/turf/open/floor/iron/recharge_floor,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/machinery/light/small/red/directional/east,
+/turf/open/floor/engine,
 /area/shuttle/crimson)
 "UN" = (
 /obj/machinery/cryopod{
@@ -2571,6 +2779,7 @@
 	dir = 8
 	},
 /obj/machinery/light/red/directional/south,
+/obj/structure/sign/warning/electric_shock/directional/south,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "Wr" = (
@@ -2617,7 +2826,7 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/shuttle/exploration/bot,
-/obj/structure/rack,
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/iron/shuttle/exploration/textured_flat,
 /area/shuttle/crimson)
 "Xj" = (
@@ -2672,9 +2881,8 @@
 /obj/item/borg_restart_board{
 	pixel_y = 7
 	},
-/turf/open/floor/iron/shuttle/cargo{
-	icon_state = "floor_box"
-	},
+/obj/effect/turf_decal/shuttle/exploration/bot,
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/crimson)
 "XJ" = (
 /obj/effect/turf_decal/tile/dark/opposingcorners,
@@ -2715,22 +2923,24 @@
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "YA" = (
-/obj/effect/turf_decal/shuttle/exploration/hazardstripe{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/obj/machinery/light/small/red/directional/east,
+/obj/effect/turf_decal/shuttle/exploration/bot,
 /turf/open/floor/plating/reinforced,
 /area/shuttle/crimson)
 "YG" = (
-/obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/directional/south,
+/obj/machinery/stasis{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/effect/turf_decal/tile/blue/half/contrasted,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/crimson)
 "Zg" = (
 /obj/machinery/bluespace_beacon,
+/obj/structure/chair/comfy/shuttle{
+	dir = 1;
+	name = "captain seat"
+	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/crimson)
 "ZA" = (
@@ -2839,13 +3049,13 @@ WC
 WC
 WC
 Kb
-hZ
+HL
 Sc
 Jg
 as
 Jg
 Tg
-hZ
+HL
 lp
 bR
 WC
@@ -2880,13 +3090,13 @@ WC
 WC
 WC
 Kb
-hZ
+HL
 sX
 Rg
 Rg
 Rg
 yx
-Tn
+uk
 uc
 bY
 mG
@@ -2921,15 +3131,15 @@ WC
 WC
 WC
 Kb
-hZ
+HL
 tc
 BZ
 EX
 jc
 mF
-hZ
+HL
 uc
-FV
+lp
 mG
 "}
 (5,1,1) = {"
@@ -2989,10 +3199,10 @@ Vp
 Jh
 Bx
 Xb
-MZ
-Jf
-Jf
 rv
+Jf
+Jf
+Jf
 XH
 Vp
 WC
@@ -3046,9 +3256,9 @@ Vp
 Iw
 ni
 Vp
-LA
+MZ
 Ou
-LA
+MZ
 TO
 WC
 WC
@@ -3061,7 +3271,7 @@ WC
 WC
 TO
 Vp
-Vp
+rb
 Vp
 LA
 Ei
@@ -3074,7 +3284,7 @@ wx
 Cf
 Rh
 FN
-FN
+NS
 sM
 xR
 Cf
@@ -3098,11 +3308,11 @@ WC
 "}
 (9,1,1) = {"
 WC
-xt
-xt
+rb
+rb
 LA
 lt
-Uc
+ZA
 Cf
 QM
 vh
@@ -3138,8 +3348,8 @@ WC
 WC
 "}
 (10,1,1) = {"
-xt
-xt
+rb
+rb
 dH
 HG
 Fk
@@ -3179,9 +3389,9 @@ WC
 WC
 "}
 (11,1,1) = {"
-xt
+rb
 UW
-rG
+Uc
 pD
 ZL
 vN
@@ -3216,11 +3426,11 @@ os
 nY
 ST
 Vp
+xt
 mG
-sU
 "}
 (12,1,1) = {"
-xt
+rb
 Pf
 Zg
 ya
@@ -3238,7 +3448,7 @@ Nc
 Jn
 SQ
 IU
-IU
+Tn
 IU
 cw
 Qx
@@ -3257,11 +3467,11 @@ yI
 Su
 ST
 Vp
-mG
+bm
 mG
 "}
 (13,1,1) = {"
-xt
+rb
 mp
 rG
 HE
@@ -3269,7 +3479,7 @@ ri
 uX
 Cf
 hc
-rQ
+kr
 rQ
 uJ
 Cf
@@ -3298,12 +3508,12 @@ os
 Ad
 ST
 Vp
-mG
+mY
 mG
 "}
 (14,1,1) = {"
-xt
-xt
+rb
+rb
 cl
 Qg
 nS
@@ -3344,8 +3554,8 @@ WC
 "}
 (15,1,1) = {"
 WC
-xt
-xt
+rb
+rb
 LA
 Ny
 fg
@@ -3389,7 +3599,7 @@ WC
 WC
 TO
 Vp
-Vp
+rb
 Vp
 LA
 VP
@@ -3456,9 +3666,9 @@ Vp
 Vp
 Vp
 Vp
-LA
+MZ
 vA
-LA
+MZ
 TO
 WC
 WC
@@ -3577,16 +3787,16 @@ WC
 WC
 WC
 Ax
-hZ
+FV
 mS
 Dv
 Oi
 lk
 zz
-hZ
+YA
 uc
-Vp
-mY
+sH
+mG
 "}
 (21,1,1) = {"
 WC
@@ -3620,11 +3830,11 @@ WC
 Ax
 hZ
 Hl
-AT
+Kq
+sU
 AT
 AT
 fl
-Tn
 uc
 Vp
 mG
@@ -3659,13 +3869,13 @@ WC
 WC
 WC
 Ax
-hZ
+eI
 Uf
-YA
+za
 IA
-YA
+bm
 DL
-hZ
+YA
 LA
 TO
 WC
