@@ -4,6 +4,8 @@
 	var/area/shuttle_area_basetype
 	/// The sound to be played after takeoff
 	var/sound/after_takeoff_sound
+	/// Volume used by area-based play_engine_sound
+	var/takeoff_sound_volume = 50
 
 // Bluemoon edit - Play hyperspace takeoff sound from shuttle areas
 /obj/docking_port/mobile/play_engine_sound(atom/distant_source, takeoff, takeoff_phase)
@@ -21,7 +23,7 @@
 		target_mob.playsound_local(
 			turf_source = get_turf(target_mob),
 			soundin = selected_sound,
-			vol = 65,
+			vol = takeoff_sound_volume,
 			vary = FALSE,
 			use_reverb = FALSE,
 			volume_preference = /datum/preference/numeric/volume/sound_ship_ambience_volume
