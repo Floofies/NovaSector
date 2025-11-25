@@ -15,14 +15,27 @@
 	else
 		payload(light)
 
+///Applies the desired effects to the light object
 /obj/effect/mapping_helpers/light/proc/payload(obj/machinery/light/light)
 	return
 
+// Disables flickering caused by explosions
 /obj/effect/mapping_helpers/light/flickerproof
 	name = "flicker-proof light helper"
 
 /obj/effect/mapping_helpers/light/flickerproof/payload(obj/machinery/light/light)
 	light.flicker_proof = TRUE
+
+// Small lights
+
+/obj/machinery/light/small/cold
+	bulb_colour = LIGHT_COLOR_FAINT_BLUE
+	nightshift_light_color = LIGHT_COLOR_FAINT_BLUE
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light/small/cold, 0)
+
+
+// Floor lights
 
 /obj/machinery/light/floor/warm
 	bulb_colour = "#fae5c1"
