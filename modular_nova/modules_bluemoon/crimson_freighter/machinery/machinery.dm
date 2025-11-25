@@ -3,6 +3,9 @@
 	desc = "Used to control the SEV 'Crimson'."
 	icon = 'modular_nova/modules/advanced_shuttles/icons/computer.dmi'
 	icon_state = "computer_left"
+	icon_keyboard = ""
+	icon_screen = ""
+	connectable = FALSE
 	circuit = /obj/item/circuitboard/computer/crimson
 	shuttleId = "crimson"
 	possible_destinations = "crimson_home;whiteship_away;whiteship_home;whiteship_z4;whiteship_lavaland;crimson_custom"
@@ -17,6 +20,9 @@
 	desc = "Used to designate a precise transit location for the SEV 'Crimson'."
 	icon = 'modular_nova/modules/advanced_shuttles/icons/computer.dmi'
 	icon_state = "computer"
+	icon_keyboard = ""
+	icon_screen = ""
+	connectable = FALSE
 	shuttleId = "crimson"
 	lock_override = NONE
 	shuttlePortId = "crimson_custom"
