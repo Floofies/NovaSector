@@ -1,4 +1,5 @@
 /datum/action/cooldown/spell/summonitem/event
+	invocation_type = INVOCATION_NONE
 	var/static/list/area/summon_area_blacklist = list()
 
 /datum/action/cooldown/spell/summonitem/event/before_cast(atom/cast_on)
