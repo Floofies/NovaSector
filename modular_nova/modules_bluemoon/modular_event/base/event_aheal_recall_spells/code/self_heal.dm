@@ -23,10 +23,10 @@
 			return FALSE
 	user.balloon_alert(user, "autodoc charging...")
 	playsound(user, 'sound/machines/defib/defib_ready.ogg', 50, FALSE, SHORT_RANGE_SOUND_EXTRARANGE)
-	if(!do_after(user, 2 SECONDS))
+	if(!do_after(user, 2 SECONDS, timed_action_flags = IGNORE_SLOWDOWNS | IGNORE_INCAPACITATED | IGNORE_USER_LOC_CHANGE))
 		return
 	playsound(user, 'sound/machines/defib/defib_charge.ogg', 50, FALSE, SHORT_RANGE_SOUND_EXTRARANGE)
-	if(!do_after(user, 4 SECONDS))
+	if(!do_after(user, 4 SECONDS, timed_action_flags = IGNORE_SLOWDOWNS | IGNORE_INCAPACITATED | IGNORE_USER_LOC_CHANGE))
 		return
 	if(prob(0.1))
 		playsound(user, 'sound/effects/pray_chaplain.ogg', 40, FALSE, SHORT_RANGE_SOUND_EXTRARANGE)
