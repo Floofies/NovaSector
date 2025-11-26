@@ -14,14 +14,15 @@
 	dwidth = 72
 
 /obj/docking_port/mobile/hedon
-	callTime = 5 MINUTES
-	can_move_docking_ports = TRUE
 	shuttle_id = "hedon"
-	launch_status = 0
-	movement_force = list("KNOCKDOWN"=0,"THROW"=0)
 	name = "NTDS 'Hedon'"
 	port_direction = EAST
 	preferred_direction = EAST
+	can_move_docking_ports = TRUE
+	launch_status = 0
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0)
+	callTime = 5 MINUTES
+	ignitionTime = 6.5 SECONDS
 	after_takeoff_sound = sound('modular_nova/modules_bluemoon/hedon_cruiser/sound/hyperspace_begin_large.wav')
 	shuttle_area_basetype = /area/shuttle/hedon
 
