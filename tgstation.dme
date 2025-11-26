@@ -9531,6 +9531,7 @@
 #include "modular_nova\modules_bluemoon\mapping\code\closet.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\counter_sink.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\decals.dm"
+#include "modular_nova\modules_bluemoon\mapping\code\defibrilator_mount.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\grille.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\light_mapping_helpers.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\mapping_helpers.dm"
