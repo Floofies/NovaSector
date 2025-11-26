@@ -10,7 +10,7 @@
 	)
 	skip_starting_sounds = TRUE
 	volume = 5
-	falloff_exponent = 7
+	falloff_exponent = 5
 	extra_range = -12
 	falloff_distance = 1
 	ignore_walls = FALSE
