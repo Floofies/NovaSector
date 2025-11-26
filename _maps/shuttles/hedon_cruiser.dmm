@@ -4686,18 +4686,21 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/hedon/mainframe)
 "tf" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/dark_green/corner{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/dark_green/corner{
 	dir = 4
 	},
+/obj/effect/turf_decal/trimline/dark_green/filled/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_green/filled/corner{
+	dir = 4
+	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/hedon/bridge)
 "th" = (
@@ -5389,7 +5392,10 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker/hedon{
 	dir = 8
 	},
-/obj/item/reagent_containers/condiment/yoghurt,
+/obj/item/reagent_containers/condiment/yoghurt{
+	pixel_x = 5;
+	pixel_y = 9
+	},
 /turf/open/floor/pod/dark,
 /area/shuttle/hedon/bridge)
 "wf" = (
@@ -6134,7 +6140,7 @@
 /area/shuttle/hedon/medbay)
 "zu" = (
 /obj/machinery/smartfridge/organ,
-/turf/open/floor/mineral/titanium/tiled/blue,
+/turf/closed/wall/prefab_plastic,
 /area/shuttle/hedon/medbay)
 "zz" = (
 /obj/structure/drain,
@@ -6648,11 +6654,13 @@
 "Bd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
-/obj/structure/cable,
 /obj/effect/turf_decal/trimline/dark_green/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/dark_green/mid_joiner,
+/obj/effect/turf_decal/trimline/dark_green/mid_joiner{
+	dir = 1
+	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 4
 	},
@@ -10776,11 +10784,9 @@
 "Sn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
 /obj/effect/turf_decal/trimline/dark_green/line,
-/obj/effect/turf_decal/trimline/dark_green/mid_joiner{
-	dir = 1
-	},
+/obj/effect/turf_decal/trimline/dark_green/mid_joiner,
+/obj/structure/cable,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 4
 	},
@@ -15768,7 +15774,7 @@ Ro
 td
 tf
 UP
-UP
+ef
 Sn
 ep
 Bd
