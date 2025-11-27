@@ -128,6 +128,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 
 	///Only main engines can have their sliver stolen, can trigger cascades, and can spawn stationwide anomalies.
 	var/is_main_engine = FALSE
+	///Our soundloop
 	var/datum/looping_sound/supermatter/soundloop
 	///Can it be moved?
 	var/moveable = FALSE
