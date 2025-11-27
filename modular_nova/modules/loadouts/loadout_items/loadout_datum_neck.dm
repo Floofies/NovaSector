@@ -1,6 +1,7 @@
 // LOADOUT ITEM DATUMS FOR THE NECK SLOT
 
 /datum/loadout_category/neck
+	// Bluemoon edit - Fix loadout tab order
 	tab_order = /datum/loadout_category/head::tab_order + 2
 
 /datum/loadout_item/neck/pre_equip_item(datum/outfit/outfit, datum/outfit/outfit_important_for_life, mob/living/carbon/human/equipper, visuals_only = FALSE)

@@ -9,6 +9,7 @@
 /datum/brain_trauma/very_special
 	abstract_type = /datum/brain_trauma/very_special
 
+// Bluemoon edit - Amorous quirk
 /datum/brain_trauma/very_special/amorous
 	name = "Permanent hormonal disruption"
 	desc = "The patient has completely lost the ability to form speech and seems extremely aroused."
