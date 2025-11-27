@@ -16,6 +16,14 @@
 		if(DOOR_CLOSING_ANIMATION)
 			playsound(src, animation_sound, 30, TRUE)
 
+// Bluemoon edit - Reduce prefab shuttle animation length
+/obj/machinery/door/poddoor/shutters/colony_fabricator/animation_length(animation)
+	switch(animation)
+		if(DOOR_OPENING_ANIMATION)
+			return 1 SECONDS
+		if(DOOR_CLOSING_ANIMATION)
+			return 1 SECONDS
+
 /obj/item/flatpacked_machine/shutter_kit
 	name = "prefab shutters parts kit"
 	desc = /obj/machinery/door/poddoor/shutters/colony_fabricator/preopen::desc
