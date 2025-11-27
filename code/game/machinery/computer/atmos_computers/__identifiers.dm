@@ -33,6 +33,8 @@
 #define ATMOS_GAS_MONITOR_ENGINE "engine"
 // Bluemoon edit - Methane gas
 #define ATMOS_GAS_MONITOR_METHANE GAS_METHANE
+// Bluemoon edit - NTDS Hedon shuttle
+#define ATMOS_GAS_MONITOR_HEDON "engine_hedon"
 
 // Human-readble names of these funny tags.
 GLOBAL_LIST_INIT(station_gas_chambers, list(
@@ -66,4 +68,6 @@ GLOBAL_LIST_INIT(station_gas_chambers, list(
 	ATMOS_GAS_MONITOR_ENGINE = "Supermatter Engine Chamber",
 	// Bluemoon edit - Methane gas
 	ATMOS_GAS_MONITOR_METHANE = "Methane Supply",
+	// Bluemoon edit - NTDS Hedon shuttle
+	ATMOS_GAS_MONITOR_HEDON = "Fusion Reactor Chamber",
 ))

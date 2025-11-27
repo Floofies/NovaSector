@@ -68,16 +68,22 @@
 	icon_state = "cafeteria"
 
 /area/shuttle/hedon/engine
-	name = "NTDS 'Hedon' Engine Bay"
+	name = "NTDS 'Hedon' Engineering Bay"
 	icon_state = "engi_lobby"
 	ambience_index = AMBIENCE_ENGI
 	sound_environment = SOUND_AREA_LARGE_ENCLOSED
 
 /area/shuttle/hedon/reactor
-	name = "NTDS 'Hedon' RB-MK2 Reactor Bay"
+	name = "NTDS 'Hedon' Reactor Bay"
 	icon_state = "engine"
 	ambience_index = AMBIENCE_ENGI
 	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/shuttle/hedon/reactor_chamber
+	name = "NTDS 'Hedon' Fusion Reactor"
+	icon_state = "engine_sm"
+	ambience_index = AMBIENCE_ENGI
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/shuttle/hedon/engine_storage
 	name = "NTDS 'Hedon' Engine Storage"
