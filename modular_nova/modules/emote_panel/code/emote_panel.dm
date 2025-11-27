@@ -108,10 +108,15 @@
 		/mob/living/proc/emote_awoo,
 		/mob/living/proc/emote_nya,
 		/mob/living/proc/emote_weh,
+		// Bluemoon edit - Add antennae wag emote
+		/mob/living/proc/emote_mwag,
+		// Bluemoon edit - Add antennae wag emote
+		/mob/living/proc/emote_amwag,
 		/mob/living/proc/emote_mothsqueak,
 		/mob/living/proc/emote_mousesqueak,
 		/mob/living/proc/emote_merp,
 		/mob/living/proc/emote_bark,
+		// Bluemoon edit - Add whine emote
 		/mob/living/proc/emote_whine,
 		/mob/living/proc/emote_squish,
 		/mob/living/proc/emote_meow,
@@ -144,6 +149,8 @@
 		/mob/living/proc/emote_rattle,
 		/mob/living/proc/emote_cackle,
 		/mob/living/proc/emote_warble,
+		// Bluemoon edit - Add twerk emote
+		/mob/living/proc/emote_twerk,
 		/mob/living/proc/emote_trills,
 		/mob/living/proc/emote_rpurr,
 		/mob/living/proc/emote_purr,
@@ -695,12 +702,6 @@
 	set category = "Emotes+"
 	usr.emote("bark", intentional = TRUE)
 
-// Bluemoon edit - Add whine emote
-/mob/living/proc/emote_whine()
-	set name = "> Whine"
-	set category = "Emotes+"
-	usr.emote("whine", intentional = TRUE)
-
 /mob/living/proc/emote_squish()
 	set name = "> Squish"
 	set category = "Emotes+"
@@ -1047,14 +1048,3 @@
 	set name = "| Mark Turf |"
 	set category = "Emotes+"
 	usr.emote("turf", intentional = TRUE)
-
-// Bluemoon edit - Add antennae wag emote
-/mob/living/proc/emote_mwag()
-	set name = "> Wag Antennae"
-	set category = "Emotes+"
-	usr.emote("mwag", intentional = TRUE)
-
-/mob/living/proc/emote_amwag()
-	set name = "> Angry Wag Antennae"
-	set category = "Emotes+"
-	usr.emote("amwag", intentional = TRUE)

@@ -36,7 +36,8 @@
 	if(intentional && !HAS_TRAIT(user, TRAIT_FREERUNNING) && !HAS_TRAIT(user, TRAIT_STYLISH) && !do_after(user, 1 SECONDS, target = user, hidden = TRUE))
 		return
 	if(isliving(user))
-		user.do_stagger_animation()
+		INVOKE_ASYNC(user, TYPE_PROC_REF(/mob/living, do_stagger_animation))
+		INVOKE_ASYNC(user, TYPE_PROC_REF(/mob/living, do_stagger_animation))
 
 /datum/emote/twerk/check_cooldown(mob/user, intentional)
 	. = ..()
