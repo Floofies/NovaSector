@@ -622,8 +622,6 @@
 			target.adjustOxyLoss(-min(target.getOxyLoss(), 5))
 		// NOVA EDIT ADDITION END
 		else
-			// Both parties can breathe, so increase efficacy slightly
-			to_chat(target, span_unconscious("You feel someone pushing on your chest, and fresh air inside your lungs... It feels good..."))
 			target.adjustOxyLoss(-min(target.getOxyLoss(), 7))
 			to_chat(target, span_unconscious("You feel someone pushing on your chest, and fresh air inside your lungs... It feels good...")) // NOVA EDIT CHANGE - Original: to_chat(target, span_unconscious("You feel a breath of fresh air enter your lungs... It feels good..."))
 
