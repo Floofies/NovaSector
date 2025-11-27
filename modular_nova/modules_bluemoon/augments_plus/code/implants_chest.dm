@@ -10,19 +10,14 @@
 	name = "Inertial Maneuvering Jets Implant"
 	path = /obj/item/organ/cyberimp/chest/thrusters
 
-/obj/item/organ/cyberimp/chest/spine/upgraded
-	name = "\improper Atlas gravitonic spinal implant"
-	desc = "This gravitronic spinal interface is able to improve the athletics of a user, allowing them greater physical ability. \
-		This one has been improved through the installation of a gravity anomaly core, allowing for personal gravity manipulation."
-	athletics_boost_multiplier = 0.25
-	added_throw_range = 4
-	strength_bonus = 8
-	core_applied = TRUE
+/datum/augment_item/implant/chest/analyzer
+	name = "Internal Medical Analyzer Implant"
+	path = /obj/item/organ/cyberimp/chest/scanner
 
-/datum/augment_item/implant/chest/thrusters
-	name = "Gravitronic Spinal Implant"
+/datum/augment_item/implant/chest/grav
+	name = "Herculean Gravitronic Spinal Implant"
 	path = /obj/item/organ/cyberimp/chest/spine
 
-/datum/augment_item/implant/chest/thrusters
-	name = "Upgraded Gravitronic Spinal Implant"
-	path = /obj/item/organ/cyberimp/chest/spine/upgraded
+/datum/augment_item/implant/chest/grav/upgraded
+	name = "Atlas Gravitronic Spinal Implant"
+	path = /obj/item/organ/cyberimp/chest/spine/atlas
