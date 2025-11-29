@@ -159,7 +159,7 @@
 				/obj/item/reagent_containers/cup/bottle/dimicillin = 6,
 
 				// Bluemoon edit - RUTT reagent
-				/obj/item/reagent_containers/pill/rutt = 20,
+				/obj/item/reagent_containers/applicator/pill/rutt = 20,
 				/obj/item/reagent_containers/cup/bottle/rutt = 6,
 			),
 		),
