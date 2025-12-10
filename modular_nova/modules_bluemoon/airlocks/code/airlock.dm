@@ -36,6 +36,10 @@
 	forcedOpen = 'modular_nova/modules_bluemoon/airlocks/sound/vault_airlock/open_force.ogg'
 	forcedClosed = 'modular_nova/modules_bluemoon/airlocks/sound/vault_airlock/close_force.ogg'
 
+/obj/machinery/door/airlock/multi_tile/metal
+	opacity = TRUE
+	glass = FALSE
+
 /obj/machinery/door/airlock/vault
 	doorOpen = 'modular_nova/modules_bluemoon/airlocks/sound/vault_airlock/airlock.ogg'
 	doorClose = 'modular_nova/modules_bluemoon/airlocks/sound/vault_airlock/airlockclose.ogg'
