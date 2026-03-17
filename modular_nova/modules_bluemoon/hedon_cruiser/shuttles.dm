@@ -8,9 +8,9 @@
 	name = "Refueling Station: Port 10"
 	shuttle_id = "hedon_home"
 	roundstart_template = /datum/map_template/shuttle/hedon
-	height = 37
+	height = 43
 	width = 85
-	dheight = 2
+	dheight = 3
 	dwidth = 72
 
 /obj/docking_port/mobile/hedon
