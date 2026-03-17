@@ -134,12 +134,18 @@
 /area/shuttle/hedon/port_bunks
 	name = "NTDS 'Hedon' Port Bunks"
 	icon_state = "dorms"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
 
 /area/shuttle/hedon/sauna
 	name = "NTDS 'Hedon' Sauna"
 	icon_state = "sauna"
 	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/shuttle/hedon/surgery
+	name = "NTDS 'Hedon' Operating Room"
+	icon_state = "surgery"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	ambience_index = AMBIENCE_MEDICAL
 
 /area/shuttle/hedon/mainframe
 	name = "NTDS 'Hedon' Mainframe"
@@ -149,7 +155,7 @@
 /area/shuttle/hedon/starboard_bunks
 	name = "NTDS 'Hedon' Starboard Bunks"
 	icon_state = "dorms"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
 
 /area/shuttle/hedon/bunks
 	name = "NTDS 'Hedon' Bunks"

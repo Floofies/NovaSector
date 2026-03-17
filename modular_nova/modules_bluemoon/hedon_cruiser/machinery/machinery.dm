@@ -25,5 +25,6 @@
 	)
 	view_range = 15
 	designate_time = 5 SECONDS
-	x_offset = 7
+	x_offset = -16
+	y_offset = 16
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
