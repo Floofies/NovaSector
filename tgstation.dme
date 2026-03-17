@@ -9552,6 +9552,7 @@
 #include "modular_nova\modules_bluemoon\mapping\code\platform.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\reactor.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\reinf_walls.dm"
+#include "modular_nova\modules_bluemoon\mapping\code\sauna.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\signs.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\structure.dm"
 #include "modular_nova\modules_bluemoon\mapping\code\turfs.dm"
