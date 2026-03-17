@@ -2703,7 +2703,6 @@
 /turf/open/floor/grass,
 /area/shuttle/shipstation)
 "ow" = (
-/obj/structure/table/reinforced/titaniumglass,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
@@ -2720,6 +2719,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/o2supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/table/reinforced/titaniumglass,
 /turf/open/floor/iron/white/textured_large,
 /area/shuttle/shipstation)
 "oz" = (
@@ -3987,6 +3987,12 @@
 "wU" = (
 /obj/structure/chair/comfy/shuttle,
 /obj/effect/landmark/start/nanotrasen_consultant,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/shipstation)
+"wZ" = (
+/obj/effect/turf_decal/arrows/red{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/shipstation)
 "xd" = (
@@ -8203,7 +8209,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 10
 	},
-/obj/structure/table/reinforced/titaniumglass,
+/obj/machinery/chem_mass_spec,
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 4
 	},
@@ -8967,7 +8973,7 @@ Id
 Rg
 rK
 Mg
-Am
+wZ
 Am
 PG
 nA
