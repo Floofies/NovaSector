@@ -21,6 +21,8 @@
 		if(is_type_in_list(user_area, aheal_area_blacklist))
 			to_chat(user, span_boldwarning("You cannot use this ability inside [user_area]!"))
 			return FALSE
+
+	StartCooldown()
 	user.balloon_alert(user, "autodoc charging...")
 	playsound(user, 'sound/machines/defib/defib_ready.ogg', 50, FALSE, SHORT_RANGE_SOUND_EXTRARANGE)
 	if(!do_after(user, 2 SECONDS, timed_action_flags = IGNORE_SLOWDOWNS | IGNORE_INCAPACITATED | IGNORE_USER_LOC_CHANGE))
@@ -39,6 +41,5 @@
 		var/mob/living/carbon/human/human_target = user
 		human_target.electrocution_animation(2 SECONDS)
 	user.balloon_alert(user, "fully healed")
-	StartCooldown()
 
 	return TRUE
